@@ -99,7 +99,7 @@ height: 145px;}
 <head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> </head>
 <title>####</title>
 <div id='container'>
-	<div id='flow_1' style="opacity:0.02;Z-INDEX:0;POSITION:absolute;top:103px;LEFT:-30px;"> <img src="blog/00.gif" width="500px"></div>
+	<div id='flow_1' style="opacity:0.02;Z-INDEX:0;POSITION:absolute;top:53px;LEFT:-30px;"> <img src="blog/00.gif" width="500px"></div>
 <!--	<div id='header'> </div> -->
 	<div id='body' style="align=right;">	
 		<table width=76% style="border-collapse:collapse;margin-right:123px;table-layout:fixed;background-color:;"  align="center" border=0><tr>
@@ -203,8 +203,8 @@ height: 145px;}
 			<font size=2>8.输入你想要察看的标签</font>
 			<form action="">
 			<input size='16px' type="text" id="tagname" value=""/>
-			<button type="submit" onclick="window.open('http://hi.baidu.com/tag/'+tagname.value+'/feeds','newwindow');return false;">搜</button>
 			<button type="submit" onclick="window.open('http://hi.baidu.com/loveu/archive/tag/'+tagname.value,'newwindow');return false;">hi</button>
+			<button type="submit" onclick="window.open('http://hi.baidu.com/tag/'+tagname.value+'/feeds','newwindow');return false;">搜</button>
 			<button type="submit" onclick="window.open('http://www.ittang.com/plus/search.php?kwtype=0&keyword='+tagname.value+'','newwindow');return false;">IT</button>
 			<button type="submit" onclick="window.open('https://github.com/search?type=&ref=simplesearch&q='+tagname.value+'','newwindow');return false;">git</button>
 			</form>
