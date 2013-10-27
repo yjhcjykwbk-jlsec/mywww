@@ -1,6 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh" lang="zh" dir="ltr">
 <script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="../underscore.js"></script>
+<script type="text/javascript" src="../backbone.js"></script>
 <script type="text/javascript">
 function pull_urls(){other_links.innerHTML="";$.ajax({ url:"pull.php", data:"pull_url=1", type:'post', dataType:'json', success:function(result){ other_links.innerHTML="";for(var i=0;i<result.length;i++){ newrow=other_links.insertRow(other_links.rows.length); newcol=newrow.insertCell(0);newcol.innerHTML=result[i][0]; newcol=newrow.insertCell(1); newcol.innerHTML=result[i][1]; newcol=newrow.insertCell(2); newcol.innerHTML="<a target=_blank href="+result[i][2]+">"+result[i][2].substring(0,20)+"</a>";newcol=newrow.insertCell(3);newcol.innerHTML="<button onclick=del_url("+result[i][0]+")>del</button>";} }});} 
 function pull_urls_div(){other_links_div.innerHTML="";$.ajax({ url:"pull.php", data:"pull_url=1", type:'post', dataType:'json', success:function(result){ other_links.innerHTML="";for(var i=0;i<result.length;i++){ other_links.innerHTML+="<a target=_blank href="+result[i][2]+" style=\"font-size:"+Math.ceil(Math.random()*6+8)+"pt;\">"+result[i][1]+"</a><a href='' onclick='del_url("+result[i][0]+")'>... </a>";} }});} 
@@ -83,8 +85,9 @@ td#col_4{ opacity:0.8; }
 	width:100%;
 }
 body{
-	background-repeat: repeat;
-	background-color:#000000;
+	background-repeat: no-repeat;
+	background-color:#ffffff;
+  background: url(bg.jpg) no-repeat right top;
 	font-size:12px;font-family:Arial,Console,Verdana,Courier New;
 }
 #header { width: 900px; height: 10px; Z-INDEX:1; POSITION:relative; margin: 0 auto; padding: 90px 0 0 0; text-align: left; }
@@ -98,16 +101,18 @@ height: 145px;}
 -->
 <head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> </head>
 <title>####</title>
-<div id='container'>
-	<div id='flow_1' style="opacity:0.02;Z-INDEX:0;POSITION:absolute;top:53px;LEFT:-30px;"> <img src="blog/00.gif" width="500px"></div>
+<div id='container' style="margin-top:50px;margin-right:140px">
+	<div id='flow_1' style="opacity:0.02;Z-INDEX:0;POSITION:absolute;top:53px;LEFT:-30px;display:none"> <img src="1.jpg" width="500px"></div>
 <!--	<div id='header'> </div> -->
-	<div id='body' style="align=right;">	
-		<table width=76% style="border-collapse:collapse;margin-right:123px;table-layout:fixed;background-color:;"  align="center" border=0><tr>
-		<td id='col_1' width=20% bgcolor='f1e6d4'><!-- bgcolor='F1E6D4' -->  <!--'F1E6D4'-->
+	<div id='body' style="width:76%;margin-left:auto;margin-right:100px;padding:15px 15px 20px 15px;background-color:rgba(243, 243, 243, 0.57);">	
+		<table style="border-collapse:none;table-layout:fixed;background-color:#ffffff;"  align="center"><tr>
+		<td id='col_1' width=20% bgcolor='f1e6d4'>
+		<div style="margin-left:10px;margin-right:10px;padding:5px 5px 5px 5px"><!-- bgcolor='F1E6D4' -->  <!--'F1E6D4'-->
 		<h3>access</h3>
 		<ul><li>
 			<a href="http://localhost" target="_blank">local</a>
 			<a href="http://219.223.254.55/portal/index_default.jsp" target="_blank">网关</a>
+			<a href="http://219.223.254.55/portal/wlan_login.jsp" target="_blank">wifi</a>
 			<a href="chrome://downloads/" target="_blank">down</a>
 			<a href="http://localhost/phpmyadmin" target="_blank">phpadmin</a>
 			</li><li>
@@ -200,14 +205,17 @@ height: 145px;}
 			<td><a  target="_blank" href="http://wenku.baidu.com/">百度文库</a></td>
 			<td><a  target="_blank" href="http://i.yunduan.cn/">cloud</a></td>
 			</table></li><li>
-			<font size=2>8.输入你想要察看的标签</font>
-			<form action="">
-			<input size='16px' type="text" id="tagname" value=""/>
-			<button type="submit" onclick="window.open('http://hi.baidu.com/loveu/archive/tag/'+tagname.value,'newwindow');return false;">hi</button>
-			<button type="submit" onclick="window.open('http://hi.baidu.com/tag/'+tagname.value+'/feeds','newwindow');return false;">搜</button>
-			<button type="submit" onclick="window.open('http://www.ittang.com/plus/search.php?kwtype=0&keyword='+tagname.value+'','newwindow');return false;">IT</button>
-			<button type="submit" onclick="window.open('https://github.com/search?type=&ref=simplesearch&q='+tagname.value+'','newwindow');return false;">git</button>
-			</form>
+      <font size=2>8.输入你想要察看的标签</font>
+      <form action="">
+      <input size='14px' type="text" id="tagname" value=""/>
+      <button type="submit" onclick="window.open('http://tieba.baidu.com/f/search/res?ie=utf-8&kw=%E8%9C%80%E5%B1%B1%E5%89%91%E5%AE%A2&rn=10&un=&sm=1&qw='+tagname.value+'','newwindow');return false;">贴吧</button>
+      <button type="submit" onclick="window.open('http://www.dewen.org/search/?q='+tagname.value,'newwindow');return false;">德问</button>
+      <button type="submit" onclick="window.open('http://hi.baidu.com/loveu/archive/tag/'+tagname.value,'newwindow');return false;">hi</button>
+      <button type="submit" onclick="window.open('http://hi.baidu.com/tag/'+tagname.value+'/feeds','newwindow');return false;">搜</button>
+      <button type="submit" onclick="window.open('http://www.ittang.com/plus/search.php?kwtype=0&keyword='+tagname.value+'','newwindow');return false;">IT</button>
+      <button type="submit" onclick="window.open('https://github.com/search?type=&ref=simplesearch&q='+tagname.value+'','newwindow');return false;">git</button>
+      <button type="submit" onclick="window.open('http://www.oschina.net/search?scope=code&q='+tagname.value+'','newwindow');return false;">oschina</button>
+      </form>
 			</li><li>
 			<font size=2>9.留言板</font>
 			<table id="replies" border=1>
@@ -227,7 +235,7 @@ $begin=$pg-5>0?$pg-5:0; $end=$pg+5; for($k=$begin;$k<$end;$k++){ ?>
 				<a href="javascript:void(0);" onclick="pull_reply(<?php echo $k ?>);" ><?php echo $k?></a>
 			<?php } ?>
 </ul>
-	</td>
+	</div></td>
 
 	<td id='col_2' width=20% bgcolor='fafafa' border=0><!-- effeff-->
 		<h3>personal</h3>
@@ -393,7 +401,7 @@ $begin=$pg-5>0?$pg-5:0; $end=$pg+5; for($k=$begin;$k<$end;$k++){ ?>
 					<font size=1 face="arial" color="green" align='center'>
 					<div name="other_links_div" id="other_links_div" width="500px">
 					</div>
-					<table name="other_links" id="other_links" width="340px" align='center'>
+					<table name="other_links" id="other_links" width="500px" align='center'>
 	<script type="text/javascript">
 	//	pull_urls();
 	pull_urls_div();
