@@ -14,16 +14,27 @@ fp=open('test2.html')
 def myprint(content):
   print type(content)
   print content
-
+def myexec(sql):
+  print sql
+  if cursor.execute(sql)!=1:
+    print "FAILED"
+  print
+  
 class Tieba:
   def __init__(self):
     self.db="db"
   def insertPost(self,post_id, post_content):
     sql="insert into posts(postid,postcontent) values ('%s',%s)"%(post_id,post_content)
-    print sql
-    if cursor.execute(sql)!=1:
-      print "FAILED"
-    print
+    myexec(sql)
+  def insertThread(self,thread_id,post_id):
+    sql="insert into threads(tid,postid) values ('%s','%s')"%(thread_id,post_id)
+    myexec(sql)
+  def clear(self):
+    sql="delete from posts where 1=1"
+    myexec(sql);
+    sql="delete from threads where 1=1"
+    myexec(sql);
+  
 # database
 db = sql.connect("127.0.0.1","root","","tieba" )
 # prepare a cursor object using cursor() method
@@ -34,16 +45,22 @@ html=pyq(url="http://tieba.baidu.com/p/2072174673?pid=31948424950&cid=0#31948424
 doc=pyq(html)
 d_post_contents=doc('.d_post_content')
 tieba=Tieba()
-for d_post_content in d_post_contents:
+tieba.clear();
+for i,d_post_content in enumerate(d_post_contents):
   post_content_id=pyq(d_post_content).attr('id')
   ri=post_content_id.rfind("_")
   post_id=post_content_id.split('_')[2]
   post_content=pyq(d_post_content).text()
   print post_id 
+  if i==0:
+    print "threadid:"+post_id
+    thread_id=post_id
+  else:
+    tieba.insertThread(thread_id,post_id)
   try:
     post_content=post_content.replace("'","\\'");
     post_content=post_content.decode("utf-8").encode("gbk");
-    myprint(post_content);
+    #myprint(post_content);
     tieba.insertPost(post_id,"'"+post_content+"'")
     #post_content=repr(post_content);
     #myprint(post_content)
