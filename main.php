@@ -239,6 +239,15 @@ $begin=$pg-5>0?$pg-5:0; $end=$pg+5; for($k=$begin;$k<$end;$k++){ ?>
 
 	<td id='col_2' width=20% bgcolor='fafafa' border=0><!-- effeff-->
 		<h3>personal</h3>
+
+
+		<div>
+			<ul style="display: inline-block; overflow: hidden; font-size: 12px; font-weight: bold; word-wrap: break-word;">
+			<li><img  src="http://tp3.sinaimg.cn/2635728142/180/22831012745/1" width="150" height="145" alt="请叫我老xu"></li>
+			<li ><a target="_blank" href="" ><strong node-type="follow"><font font-family='华文行凯'> 今日事今日</font></strong><span>毕</span></a></li>
+			</ul>  
+		</div>
+
 		<div><ul>
 			<li>Email
 				<a  target="_blank" href="http://cn.yahoo.com">yahoo</a>
@@ -337,14 +346,6 @@ $begin=$pg-5>0?$pg-5:0; $end=$pg+5; for($k=$begin;$k<$end;$k++){ ?>
 						<button type="ff" id="dd" name="dd" onclick="display_urls();return;">显示</button>
 				</li>
 		</ul>
-		</div>
-		<div>
-			<ul style="display: inline-block; overflow: hidden; font-size: 12px; font-weight: bold; word-wrap: break-word;">
-			<li><img  src="http://tp3.sinaimg.cn/2635728142/180/22831012745/1" width="150" height="145" alt="请叫我老xu"></li>
-			<li><dd style="display:inline-block ; overflow: hidden; font-size: 12px; font-weight: bold; word-wrap: break-word;"> <a href="" target="_blank" title="真是个好公民"><font  color='feeeef'>叫 我 老 徐</font></a>
-			</dd></li>
-			<li ><a target="_blank" href="" ><strong node-type="follow"><font font-family='华文行凯'> 今日事今日</font></strong><span>毕</span></a></li>
-			</ul>  
 		</div>
 
 	</td>
