@@ -88,10 +88,10 @@ def myEncode(text):
   try:
     #text=strQ2B(text)
     text=text.decode("utf-8").encode("gbk");
+    text=text.replace("'","\\'");
   except Exception, err:
     print "[FAILED]myEncode:",type(text)
     print "[ERROR]",err
-  text=text.replace("'","\\'");
   return text
 
 #initialize global variables  
@@ -156,7 +156,6 @@ def handleMainPage(doc,parameters):
       print "title:"+title
       print "tid:"+tid
       tieba.insertThreadDetails(tid,title)
-      parameters={}
       parameters['thread_id']=tid
       #handle with each thread
       handlePages('http://tieba.baidu.com/p/'+tid,1,getPager1,handlePostPage,parameters)
@@ -176,7 +175,7 @@ def handlePostPage(doc,parameters):
     post_content_id=pyq(d_post_content).attr('id')
     ri=post_content_id.rfind("_")
     post_id=post_content_id.split('_')[2]
-    post_content=pyq(d_post_content).text()
+    post_content=pyq(d_post_content).html()
     #if is the last post
     if i==len(l_posts)-1:
       #print "update thread:"+thread_id+" timestamp:"+time+" post:"+post_id
@@ -203,14 +202,13 @@ def handlePostPage(doc,parameters):
         tieba.insertLzl(post_id,spid,lzl_cnt,lzl_time)
         
 
-parameters={}
 #parameters['thread_id']='2072174673'
 #handlePages("http://tieba.baidu.com/p/2072174673",1,getPager1,handlePostPage,parameters)
-#parameters=''
 #use this to bake a tieba
-#handlePages("http://tieba.baidu.com/f?kw=%CA%F1%C9%BD%BD%A3%BF%CD&tp=0",1,getPager2,handleMainPage,parameters)
+parameters={}
+handlePages("http://tieba.baidu.com/f?kw=%CA%F1%C9%BD%BD%A3%BF%CD&tp=0",1,getPager2,handleMainPage,parameters)
 
-myOpen("http://tieba.baidu.com/p/2198155679");
+#myOpen("http://tieba.baidu.com/p/2198155679");
 
     #post_content=sql.escape_string(str(post_content))
   #print sql.escape_string(str)
