@@ -122,7 +122,7 @@ def getNextPage(o_url,page):
 
 def handlePages(url,page,getPager,func,parameters):
   #html=fp.read();#gbk 
-  myOpen(url)
+  #myOpen(url)
   html=pyq(url);
   doc=pyq(html)
   #handlePostPage(doc)
