@@ -1,4 +1,4 @@
-<?php $post_content="post_content";$timestamp="2012.12.12";$floor=1;$spid=100;$spost[100]="spost here";?>
+<?php require_once "postmanager.php"; ?>
 <div class="l_post ">
     <table width="100%"><tr>
     <td class="d_author"></td>
@@ -6,7 +6,7 @@
         <div class="p_content">
             <cc>
                 <div id="post_content_40704045971" class="d_post_content j_d_post_content">
-                    <?php echo $post_content ?>
+                    <?php echo $POST['postcontent']; ?>
                 </div>
             </cc>
             <br>
@@ -18,9 +18,9 @@
                 <div class="j_lzl_r p_reply" data-field="{&quot;pid&quot;:40704045971,&quot;total_num&quot;:2}"> <a href="#" class="lzl_link_unfold" style="display:none;">回复(2)</a>  <span class="lzl_link_fold" style="display:;">收起回复</span> 
                 </div>
                 <ul class="p_tail">
-                    <li><span class=""><?php echo $floor ?>楼</span>
+                    <li><span class=""><?php echo $POST['floor']; ?>楼</span>
                     </li>
-                    <li><span><?php echo $timestamp ?></span>
+                    <li><span><?php echo $POST['timestamp']; ?></span>
                     </li>
                   <li><span><a class="p_post_del" href="#">删除</a>&nbsp;</span></li>
                 </ul>
@@ -32,9 +32,9 @@
                         <li class="lzl_single_post j_lzl_s_p first_no_border" data-field="{&quot;pid&quot;:40704045971,&quot;spid&quot;:&quot;$spid&quot;,&quot;user_name&quot;:&quot;\u8700\u5c71\u65e0\u5f71\u5251&quot;,&quot;portrait&quot;:&quot;5c19caf1c9bdceded3b0bda3ac06&quot;}">
                             <a class="l_post_anchor" name="$spid"></a>
                             <div class="lzl_cnt"> <span class="lzl_content_main">  
-                            <?php echo $spost[$spid] ?>
+                            <?php echo "lzl"; ?>
                           </span> 
-                                <div class="lzl_content_reply"><span class="lzl_jb"></span><span class="lzl_op_list j_lzl_o_l" style=""><a href="#" class="j_lzl_ban">封</a>&nbsp;|&nbsp;<a href="#" class="j_lzl_del">删除</a>&nbsp;|&nbsp;</span><span class="lzl_time"><?php echo $timestamp ?></span>
+                                <div class="lzl_content_reply"><span class="lzl_jb"></span><span class="lzl_op_list j_lzl_o_l" style=""><a href="#" class="j_lzl_ban">封</a>&nbsp;|&nbsp;<a href="#" class="j_lzl_del">删除</a>&nbsp;|&nbsp;</span><span class="lzl_time"><?php echo $POST['timestamp']; ?></span>
                                     <a href="#" class="lzl_s_r">回复</a>
                                 </div>
                             </div>

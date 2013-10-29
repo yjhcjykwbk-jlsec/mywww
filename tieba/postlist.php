@@ -1,8 +1,18 @@
+<?php 
+    require_once "db.php";
+    $DB=new DB();
+    if(isset($_ENV['pn']))
+      $PN=$_ENV['pn'];
+    else $PN=1;
+    if(isset($_ENV['tid'])){
+      $TID=$_ENV['tid'];
+      $ACTION="getPosts";
+      require "postmanager.php";
+    }else return;
+?>
 <html>
-
 <head>
     <meta charset="gbk">
-    <meta furl="tieba.baidu.com/f?kw=%CA%F1%C9%BD%BD%A3%BF%CD" fname="蜀山剑客">
     <title>上交acm</title>
 
     <link rel="apple-touch-icon" href="http://tb2.bdstatic.com/tb/wap/img/touch.png">
@@ -85,12 +95,16 @@
                             </div>
                         </div>
                         <div class="p_postlist" id="j_p_postlist">
-
-                          <?php require "post.php" ?>
-                          
+                          <?php 
+                          $i=0;
+                          foreach($POSTLIST as $POST){
+                            $POST['floor']=++$i; 
+                            if($i==1)
+                              require "mainpost.php";
+                            else require "post.php";
+                          }
+                          ?>
                         </div>
-
-
                     </div>
                 </div>
             </div>

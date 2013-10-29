@@ -5,7 +5,7 @@ data-passive="loaded">
         <div class="p_content">
             <cc>
                 <div id="post_content_40703980655" class="d_post_content j_d_post_content">
-                    $post_content[$pid]
+                   <?php echo $POST['postcontent']; ?>
                 </div>
             </cc>
             <br>
@@ -20,7 +20,7 @@ data-passive="loaded">
                 <ul class="p_tail">
                     <li><span class="">1楼</span>
                     </li>
-                    <li><span>$timestamp[$pid]</span>
+                    <li><span><?php echo $POST['timestamp'];?></span>
                     </li>
                 </ul>
                 <ul class="p_mtail">
