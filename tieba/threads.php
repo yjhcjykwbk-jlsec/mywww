@@ -1,24 +1,20 @@
-<?php include_once "./db.php"; $DB=new DB(); ?>
 <?php
-  if(isset($DB)&&isset($_ENV['pn'])){
-    $START=($_ENV['pn']-1)*50;
-    $ACTION="getThreads";
-    require "postmanager.php";
-    }else{
-    echo "no pn set";
-    return;
-    }
-?>
+  require "db.php";
+  $DB=new DB();
+  $ACTION="getThreads";
+  $PN=isset($_ENV['pn'])?$_ENV['pn']:1;
+  require "postmanager.php";
+  ?>
 <html>
 <head>
-    <meta charset="gbk">
+    <meta charset="utf-8">
     <title>个人论坛</title>
     <link rel="apple-touch-icon" href="http://tb2.bdstatic.com/tb/wap/img/touch.png">
     <style>
         header, footer, section, article, aside, nav, figure {
             display:block;
             margin:0;
-            padding:0;
+            padding:0;http://localhost/www/tieba/?mod=posts&tid=2116338996
             border:0
         }
     </style>
@@ -52,6 +48,7 @@
                             <ul id="thread_list" class="threadlist">
                                 <?php $i=0;foreach($THREADLIST as $THREAD){
                                   $THREAD['postnum']=1;$THREAD['digest']="this is digest";
+                                  $THREAD['title']=c($THREAD['title']);                                  
                                   if($i++%2==0){ ?>
                                 <li class="j_thread_list" data-field="">
                                 <?php }else{?>

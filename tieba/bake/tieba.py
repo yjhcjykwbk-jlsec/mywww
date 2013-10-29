@@ -207,10 +207,7 @@ parameters={}
 #parameters['thread_id']='2072174673'
 #handlePages("http://tieba.baidu.com/p/2072174673",1,getPager1,handlePostPage,parameters)
 #parameters=''
-#use this to bake a tieba
-#handlePages("http://tieba.baidu.com/f?kw=%CA%F1%C9%BD%BD%A3%BF%CD&tp=0",1,getPager2,handleMainPage,parameters)
-
-myOpen("http://tieba.baidu.com/p/2198155679");
+handlePages("http://tieba.baidu.com/f?kw=%CA%F1%C9%BD%BD%A3%BF%CD&tp=0",1,getPager2,handleMainPage,parameters)
 
     #post_content=sql.escape_string(str(post_content))
   #print sql.escape_string(str)

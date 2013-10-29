@@ -95,6 +95,7 @@ body, button, input, select, textarea, td, th {
 .p_content {
     position: relative;
     min-height: 145px;
+    height: 145px;
     padding: 20px 15px 0 0;
 }
 
@@ -235,6 +236,7 @@ body, button, input, select, textarea, td, th {
     padding-top: 15px;
     margin-left: 0px;
     text-align: center;
+    width: 130px;
     background: #f3f3f3;
 }
 /*帖子所占区域，包含楼中楼*/
@@ -304,7 +306,7 @@ body, button, input, select, textarea, td, th {
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 0px;
-    width: 149px;
+    width: 129px;
 }
 
 .p_tail li, .p_mtail li {

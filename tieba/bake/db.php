@@ -24,7 +24,6 @@ class DB{
                 $this->halt("use database error");
 						}
         }
-        //$this->query("SET NAMES gbk");
         return $this->Link_ID;
     }function __construct(){
         $this->connect();

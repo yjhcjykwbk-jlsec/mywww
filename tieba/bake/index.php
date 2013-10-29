@@ -1,13 +1,13 @@
 <?php
   function cmp($a,$b){return isset($a)&&isset($b)&&strcmp($a,$b)==0;}
-  function c($a){return iconv('GB2312','UTF-8',$a);}
   $_ENV=$_REQUEST;
+  print_r($_ENV);
   if(isset($_ENV['mod'])){
     $MOD=$_ENV['mod'];
     if(cmp($MOD,"threads")) {//帖子列表
-      require "threads.php";
+      require "threadlist.php";
     }else if(cmp($MOD,'posts')){//
-      require "posts.php";
+      require "postlist.php";
     }else {
       echo "error request";
     }

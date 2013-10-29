@@ -50,20 +50,16 @@
                     <div class="contet_wrap" id="contet_wrap">
                         <div id="content_leftList" class="content_leftList clearfix">
                             <ul id="thread_list" class="threadlist">
-                                <?php $i=0;foreach($THREADLIST as $THREAD){
-                                  $THREAD['postnum']=1;$THREAD['digest']="this is digest";
-                                  if($i++%2==0){ ?>
-                                <li class="j_thread_list" data-field="">
-                                <?php }else{?>
-                                <li class="j_thread_list threadlist_li_gray" data-field="">
-                                <?php }?>
+                                <?php foreach($THREADLIST as $THREAD){
+                                  $THREAD['postnum']=1;$THREAD['digest']="this is digest";?>
+                                <li class="j_thread_list" data-field="{&quot;id&quot;:2676683326,&quot;author_name&quot;:&quot;\u947d\u6393\u6e79\u6f5e&quot;,&quot;reply_num&quot;:5,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0,&quot;is_repost&quot;:0}">
                                     <div class="threadlist_li_left j_threadlist_li_left">
                                         <div title="<?php echo $THREAD['postnum'];?>个回复" class="threadlist_rep_num j_rp_num"><?php echo $THREAD['postnum'];?></div>
                                     </div>
                                     <div class="threadlist_li_right j_threadlist_li_right">
                                         <div class="threadlist_lz clearfix">
                                             <div class="threadlist_text threadlist_title j_th_tit  notStarList ">
-                                                <a href="?mod=posts&tid=<?php echo $THREAD['tid'];?>" title="<?php echo $THREAD['title'];?>" target="_blank" class="j_th_tit">【精品】<?php echo $THREAD['title'];?></a>
+                                                <a href="/p/<?php echo $THREAD['tid'];?>" title="<?php echo $THREAD['title'];?>" target="_blank" class="j_th_tit">【精品】<?php echo $THREAD['title'];?></a>
                                             </div>
                                         </div>
                                         <div class="j_threadlist_detail threadlist_detail clearfix">
@@ -72,7 +68,7 @@
                                                 </div>
                                             </div>
                                             <div class="threadlist_author">
-                                                <span class="tb_icon_author_rely j_replyer" title="最后回复人:" style="float:left"></span>
+                                                <span class="tb_icon_author_rely j_replyer" title="最后回复人：鑽掓湹潞" style="float:left"></span>
                                                 <span class="threadlist_reply_date j_reply_data" title="最后回复时间"><?php echo  $THREAD['timestamp']; ?></span>
                                             </div>
 
@@ -80,8 +76,54 @@
                                     </div>
                                     <div class="clear"></div>
                                 </li>
-                              <?php }?>
+                                <li class="j_thread_list threadlist_li_gray" data-field="{&quot;id&quot;:2676680967,&quot;author_name&quot;:&quot;\u90ed\u5929\u771f\u4e48\u4e48\u54d2&quot;,&quot;reply_num&quot;:8,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0,&quot;is_repost&quot;:0}">
+                                    <div class="threadlist_li_left j_threadlist_li_left">
+                                        <div title="8个回复" class="threadlist_rep_num j_rp_num">8</div>
+                                    </div>
+                                    <div class="threadlist_li_right j_threadlist_li_right">
+                                        <div class="threadlist_lz clearfix">
+                                            <div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+
+                                                <a href="/p/2676680967" title="【我和我的华晨宇】上海站1280求补票" target="_blank" class="j_th_tit">【我和我的华晨宇】上海站1280求补票</a>
+
+
+                                            </div>
+                                            <div class="threadlist_author author-info" data-author="郭天真么么哒" title="主题作者：郭天真么么哒">
+                                                <span class="tb_icon_author" data-field="{&quot;user_id&quot;:891548498}"></span>
+                                            </div>
+                                        </div>
+                                        <div class="j_threadlist_detail threadlist_detail clearfix">
+                                            <div class="threadlist_text">
+
+                                                <div class="threadlist_abs threadlist_abs_onlyline">今天魔都的小伙伴好给力啊 目测今晚上1280的会光光 求补票啊啊啊啊啊啊啊啊啊
+                                                    <!---->
+                                                </div>
+
+                                                <ul class="threadlist_media j_threadlist_media" id="fm2676680967">
+                                                    <li>
+                                                        <div class="vpic_wrap">
+                                                            <img src="http://imgsrc.baidu.com/forum/abpic/item/43870187e950352ad45f88255143fbf2b2118b51.jpg" original="http://imgsrc.baidu.com/forum/abpic/item/43870187e950352ad45f88255143fbf2b2118b51.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=3d2d212599504fc2a25fb00dd5e6e711/cdbf6c81800a19d8ae3d292831fa828ba61e46e4.jpg"
+                                                            class="threadlist_pic j_m_pic " immediate="" onload="loadPic(this)" style="width: 126.05042016806723px; height: 75px;">
+                                                        </div>
+                                                        <div class="threadlist_pic_highlight j_m_pic_light"></div>
+                                                    </li>
+                                                </ul>
+
+
+                                            </div>
+                                            <div class="threadlist_author">
+                                                <span class="tb_icon_author_rely j_replyer" title="最后回复人：__灵魂的共鸣" style="float:left"></span>
+                                                <span class="threadlist_reply_date j_reply_data" title="最后回复时间">21:10</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </li>
                             </ul>
+
+
+
 
                             <div id="frs_list_pager" class="pager clearfix"><span class="cur">1</span>
                                 <a href="/f?kw=%BB%AA%B3%BF%D3%EE&amp;tp=0&amp;pn=50">2</a>
@@ -191,3 +233,4 @@
     <link rel="stylesheet" href="http://tb1.bdstatic.com/tb/static-common/style/ueditor_extend_83890c9f.css">
 </body>
 </html>
+<?php return; ?>
