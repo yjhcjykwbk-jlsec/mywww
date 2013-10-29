@@ -1,0 +1,707 @@
+title:¡¾Ìì¿ÕÒ»ÎŞËùÇó¡¿
+tid:1772839043
+insert into thread_details(tid,title,timestamp) values ('1772839043','¡¾Ìì¿ÕÒ»ÎŞËùÇó¡¿','0')
+handling thread:1772839043
+insert into threads(tid,postid) values ('1772839043','22741031500')
+insert into posts(postid,postcontent,timestamp) values('22741031500, 'ÈÎÄñ¶ù×ÔÓÉ×ÔÔÚ','2012-08-05 18:01')
+insert into threads(tid,postid) values ('1772839043','22744404004')
+insert into posts(postid,postcontent,timestamp) values('22744404004, '¼ÙÈçÃ»ÓĞÁËÃÎ£¬ÄÃÊ²Ã´','2012-08-05 19:35')
+insert into threads(tid,postid) values ('1772839043','22745531271')
+insert into posts(postid,postcontent,timestamp) values('22745531271, 'Ãæ¶ÔËûÈË£¬ºÎ±ØÂñÔ¹¡£','2012-08-05 20:06')
+insert into threads(tid,postid) values ('1772839043','22745740539')
+insert into posts(postid,postcontent,timestamp) values('22745740539, 'ÂúµØµÄ»¨¶ä£¬È´Ã»Ò»Èº','2012-08-05 20:12')
+insert into threads(tid,postid) values ('1772839043','22750386422')
+insert into posts(postid,postcontent,timestamp) values('22750386422, 'ÎÒµÄĞÄÔø¾­¿ÊÍûÒ»¸ö¶Á','2012-08-05 22:03')
+insert into threads(tid,postid) values ('1772839043','32021316418')
+insert into posts(postid,postcontent,timestamp) values('32021316418, '·Å´ó×Ô¼ºµÄÍ´¿à£¬Ò²Ğí','2013-04-28 00:25')
+insert into threads(tid,postid) values ('1772839043','32021349197')
+insert into posts(postid,postcontent,timestamp) values('32021349197, 'ÏÖÔÚ£¬ÎÒÇáÒ×²»ÔÙÑ°ÕÒ','2013-04-28 00:26')
+insert into threads(tid,postid) values ('1772839043','32021390599')
+insert into posts(postid,postcontent,timestamp) values('32021390599, '¿äÕÅ»ò»Äµ®±¾Éí²»ÊÇÒ»','2013-04-28 00:28')
+insert into threads(tid,postid) values ('1772839043','32049508149')
+insert into posts(postid,postcontent,timestamp) values('32049508149, 'ÍíÉÏÏëÏëÇ§ÌõÂ·,ÔçÉÏÆ','2013-04-28 20:37')
+insert into threads(tid,postid) values ('1772839043','32099713413')
+insert into posts(postid,postcontent,timestamp) values('32099713413, 'ÈËÕâ±»×Ó×î±¯´ßµÄÊÂÇé','2013-04-30 00:13')
+handling lzl:38737161551
+insert into lzl(postid,spid,content,timestamp) values(32099713413,38737161551,'×öÊÂÇé»¹ÊÇÓ¦µ±×ñÑ­ºÃ','2013-9-10 14:02')
+insert into threads(tid,postid) values ('1772839043','32201642356')
+insert into posts(postid,postcontent,timestamp) values('32201642356, 'ÓĞÊ±ºòÎŞÖª²¢²»¿ÉÅÂ£¬','2013-05-02 14:18')
+insert into threads(tid,postid) values ('1772839043','32262262311')
+insert into posts(postid,postcontent,timestamp) values('32262262311, 'ËıÅãËû×ß¹ı´´Òµ×îÄÑ°¾','2013-05-03 22:51')
+insert into threads(tid,postid) values ('1772839043','32306528393')
+insert into posts(postid,postcontent,timestamp) values('32306528393, 'ÎÒÉúÒ²ÓĞÑÄ£¬¶øÖªÔòÎŞ','2013-05-04 22:24')
+insert into threads(tid,postid) values ('1772839043','32466377136')
+insert into posts(postid,postcontent,timestamp) values('32466377136, 'ÈËĞÔÓĞÊ±ºòºÜÓ×ÖÉ£¬¾Í','2013-05-08 14:52')
+insert into threads(tid,postid) values ('1772839043','33306491631')
+insert into posts(postid,postcontent,timestamp) values('33306491631, 'âã»Ú¡£ÊÂÊÂÌ«½ÏÕæ£¬ÀÛ','2013-05-28 12:55')
+handling lzl:33336710740
+insert into lzl(postid,spid,content,timestamp) values(33306491631,33336710740,'ÄãµÃÃôÈñµÄ²ì¾õµ½ÉõÖÁ','2013-5-29 08:11')
+handling lzl:33410769080
+insert into lzl(postid,spid,content,timestamp) values(33306491631,33410769080,'¸ø±ğÈËÒ»¸ö»ú»á£¬Ò²ÊÇ','2013-5-31 01:16')
+insert into threads(tid,postid) values ('1772839043','34403522322')
+insert into posts(postid,postcontent,timestamp) values('34403522322, 'ÎÒº¦ÅÂÆ«Àë×Ô¼ºµÄÄ¿±ê','2013-06-22 17:24')
+handling lzl:35272316475
+insert into lzl(postid,spid,content,timestamp) values(34403522322,35272316475,'Ä¿±êÈçºÎ½øĞĞ¹ÜÀí£¬´Ó','2013-7-11 01:19')
+handling lzl:36862770459
+insert into lzl(postid,spid,content,timestamp) values(34403522322,36862770459,'we need only one tar','2013-8-8 10:55')
+handling lzl:40878790348
+insert into lzl(postid,spid,content,timestamp) values(34403522322,40878790348,'µ±ÎÒÃÇ¿´µ½±ğÈËÍ¶»úÈ¡','2013-10-27 17:13')
+handling lzl:40878939836
+insert into lzl(postid,spid,content,timestamp) values(34403522322,40878939836,'µ«ÊÇ£¬Â·ÊÇÎÒÃÇ×Ô¼ºÑ¡','2013-10-27 17:17')
+handling lzl:40878981342
+insert into lzl(postid,spid,content,timestamp) values(34403522322,40878981342,'Èç¹ûÓĞÒ»Ìì£¬Äãº°ÀÛÁË','2013-10-27 17:18')
+insert into threads(tid,postid) values ('1772839043','34623674952')
+insert into posts(postid,postcontent,timestamp) values('34623674952, '°ÚÍÑËŞÃüµÄî¿°í¡£Æ½ĞÄ','2013-06-27 14:22')
+handling lzl:37129149881
+insert into lzl(postid,spid,content,timestamp) values(34623674952,37129149881,'Õâ¸öÊÀ½çÃ»ÓĞÈË±ÈÄãÁË','2013-8-12 18:10')
+insert into threads(tid,postid) values ('1772839043','34728089895')
+insert into posts(postid,postcontent,timestamp) values('34728089895, 'Äãº¦ÅÂÃæ¶ÔÀ§ÄÑ¡£Äã×Ü','2013-06-29 20:47')
+handling lzl:38137194622
+insert into lzl(postid,spid,content,timestamp) values(34728089895,38137194622,'Ó¦µ±ÓĞÖ±ÃæÒ»ÇĞµÄÏ°¹ß','2013-8-29 19:22')
+handling lzl:39172660780
+insert into lzl(postid,spid,content,timestamp) values(34728089895,39172660780,'ÈË¶¼º¦ÅÂÀ§ÄÑ£¬ÓÈÆäÊÇ','2013-9-20 00:09')
+handling lzl:39172961807
+insert into lzl(postid,spid,content,timestamp) values(34728089895,39172961807,'ÈË»¹»áÄªÃûµØ»³ÒÉ×Ô¼º','2013-9-20 00:16')
+handling lzl:39173070641
+insert into lzl(postid,spid,content,timestamp) values(34728089895,39173070641,'as 73L says:  you ar','2013-9-20 00:19')
+handling lzl:39375678717
+insert into lzl(postid,spid,content,timestamp) values(34728089895,39375678717,'¼È²»ÄÜ¹»ÒòÎªÒ»µãµã´ì','2013-9-24 15:12')
+handling lzl:39388188832
+insert into lzl(postid,spid,content,timestamp) values(34728089895,39388188832,'ÎÒËùÉîºŞÕß£¬Õ´Õ´×ÔÏ²','2013-9-24 21:27')
+handling lzl:40302213006
+insert into lzl(postid,spid,content,timestamp) values(34728089895,40302213006,'²»½ö²»ÄÜÕ´Õ´×ÔÏ²£¬¶ø','2013-10-14 16:45')
+insert into threads(tid,postid) values ('1772839043','35101334506')
+insert into posts(postid,postcontent,timestamp) values('35101334506, 'ÄãÌìÌì¶¼ÔÚÏûÄ¥Ê±¼ä¡£','2013-07-07 17:58')
+handling lzl:35148365304
+insert into lzl(postid,spid,content,timestamp) values(35101334506,35148365304,'ÄãÊÇÖĞÁ÷íÆÖù£¬ÄãÊÇ¶°','2013-7-8 17:08')
+handling lzl:37983499184
+insert into lzl(postid,spid,content,timestamp) values(35101334506,37983499184,'ÄãÄÜ¹»ÍµÀÁÒ»Ê±£¬È´²»','2013-8-27 09:14')
+insert into threads(tid,postid) values ('1772839043','35151024203')
+insert into posts(postid,postcontent,timestamp) values('35151024203, '×ÜÊÇÏİÈëÇéĞ÷Î£»ú£¬¸Ğ','2013-07-08 18:10')
+handling lzl:35159048751
+insert into lzl(postid,spid,content,timestamp) values(35151024203,35159048751,'Ï£ÅÎÊÀ¼äµÄÓûÀÖ£¬ÖÕÊÇ','2013-7-8 21:04')
+handling lzl:35252284273
+insert into lzl(postid,spid,content,timestamp) values(35151024203,35252284273,'½¥½¥Ã÷°×£¬ÈËµÄĞÄÕâÒ»','2013-7-10 18:06')
+handling lzl:35272532775
+insert into lzl(postid,spid,content,timestamp) values(35151024203,35272532775,'»Ø¸´ ÊñÉ½ÎŞÓ°½£ :Éç»','2013-7-11 01:29')
+handling lzl:35425076468
+insert into lzl(postid,spid,content,timestamp) values(35151024203,35425076468,'µ±ÎÒÃÇ¾²ÏÂÀ´»ò¶À´¦µÄ','2013-7-14 00:59')
+handling lzl:36290881248
+insert into lzl(postid,spid,content,timestamp) values(35151024203,36290881248,'ÓéÀÖ´óÖÚÊÇºÜÓĞÒâË¼µÄ','2013-7-29 21:53')
+handling lzl:36325472939
+insert into lzl(postid,spid,content,timestamp) values(35151024203,36325472939,'Éç»áÖĞÓĞÒ»ÖÖ½ÇÉ«ÊÇ´«','2013-7-30 14:28')
+handling lzl:38026737804
+insert into lzl(postid,spid,content,timestamp) values(35151024203,38026737804,'ÎŞÂÛĞÄÇéÈçºÎÔã¸â£¬¶¼','2013-8-27 22:17')
+insert into threads(tid,postid) values ('1772839043','38937679726')
+insert into posts(postid,postcontent,timestamp) values('38937679726, 'ÈËÊÀ¼äÈç¹û´æÔÚÒ»ÖÖĞÅ','2013-09-14 23:15')
+handling lzl:38938152631
+insert into lzl(postid,spid,content,timestamp) values(38937679726,38938152631,'Ò»¶¨ÒªÕäÏ§Äã×Ô¼º¡£Ëü','2013-9-14 23:24')
+handling lzl:38938325452
+insert into lzl(postid,spid,content,timestamp) values(38937679726,38938325452,'ËùÎ½ÎŞÎÒ£¬¼´ÎŞÓëËùÓĞ','2013-9-14 23:27')
+handling lzl:38938699863
+insert into lzl(postid,spid,content,timestamp) values(38937679726,38938699863,'ºÎÎ½Ëû£¿ËüÊÇÈËµÄ¼ÇÒä','2013-9-14 23:34')
+insert into threads(tid,postid) values ('1772839043','38940076423')
+insert into posts(postid,postcontent,timestamp) values('38940076423, 'ÈËÎªÊ²Ã´»áÍ´¿à£¿ÒòÎª','2013-09-15 00:00')
+handling lzl:38940210445
+insert into lzl(postid,spid,content,timestamp) values(38940076423,38940210445,'you are the one that','2013-9-15 00:03')
+handling lzl:39031395567
+insert into lzl(postid,spid,content,timestamp) values(38940076423,39031395567,'Õâ¸öÊÀ½çÕæÕıÄÜ¹»´òµ¹','2013-9-16 23:10')
+insert into threads(tid,postid) values ('1772839043','39031631175')
+insert into posts(postid,postcontent,timestamp) values('39031631175, 'µ±Óöµ½ºÍÄã¹ı²»È¥µÄÈË','2013-09-16 23:15')
+insert into threads(tid,postid) values ('1772839043','39349867027')
+insert into posts(postid,postcontent,timestamp) values('39349867027, 'ÊÀ½çÓÀÔ¶ÊÇ¸¡»ªµÄ¡£ÈË','2013-09-23 21:08')
+handling lzl:39352753305
+insert into lzl(postid,spid,content,timestamp) values(39349867027,39352753305,'Amusing the public i','2013-9-23 22:21')
+insert into threads(tid,postid) values ('1772839043','40066089900')
+insert into posts(postid,postcontent,timestamp) values('40066089900, 'ÊÀ½çÊÇ¸´ÔÓµÄ£¬ÒªÀíÇå','2013-10-09 13:04')
+handling lzl:40605036436
+insert into lzl(postid,spid,content,timestamp) values(40066089900,40605036436,'ÏëÒª³ÉÎªÒ»¸ö¼â¶ËÈË²Å','2013-10-21 14:51')
+handling lzl:40605122822
+insert into lzl(postid,spid,content,timestamp) values(40066089900,40605122822,'ÈçºÎ×î¿ìËÙ¶È°üÎ§Ò»¸ö','2013-10-21 14:53')
+handling lzl:40878670646
+insert into lzl(postid,spid,content,timestamp) values(40066089900,40878670646,'¹Ø¼üÊÇĞèÒªÓĞÎ¸¿Ú¡£º£','2013-10-27 17:10')
+insert into threads(tid,postid) values ('1772839043','40077255153')
+insert into posts(postid,postcontent,timestamp) values('40077255153, 'Äã¼á³Ö×Ô¼º£¬È´ÍùÍùÊÜ','2013-10-09 18:27')
+handling lzl:40077356906
+insert into lzl(postid,spid,content,timestamp) values(40077255153,40077356906,'ËùÒÔÒ»ÇĞÈçÍù³£¡£Äã»ò','2013-10-9 18:30')
+insert into threads(tid,postid) values ('1772839043','40140333821')
+insert into posts(postid,postcontent,timestamp) values('40140333821, 'µ±ÄãÃæ¶Ô×Ô¼ºÊ±£¬Äã¸ß','2013-10-11 00:20')
+handling lzl:40140539951
+insert into lzl(postid,spid,content,timestamp) values(40140333821,40140539951,'ÄãÒªÖªÒ»Ö±¼á³ÖµÄ×Ô¼º','2013-10-11 00:25')
+handling lzl:40140884210
+insert into lzl(postid,spid,content,timestamp) values(40140333821,40140884210,'×ÔÂú×Ô×İµÈÓÚ×Ô±©×ÔÆú','2013-10-11 00:34')
+insert into threads(tid,postid) values ('1772839043','40882497900')
+insert into posts(postid,postcontent,timestamp) values('40882497900, '32 "','2013-10-27 18:50')
+update thread:1772839043 timestamp:2013-10-27 19:04 post:40883095282
+update thread_details set timestamp='2013-10-27 19:04'
+insert into threads(tid,postid) values ('1772839043','40883095282')
+insert into posts(postid,postcontent,timestamp) values('40883095282, '32 "','2013-10-27 19:04')
+title:Ê÷Êı¾İ½á¹¹
+tid:2660575990
+insert into thread_details(tid,title,timestamp) values ('2660575990','Ê÷Êı¾İ½á¹¹','0')
+handling thread:2660575990
+insert into threads(tid,postid) values ('2660575990','40570404939')
+insert into posts(postid,postcontent,timestamp) values('40570404939, '','2013-10-20 18:58')
+insert into threads(tid,postid) values ('2660575990','40571355616')
+insert into posts(postid,postcontent,timestamp) values('40571355616, '','2013-10-20 19:21')
+handling lzl:40573216457
+insert into lzl(postid,spid,content,timestamp) values(40571355616,40573216457,'http://wenku.baidu.c','2013-10-20 20:04')
+insert into threads(tid,postid) values ('2660575990','40571716965')
+insert into posts(postid,postcontent,timestamp) values('40571716965, '','2013-10-20 19:29')
+handling lzl:40573245135
+insert into lzl(postid,spid,content,timestamp) values(40571716965,40573245135,'http://wenku.baidu.c','2013-10-20 20:04')
+insert into threads(tid,postid) values ('2660575990','40623624595')
+insert into posts(postid,postcontent,timestamp) values('40623624595, '¸½Î±´úÂë£º TARJIAN-L','2013-10-21 22:53')
+handling lzl:40623779204
+insert into lzl(postid,spid,content,timestamp) values(40623624595,40623779204,'http://tieba.baidu.c','2013-10-21 22:55')
+insert into threads(tid,postid) values ('2660575990','40643094189')
+insert into posts(postid,postcontent,timestamp) values('40643094189, 'ÊÖĞ´ÉìÕ¹Ê÷²Ù×÷ £¨²åÈ','2013-10-22 12:45')
+insert into threads(tid,postid) values ('2660575990','40692697379')
+insert into posts(postid,postcontent,timestamp) values('40692697379, '¹ØÓÚhuffman ×îĞ¡N²æÊ','2013-10-23 15:17')
+insert into threads(tid,postid) values ('2660575990','40725295507')
+insert into posts(postid,postcontent,timestamp) values('40725295507, '¹ØÓÚ¶Ñ£º ½ÚµãÉÏĞĞ£¨º','2013-10-24 09:55')
+handling lzl:40725386337
+insert into lzl(postid,spid,content,timestamp) values(40725295507,40725386337,'²åÈë£º·Åµ½node[++len','2013-10-24 09:58')
+update thread:2660575990 timestamp:2013-10-29 09:40 post:40949172397
+update thread_details set timestamp='2013-10-29 09:40'
+insert into threads(tid,postid) values ('2660575990','40949172397')
+insert into posts(postid,postcontent,timestamp) values('40949172397, 'ÓëÊ÷Ïà¹ØµÄ»¹ÓĞÊ÷ĞÎdp','2013-10-29 09:40')
+handling lzl:40949262616
+insert into lzl(postid,spid,content,timestamp) values(40949172397,40949262616,'ÀıÈçÑ°ÕÒÊ÷µÄ×î³¤Â·¾¶','2013-10-29 09:43')
+title:Ìù°É²»ÄÜÔÙÓÃ
+tid:2673204199
+insert into thread_details(tid,title,timestamp) values ('2673204199','Ìù°É²»ÄÜÔÙÓÃ','0')
+handling thread:2673204199
+insert into threads(tid,postid) values ('2673204199','40887829807')
+insert into posts(postid,postcontent,timestamp) values('40887829807, 'Ö®Ç°¡¶Í¼Êı¾İ½á¹¹¡·Õâ','2013-10-27 20:56')
+update thread:2673204199 timestamp:2013-10-28 07:02 post:40901738427
+update thread_details set timestamp='2013-10-28 07:02'
+insert into threads(tid,postid) values ('2673204199','40901738427')
+insert into posts(postid,postcontent,timestamp) values('40901738427, 'ÊñÉ½µÄÉ¾Ìù»ØÊÕÕ¾£¨Ïµ','2013-10-28 07:02')
+handling lzl:40908668927
+insert into lzl(postid,spid,content,timestamp) values(40901738427,40908668927,'ÓĞĞ©ÓĞ¡£¡£»°ËµÌù°ÉÒ²','2013-10-28 11:02')
+handling lzl:40947049465
+insert into lzl(postid,spid,content,timestamp) values(40901738427,40947049465,'ÕıÔÚ¿ª·¢¡°Ìù°É±¸·İ¹¤','2013-10-29 08:36')
+title:cmdËÙ²é
+tid:2287582172
+insert into thread_details(tid,title,timestamp) values ('2287582172','cmdËÙ²é','0')
+handling thread:2287582172
+insert into threads(tid,postid) values ('2287582172','31885819028')
+insert into posts(postid,postcontent,timestamp) values('31885819028, '¡£¡£','2013-04-24 13:57')
+insert into threads(tid,postid) values ('2287582172','31885828837')
+insert into posts(postid,postcontent,timestamp) values('31885828837, 'wget ÊÇÒ»¸öÃüÁîĞĞµÄÏ','2013-04-24 13:57')
+handling lzl:31961369416
+insert into lzl(postid,spid,content,timestamp) values(31885828837,31961369416,'ÒÔÇ°Ê¹ÓÃwget,×ÜÊÇÔÚw','2013-4-26 13:37')
+insert into threads(tid,postid) values ('2287582172','31891093805')
+insert into posts(postid,postcontent,timestamp) values('31891093805, '¹ØÓÚshellÖĞµÄforÑ­»·','2013-04-24 17:02')
+handling lzl:37577967463
+insert into lzl(postid,spid,content,timestamp) values(31891093805,37577967463,'for(i=0;i<n;i++)  i=','2013-8-20 12:41')
+insert into threads(tid,postid) values ('2287582172','31945491116')
+insert into posts(postid,postcontent,timestamp) values('31945491116, 'python urlencode Ò»¡','2013-04-25 23:40')
+handling lzl:31945580213
+insert into lzl(postid,spid,content,timestamp) values(31945491116,31945580213,'http://luchanghong.c','2013-4-25 23:43')
+handling lzl:31946079344
+insert into lzl(postid,spid,content,timestamp) values(31945491116,31946079344,'for file in files:  ','2013-4-25 23:56')
+handling lzl:31946739285
+insert into lzl(postid,spid,content,timestamp) values(31945491116,31946739285,'print quote(unquote(','2013-4-26 00:15')
+handling lzl:31948136926
+insert into lzl(postid,spid,content,timestamp) values(31945491116,31948136926,'url encode http://ba','2013-4-26 01:26')
+handling lzl:31948826801
+insert into lzl(postid,spid,content,timestamp) values(31945491116,31948826801,'print quote(\'ºÓĞ·\'','2013-4-26 03:15')
+insert into threads(tid,postid) values ('2287582172','31945853617')
+insert into posts(postid,postcontent,timestamp) values('31945853617, 'python ls ÃüÁî impor','2013-04-25 23:50')
+handling lzl:31945982462
+insert into lzl(postid,spid,content,timestamp) values(31945853617,31945982462,'http://www.cnblogs.c','2013-4-25 23:53')
+handling lzl:31948234295
+insert into lzl(postid,spid,content,timestamp) values(31945853617,31948234295,'print :Python3.2 ---','2013-4-26 01:36')
+insert into threads(tid,postid) values ('2287582172','32137720910')
+insert into posts(postid,postcontent,timestamp) values('32137720910, '½ø³ÌµÄ¹ÒÆğ¼°»Ö¸´(fg/','2013-04-30 22:25')
+insert into threads(tid,postid) values ('2287582172','32436924870')
+insert into posts(postid,postcontent,timestamp) values('32436924870, 'screen »á´´½¨Ò»¸öÅÜ×','2013-05-07 20:54')
+insert into threads(tid,postid) values ('2287582172','33864509074')
+insert into posts(postid,postcontent,timestamp) values('33864509074, 'shellÅĞ¶Ï 1 ×Ö·û´®ÅĞ','2013-06-10 16:43')
+handling lzl:37552495644
+insert into lzl(postid,spid,content,timestamp) values(33864509074,37552495644,'ÓÀÔ¶µÄunix http://im','2013-8-19 23:06')
+insert into threads(tid,postid) values ('2287582172','37552649734')
+insert into posts(postid,postcontent,timestamp) values('37552649734, 'grepÊ¹ÓÃ·½·¨  window','2013-08-19 23:09')
+insert into threads(tid,postid) values ('2287582172','38514639674')
+insert into posts(postid,postcontent,timestamp) values('38514639674, 'python pyquery½âÎöht','2013-09-05 23:26')
+handling lzl:38514712829
+insert into lzl(postid,spid,content,timestamp) values(38514639674,38514712829,'Ê¹ÓÃ£ğ£ù£ô£è£ï£î £ñ£','2013-9-5 23:27')
+handling lzl:38516763777
+insert into lzl(postid,spid,content,timestamp) values(38514639674,38516763777,'http://pythonhosted.','2013-9-6 00:10')
+handling lzl:38516895356
+insert into lzl(postid,spid,content,timestamp) values(38514639674,38516895356,'cts(\'.list-title\')','2013-9-6 00:13')
+handling lzl:38517525379
+insert into lzl(postid,spid,content,timestamp) values(38514639674,38517525379,'python api: http://w','2013-9-6 00:30')
+insert into threads(tid,postid) values ('2287582172','39297180041')
+insert into posts(postid,postcontent,timestamp) values('39297180041, 'python urllib2 open ','2013-09-22 16:34')
+handling lzl:39297248048
+insert into lzl(postid,spid,content,timestamp) values(39297180041,39297248048,'data=urllib.urlencod','2013-9-22 16:36')
+handling lzl:39297283040
+insert into lzl(postid,spid,content,timestamp) values(39297180041,39297283040,'http://stackoverflow','2013-9-22 16:37')
+handling lzl:39297299062
+insert into lzl(postid,spid,content,timestamp) values(39297180041,39297299062,'http://stackoverflow','2013-9-22 16:37')
+insert into threads(tid,postid) values ('2287582172','40028906917')
+insert into posts(postid,postcontent,timestamp) values('40028906917, 'js ¸ñÊ½½Å±¾ for file','2013-10-08 17:03')
+update thread:2287582172 timestamp:2013-10-28 23:29 post:40938674723
+update thread_details set timestamp='2013-10-28 23:29'
+insert into threads(tid,postid) values ('2287582172','40938674723')
+insert into posts(postid,postcontent,timestamp) values('40938674723, 'python µÄ×Ö·û±àÂëÎÊÌ','2013-10-28 23:29')
+title:ÉÏ½»acmÄ£°å
+tid:2665938259
+insert into thread_details(tid,title,timestamp) values ('2665938259','ÉÏ½»acmÄ£°å','0')
+handling thread:2665938259
+insert into threads(tid,postid) values ('2665938259','40703980655')
+insert into posts(postid,postcontent,timestamp) values('40703980655, '','2013-10-23 20:22')
+insert into threads(tid,postid) values ('2665938259','40704045971')
+insert into posts(postid,postcontent,timestamp) values('40704045971, '×¨Ìâ','2013-10-23 20:23')
+handling lzl:40887453435
+insert into lzl(postid,spid,content,timestamp) values(40704045971,40887453435,'Ê÷×´Êı×é£ºC[i=l+(r=1','2013-10-27 20:47')
+handling lzl:40887494902
+insert into lzl(postid,spid,content,timestamp) values(40704045971,40887494902,'Ê÷×´Êı×é£ºC[i=l+(r=1','2013-10-27 20:48')
+insert into threads(tid,postid) values ('2665938259','40714097070')
+insert into posts(postid,postcontent,timestamp) values('40714097070, '','2013-10-23 23:34')
+insert into threads(tid,postid) values ('2665938259','40714131297')
+insert into posts(postid,postcontent,timestamp) values('40714131297, '','2013-10-23 23:35')
+insert into threads(tid,postid) values ('2665938259','40714214127')
+insert into posts(postid,postcontent,timestamp) values('40714214127, '','2013-10-23 23:37')
+update thread:2665938259 timestamp:2013-10-23 23:37 post:40714242979
+update thread_details set timestamp='2013-10-23 23:37'
+insert into threads(tid,postid) values ('2665938259','40714242979')
+insert into posts(postid,postcontent,timestamp) values('40714242979, '','2013-10-23 23:37')
+title:¾­µäÍõ·Æ
+tid:2598119760
+insert into thread_details(tid,title,timestamp) values ('2598119760','¾­µäÍõ·Æ','0')
+handling thread:2598119760
+insert into threads(tid,postid) values ('2598119760','39033719088')
+insert into posts(postid,postcontent,timestamp) values('39033719088, '','2013-09-16 23:58')
+insert into threads(tid,postid) values ('2598119760','39033757075')
+insert into posts(postid,postcontent,timestamp) values('39033757075, '','2013-09-16 23:59')
+insert into threads(tid,postid) values ('2598119760','39033881553')
+insert into posts(postid,postcontent,timestamp) values('39033881553, '','2013-09-17 00:02')
+insert into threads(tid,postid) values ('2598119760','39034533301')
+insert into posts(postid,postcontent,timestamp) values('39034533301, '','2013-09-17 00:18')
+insert into threads(tid,postid) values ('2598119760','39034630146')
+insert into posts(postid,postcontent,timestamp) values('39034630146, '','2013-09-17 00:20')
+update thread:2598119760 timestamp:2013-10-27 18:55 post:40882720885
+update thread_details set timestamp='2013-10-27 18:55'
+insert into threads(tid,postid) values ('2598119760','40882720885')
+insert into posts(postid,postcontent,timestamp) values('40882720885, '58 "','2013-10-27 18:55')
+title:jsÓïÑÔÌØĞÔ
+tid:2549417372
+insert into thread_details(tid,title,timestamp) values ('2549417372','jsÓïÑÔÌØĞÔ','0')
+handling thread:2549417372
+insert into threads(tid,postid) values ('2549417372','37767491358')
+insert into posts(postid,postcontent,timestamp) values('37767491358, '¶ÔÏóÏà¹Ø 1 ÒıÓÃ¶ÔÏóµ','2013-08-23 15:51')
+insert into threads(tid,postid) values ('2549417372','37768174880')
+insert into posts(postid,postcontent,timestamp) values('37768174880, '3 ¹¹Ôìº¯Êı·½·¨¿ìËÙ´´','2013-08-23 16:04')
+insert into threads(tid,postid) values ('2549417372','37768267075')
+insert into posts(postid,postcontent,timestamp) values('37768267075, '5 »ìºÏ¹¹Ôìº¯ÊıºÍÔ­ĞÍ','2013-08-23 16:06')
+handling lzl:37768459067
+insert into lzl(postid,spid,content,timestamp) values(37768267075,37768459067,'¶¯Ì¬Ô­ĞÍ·½·¨£º°ÑÔ­ĞÍ','2013-8-23 16:10')
+insert into threads(tid,postid) values ('2549417372','38402619942')
+insert into posts(postid,postcontent,timestamp) values('38402619942, '¡¾Óï·¨»Ø¹Ë¡¿¸¨Öú¼ÇÒä','2013-09-03 17:16')
+handling lzl:38432607246
+insert into lzl(postid,spid,content,timestamp) values(38402619942,38432607246,'for (var i = 1; i < ','2013-9-4 10:14')
+handling lzl:38432764611
+insert into lzl(postid,spid,content,timestamp) values(38402619942,38432764611,'var junk=["hello","w','2013-9-4 10:18')
+handling lzl:38433581980
+insert into lzl(postid,spid,content,timestamp) values(38402619942,38433581980,'var coin = Math.floo','2013-9-4 10:38')
+handling lzl:38435006786
+insert into lzl(postid,spid,content,timestamp) values(38402619942,38435006786,'isNaN(number)=false:','2013-9-4 11:13')
+handling lzl:38439325583
+insert into lzl(postid,spid,content,timestamp) values(38402619942,38439325583,'var user=prompt("hel','2013-9-4 12:53')
+handling lzl:38440053110
+insert into lzl(postid,spid,content,timestamp) values(38402619942,38440053110,'var newArray=[[1,tru','2013-9-4 13:07')
+handling lzl:38440877434
+insert into lzl(postid,spid,content,timestamp) values(38402619942,38440877434,'var object={name:\'x','2013-9-4 13:24')
+handling lzl:38440926228
+insert into lzl(postid,spid,content,timestamp) values(38402619942,38440926228,'var myArray=[111,tru','2013-9-4 13:25')
+handling lzl:38441004784
+insert into lzl(postid,spid,content,timestamp) values(38402619942,38441004784,'var myObject = {  na','2013-9-4 13:27')
+handling lzl:38442831108
+insert into lzl(postid,spid,content,timestamp) values(38402619942,38442831108,'for(var sth in frien','2013-9-4 14:12')
+insert into threads(tid,postid) values ('2549417372','38492801552')
+insert into posts(postid,postcontent,timestamp) values('38492801552, '·½·¨¿ÉÒÔ·ÖÎªÈıÀà£º a','2013-09-05 15:05')
+handling lzl:39373655333
+insert into lzl(postid,spid,content,timestamp) values(38492801552,39373655333,'prototype chain: htt','2013-9-24 14:02')
+insert into threads(tid,postid) values ('2549417372','38494116186')
+insert into posts(postid,postcontent,timestamp) values('38494116186, 'js Ë½ÓĞ³ÉÔ±·ÃÎÊ·½Ê½£','2013-09-05 15:41')
+handling lzl:38494185428
+insert into lzl(postid,spid,content,timestamp) values(38494116186,38494185428,'²»¹âÊÇË½ÓĞ³ÉÔ±±äÁ¿£¬','2013-9-5 15:43')
+handling lzl:38494691550
+insert into lzl(postid,spid,content,timestamp) values(38494116186,38494691550,'console.log(typeof O','2013-9-5 15:58')
+handling lzl:38494809374
+insert into lzl(postid,spid,content,timestamp) values(38494116186,38494809374,'for(var x in myStude','2013-9-5 16:02')
+insert into threads(tid,postid) values ('2549417372','38770945512')
+insert into posts(postid,postcontent,timestamp) values('38770945512, '','2013-09-11 13:00')
+handling lzl:38817526422
+insert into lzl(postid,spid,content,timestamp) values(38770945512,38817526422,'ÕıÔò±í´ïÊ½¡¢×Ö·û´®¡¢','2013-9-12 12:59')
+insert into threads(tid,postid) values ('2549417372','38778398419')
+insert into posts(postid,postcontent,timestamp) values('38778398419, '×÷ÓÃÓòºÍ±Õ°ü how to ','2013-09-11 16:23')
+handling lzl:38817534090
+insert into lzl(postid,spid,content,timestamp) values(38778398419,38817534090,'×÷ÓÃÓò','2013-9-12 13:00')
+insert into threads(tid,postid) values ('2549417372','38781221440')
+insert into posts(postid,postcontent,timestamp) values('38781221440, 'ArrayÏà¹Ø£º array.fo','2013-09-11 17:43')
+handling lzl:38811129874
+insert into lzl(postid,spid,content,timestamp) values(38781221440,38811129874,'array.map(function(x','2013-9-12 10:24')
+handling lzl:38811234346
+insert into lzl(postid,spid,content,timestamp) values(38781221440,38811234346,'array.every(function','2013-9-12 10:27')
+handling lzl:38811304176
+insert into lzl(postid,spid,content,timestamp) values(38781221440,38811304176,'array.reduce(functio','2013-9-12 10:29')
+handling lzl:38824778231
+insert into lzl(postid,spid,content,timestamp) values(38781221440,38824778231,'shift´ÓÍ·²¿µ¯³ö¡£pop','2013-9-12 16:17')
+insert into threads(tid,postid) values ('2549417372','38817484367')
+insert into posts(postid,postcontent,timestamp) values('38817484367, '¹ØÓÚjsË½ÓĞ³ÉÔ±¼°¶ÔÏó','2013-09-12 12:59')
+insert into threads(tid,postid) values ('2549417372','38826222969')
+insert into posts(postid,postcontent,timestamp) values('38826222969, 'º¯Êı·µ»Øº¯Êı£¨¸ÃÄÚÇ¶','2013-09-12 16:59')
+handling lzl:38827487731
+insert into lzl(postid,spid,content,timestamp) values(38826222969,38827487731,'±Õ°ü»á±»ä¯ÀÀÆ÷ÉÏµÄÒ»','2013-9-12 17:35')
+handling lzl:39356390325
+insert into lzl(postid,spid,content,timestamp) values(38826222969,39356390325,'javascript±Õ°ü http:','2013-9-23 23:44')
+handling lzl:39356419100
+insert into lzl(postid,spid,content,timestamp) values(38826222969,39356419100,'http://www.cnblogs.c','2013-9-23 23:44')
+insert into threads(tid,postid) values ('2549417372','38865019271')
+insert into posts(postid,postcontent,timestamp) values('38865019271, '¿ÎÌÃÊ°ÒÅ','2013-09-13 14:09')
+insert into threads(tid,postid) values ('2549417372','39285208195')
+insert into posts(postid,postcontent,timestamp) values('39285208195, 'js event¶ÔÏó ³£ÓÃÊôĞ','2013-09-22 11:10')
+insert into threads(tid,postid) values ('2549417372','39354084079')
+insert into posts(postid,postcontent,timestamp) values('39354084079, 'jque ry Ñ¡ÔñÆ÷ 0 ²ã¼','2013-09-23 22:51')
+handling lzl:39354221870
+insert into lzl(postid,spid,content,timestamp) values(39354084079,39354221870,'³£ÓÃ#id | .class | t','2013-9-23 22:54')
+handling lzl:39354494048
+insert into lzl(postid,spid,content,timestamp) values(39354084079,39354494048,'ÀıÈç$("div.red:nth-c','2013-9-23 23:00')
+handling lzl:39355198317
+insert into lzl(postid,spid,content,timestamp) values(39354084079,39355198317,'×¢ÒâÖ´ĞĞË³Ğò¡£','2013-9-23 23:16')
+insert into threads(tid,postid) values ('2549417372','39355217832')
+insert into posts(postid,postcontent,timestamp) values('39355217832, 'replace() ·½·¨µÄ²ÎÊı','2013-09-23 23:16')
+handling lzl:39355256139
+insert into lzl(postid,spid,content,timestamp) values(39355217832,39355256139,'http://www.w3school.','2013-9-23 23:17')
+handling lzl:39355332324
+insert into lzl(postid,spid,content,timestamp) values(39355217832,39355332324,'name = "Doe, John"; ','2013-9-23 23:19')
+handling lzl:39355445558
+insert into lzl(postid,spid,content,timestamp) values(39355217832,39355445558,'name = \'"a", "b"\';','2013-9-23 23:21')
+handling lzl:39355584851
+insert into lzl(postid,spid,content,timestamp) values(39355217832,39355584851,'name = \'aaa bbb ccc','2013-9-23 23:25')
+insert into threads(tid,postid) values ('2549417372','39355871036')
+insert into posts(postid,postcontent,timestamp) values('39355871036, 'Jquery string2dom º¯','2013-09-23 23:31')
+handling lzl:39356152650
+insert into lzl(postid,spid,content,timestamp) values(39355871036,39356152650,'DOM²Ù×÷µÄºËĞÄ·½·¨/º¯','2013-9-23 23:38')
+handling lzl:39356260355
+insert into lzl(postid,spid,content,timestamp) values(39355871036,39356260355,'JQUERY Ô´Âë·ÖÎö http','2013-9-23 23:41')
+insert into threads(tid,postid) values ('2549417372','39367099560')
+insert into posts(postid,postcontent,timestamp) values('39367099560, 'underscore.js http:/','2013-09-24 11:01')
+handling lzl:39367691831
+insert into lzl(postid,spid,content,timestamp) values(39367099560,39367691831,'»¹ÊÇ¹Ù·½ÎÄµµ°É£º htt','2013-9-24 11:19')
+handling lzl:39367858655
+insert into lzl(postid,spid,content,timestamp) values(39367099560,39367858655,'ÀıÈç²é¿´_°üº¬µÄº¯Êık','2013-9-24 11:24')
+insert into threads(tid,postid) values ('2549417372','39378196392')
+insert into posts(postid,postcontent,timestamp) values('39378196392, 'Backbone API: modelÀ','2013-09-24 16:50')
+handling lzl:39379146507
+insert into lzl(postid,spid,content,timestamp) values(39378196392,39379146507,'Events: var object; ','2013-9-24 17:24')
+handling lzl:39379181769
+insert into lzl(postid,spid,content,timestamp) values(39378196392,39379181769,'Events: var object; ','2013-9-24 17:26')
+handling lzl:39379234229
+insert into lzl(postid,spid,content,timestamp) values(39378196392,39379234229,'ÖÁÓÚÍ¨Öª¹Û²ìÕß½øĞĞÏì','2013-9-24 17:27')
+handling lzl:39379506221
+insert into lzl(postid,spid,content,timestamp) values(39378196392,39379506221,'backbone eventsÖ÷ÒªÍ','2013-9-24 17:36')
+insert into threads(tid,postid) values ('2549417372','40062304550')
+insert into posts(postid,postcontent,timestamp) values('40062304550, 'ÉîÈëÀí½âthis¹Ø¼ü×Ö£º','2013-10-09 11:30')
+handling lzl:40073827378
+insert into lzl(postid,spid,content,timestamp) values(40062304550,40073827378,'var level1obj={ src:','2013-10-9 16:53')
+handling lzl:40074087341
+insert into lzl(postid,spid,content,timestamp) values(40062304550,40074087341,'this.src="hello";thi','2013-10-9 17:00')
+handling lzl:40074232124
+insert into lzl(postid,spid,content,timestamp) values(40062304550,40074232124,'this×ÜÊÇÖ¸Ïòº¯ÊıËù¶Ô','2013-10-9 17:04')
+handling lzl:40354336972
+insert into lzl(postid,spid,content,timestamp) values(40062304550,40354336972,'º¯ÊıµÄthisÖ¸ÕëÖ¸ÏòÓµ','2013-10-15 20:20')
+insert into threads(tid,postid) values ('2549417372','40072456120')
+insert into posts(postid,postcontent,timestamp) values('40072456120, 'sapui5 ¿ò¼Ü¼Ü¹¹','2013-10-09 16:11')
+insert into threads(tid,postid) values ('2549417372','40389311174')
+insert into posts(postid,postcontent,timestamp) values('40389311174, 'NODEjs ×öµ¥Ôª²âÊÔ£¨É','2013-10-16 17:08')
+handling lzl:40397021993
+insert into lzl(postid,spid,content,timestamp) values(40389311174,40397021993,'http://fengmk2.githu','2013-10-16 20:32')
+insert into threads(tid,postid) values ('2549417372','40429819930')
+insert into posts(postid,postcontent,timestamp) values('40429819930, 'require.js ÊµÏÖÄ£¿é»','2013-10-17 16:22')
+insert into threads(tid,postid) values ('2549417372','40548017725')
+insert into posts(postid,postcontent,timestamp) values('40548017725, 'ÑÓĞø17L£¬ JqueryÑ¡Ôñ','2013-10-20 09:51')
+update thread:2549417372 timestamp:2013-10-23 16:51 post:40695709144
+update thread_details set timestamp='2013-10-23 16:51'
+insert into threads(tid,postid) values ('2549417372','40695709144')
+insert into posts(postid,postcontent,timestamp) values('40695709144, 'jqueryÓ¦ÓÃÊµÀı£º É¾³','2013-10-23 16:51')
+handling lzl:40695835161
+insert into lzl(postid,spid,content,timestamp) values(40695709144,40695835161,'$(\'.userbar\').remo','2013-10-23 16:55')
+handling lzl:40695860163
+insert into lzl(postid,spid,content,timestamp) values(40695709144,40695860163,'±£´æµ½ÊÕ²Ø¼Ğ£¬µã»÷ÔË','2013-10-23 16:55')
+handling lzl:40716208826
+insert into lzl(postid,spid,content,timestamp) values(40695709144,40716208826,'$(\'title\').html($(','2013-10-24 00:19')
+handling lzl:40829083116
+insert into lzl(postid,spid,content,timestamp) values(40695709144,40829083116,'×¢ÒâjqueryµÄreadyÓëj','2013-10-26 17:06')
+handling lzl:40829203494
+insert into lzl(postid,spid,content,timestamp) values(40695709144,40829203494,'Çø·Öjquery¶ÔÏóºÍDOM¶','2013-10-26 17:09')
+title:ÎåÇ°ÅäÀÖ¼¯
+tid:2350675947
+insert into thread_details(tid,title,timestamp) values ('2350675947','ÎåÇ°ÅäÀÖ¼¯','0')
+handling thread:2350675947
+insert into threads(tid,postid) values ('2350675947','33205799138')
+insert into posts(postid,postcontent,timestamp) values('33205799138, '','2013-05-25 23:43')
+insert into threads(tid,postid) values ('2350675947','33205884565')
+insert into posts(postid,postcontent,timestamp) values('33205884565, 'Õ½¶·ÅäÀÖ¡¤µ¶¼ä¹Ä','2013-05-25 23:45')
+insert into threads(tid,postid) values ('2350675947','33205932183')
+insert into posts(postid,postcontent,timestamp) values('33205932183, 'Õ½¶·ÅäÀÖ¡¤¾ÅÏöÒĞºì','2013-05-25 23:46')
+insert into threads(tid,postid) values ('2350675947','33207472115')
+insert into posts(postid,postcontent,timestamp) values('33207472115, '','2013-05-26 00:27')
+insert into threads(tid,postid) values ('2350675947','40801133982')
+insert into posts(postid,postcontent,timestamp) values('40801133982, 'éä±ğÀë - ÓÎÏ·Ô­Éù','2013-10-25 23:37')
+handling lzl:40801444785
+insert into lzl(postid,spid,content,timestamp) values(40801133982,40801444785,'ÔÚ½á¾Ö ÔÆÀ´Ê¯','2013-10-25 23:44')
+insert into threads(tid,postid) values ('2350675947','40801217013')
+insert into posts(postid,postcontent,timestamp) values('40801217013, 'Ñà¹éÀ´ - ÓÎÏ·Ô­Éù','2013-10-25 23:39')
+insert into threads(tid,postid) values ('2350675947','40801314453')
+insert into posts(postid,postcontent,timestamp) values('40801314453, 'º£êÌÌìÇà - ÓÎÏ·Ô­Éù','2013-10-25 23:41')
+handling lzl:40801324240
+insert into lzl(postid,spid,content,timestamp) values(40801314453,40801324240,'ÔÚ ÏÄºî¸® £¬ ºûµû¹È','2013-10-25 23:41')
+insert into threads(tid,postid) values ('2350675947','40801356669')
+insert into posts(postid,postcontent,timestamp) values('40801356669, '·¼´ºËÌ - ÓÎÏ·Ô­Éù','2013-10-25 23:42')
+handling lzl:40801366620
+insert into lzl(postid,spid,content,timestamp) values(40801356669,40801366620,'ÏÉ½£ÃÎÔµ±³¾°ÀÖ','2013-10-25 23:42')
+insert into threads(tid,postid) values ('2350675947','40801522391')
+insert into posts(postid,postcontent,timestamp) values('40801522391, '×íÑşÉª - ÓÎÏ·Ô­Éù','2013-10-25 23:46')
+handling lzl:40801565537
+insert into lzl(postid,spid,content,timestamp) values(40801522391,40801565537,'·Ç³£ÓÅÃÀµÄÇú×Ó£¬µş´ä','2013-10-25 23:47')
+update thread:2350675947 timestamp:2013-10-26 01:10 post:40804729599
+update thread_details set timestamp='2013-10-26 01:10'
+insert into threads(tid,postid) values ('2350675947','40804729599')
+insert into posts(postid,postcontent,timestamp) values('40804729599, '¾§Ó¨Í¸ÁÁ£¬´äÓñÒ»Ñù´¿','2013-10-26 01:10')
+title:·´¿Ö¾«Ó¢
+tid:2669972379
+insert into thread_details(tid,title,timestamp) values ('2669972379','·´¿Ö¾«Ó¢','0')
+handling thread:2669972379
+insert into threads(tid,postid) values ('2669972379','40803806852')
+insert into posts(postid,postcontent,timestamp) values('40803806852, '1Â¥¶ÈÄï','2013-10-26 00:36')
+insert into threads(tid,postid) values ('2669972379','40803825639')
+insert into posts(postid,postcontent,timestamp) values('40803825639, 'ÊÓÆµÀ´×Ô£º ÓÅ¿á Ô­Ìû','2013-10-26 00:37')
+update thread:2669972379 timestamp:2013-10-26 00:38 post:40803862695
+update thread_details set timestamp='2013-10-26 00:38'
+insert into threads(tid,postid) values ('2669972379','40803862695')
+insert into posts(postid,postcontent,timestamp) values('40803862695, '','2013-10-26 00:38')
+title:Öì×ÜÀíµÄ¹¦Óë¹ı
+tid:2667152596
+insert into thread_details(tid,title,timestamp) values ('2667152596','Öì×ÜÀíµÄ¹¦Óë¹ı','0')
+handling thread:2667152596
+insert into threads(tid,postid) values ('2667152596','40734516608')
+insert into posts(postid,postcontent,timestamp) values('40734516608, 'ÖìéF»ùµ±ÕşµÄÊ®Äê£¬Õı','2013-10-24 14:05')
+insert into threads(tid,postid) values ('2667152596','40734649918')
+insert into posts(postid,postcontent,timestamp) values('40734649918, 'ÈËÈËÍøÒ»Î»½ĞÀî¿¡ÍøÓÑ','2013-10-24 14:09')
+insert into threads(tid,postid) values ('2667152596','40734821565')
+insert into posts(postid,postcontent,timestamp) values('40734821565, '','2013-10-24 14:15')
+insert into threads(tid,postid) values ('2667152596','40734932742')
+insert into posts(postid,postcontent,timestamp) values('40734932742, '','2013-10-24 14:19')
+insert into threads(tid,postid) values ('2667152596','40735043892')
+insert into posts(postid,postcontent,timestamp) values('40735043892, '','2013-10-24 14:22')
+handling lzl:40735175300
+insert into lzl(postid,spid,content,timestamp) values(40735043892,40735175300,'http://blog.sina.com','2013-10-24 14:26')
+handling lzl:40735561893
+insert into lzl(postid,spid,content,timestamp) values(40735043892,40735561893,'ÖìéF»ù×ÜÀíµÄ¾­¼ÃÂ·Ïß','2013-10-24 14:39')
+insert into threads(tid,postid) values ('2667152596','40735337387')
+insert into posts(postid,postcontent,timestamp) values('40735337387, '','2013-10-24 14:32')
+insert into threads(tid,postid) values ('2667152596','40735472945')
+insert into posts(postid,postcontent,timestamp) values('40735472945, '','2013-10-24 14:36')
+insert into threads(tid,postid) values ('2667152596','40735865182')
+insert into posts(postid,postcontent,timestamp) values('40735865182, 'huahua2013-09-16 13:','2013-10-24 14:49')
+insert into threads(tid,postid) values ('2667152596','40735909443')
+insert into posts(postid,postcontent,timestamp) values('40735909443, 'huahua2013-09-16 13:','2013-10-24 14:50')
+insert into threads(tid,postid) values ('2667152596','40735941417')
+insert into posts(postid,postcontent,timestamp) values('40735941417, 'huahua2013-09-16 13:','2013-10-24 14:51')
+insert into threads(tid,postid) values ('2667152596','40735984820')
+insert into posts(postid,postcontent,timestamp) values('40735984820, '×öµÃÔ½¶à£¬¹ıÊ§Ô½¶à¡£','2013-10-24 14:53')
+insert into threads(tid,postid) values ('2667152596','40736207951')
+insert into posts(postid,postcontent,timestamp) values('40736207951, 'Öì×Ü¹¦¼¨¶à¶à¡£ 1.¹úÆ','2013-10-24 15:00')
+update thread:2667152596 timestamp:2013-10-24 15:01 post:40736257779
+update thread_details set timestamp='2013-10-24 15:01'
+insert into threads(tid,postid) values ('2667152596','40736257779')
+[FAILED]myEncode: <type 'unicode'>
+[ERROR] 'gbk' codec can't encode character u'\u10e6' in position 104: illegal multibyte sequence
+insert into posts(postid,postcontent,timestamp) values('40736257779, 'ä½ è¯´çš„ä»–çš„æ”¹é©å¥½ï¼Œäººæ°‘å“ªé‡Œå¾—åˆ°åˆ©ç›Šäº†ï¼Ÿä»–','2013-10-24 15:01')
+[FAILED] <type 'unicode'>
+[ERROR] 'latin-1' codec can't encode characters in position 71-146: ordinal not in range(256)
+title:NOI×ÊÁÏºÏ¼¯
+tid:2665865371
+insert into thread_details(tid,title,timestamp) values ('2665865371','NOI×ÊÁÏºÏ¼¯','0')
+handling thread:2665865371
+update thread:2665865371 timestamp:2013-10-23 19:42 post:40702187763
+update thread_details set timestamp='2013-10-23 19:42'
+insert into threads(tid,postid) values ('2665865371','40702187763')
+insert into posts(postid,postcontent,timestamp) values('40702187763, 'CQF-SBTÖĞÎÄ°æ-Bamboo','2013-10-23 19:42')
+title:GITÃüÁî
+tid:2402855353
+insert into thread_details(tid,title,timestamp) values ('2402855353','GITÃüÁî','0')
+handling thread:2402855353
+insert into threads(tid,postid) values ('2402855353','34242409731')
+insert into posts(postid,postcontent,timestamp) values('34242409731, 'Õâ¸öÃüÁî×ÜÊÇ¼Ç²»×¡£¬','2013-06-18 23:45')
+insert into threads(tid,postid) values ('2402855353','34242454346')
+insert into posts(postid,postcontent,timestamp) values('34242454346, '¡¾gitÖ®Ô¶³Ì²Ö¿â¡¿ ht','2013-06-18 23:46')
+handling lzl:34242610031
+insert into lzl(postid,spid,content,timestamp) values(34242454346,34242610031,'gitĞŞ¸ÄÔ¶³Ì²Ö¿â http','2013-6-18 23:49')
+handling lzl:34244355213
+insert into lzl(postid,spid,content,timestamp) values(34242454346,34244355213,'Ò»°ãgit pull origin ','2013-6-19 00:34')
+handling lzl:34244528123
+insert into lzl(postid,spid,content,timestamp) values(34242454346,34244528123,'git remote rm my_dis','2013-6-19 00:40')
+handling lzl:34244945033
+insert into lzl(postid,spid,content,timestamp) values(34242454346,34244945033,'githubĞÂ½¨Ò»¸ö¿ÕµÄ²»','2013-6-19 00:55')
+handling lzl:34245011282
+insert into lzl(postid,spid,content,timestamp) values(34242454346,34245011282,'Create a new reposit','2013-6-19 00:58')
+handling lzl:34246455292
+insert into lzl(postid,spid,content,timestamp) values(34242454346,34246455292,'1) Ô¶³Ì²Ö¿âÏà¹ØÃüÁî ','2013-6-19 02:46')
+handling lzl:40696391951
+insert into lzl(postid,spid,content,timestamp) values(34242454346,40696391951,'×¢Òâ http://.. ºÍgit','2013-10-23 17:11')
+handling lzl:40697243691
+insert into lzl(postid,spid,content,timestamp) values(34242454346,40697243691,'Óöµ½publickey denied','2013-10-23 17:36')
+insert into threads(tid,postid) values ('2402855353','34242899866')
+insert into posts(postid,postcontent,timestamp) values('34242899866, 'ĞèÒªÊì¼ÇµÄgitÃüÁî ht','2013-06-18 23:56')
+insert into threads(tid,postid) values ('2402855353','34243388343')
+insert into posts(postid,postcontent,timestamp) values('34243388343, 'git sshÎÊÌâ Éú³ÉSSH¹','2013-06-19 00:08')
+handling lzl:34243422109
+insert into lzl(postid,spid,content,timestamp) values(34243388343,34243422109,'¹Ù·½ÎÄµµ https://hel','2013-6-19 00:08')
+handling lzl:34244630952
+insert into lzl(postid,spid,content,timestamp) values(34243388343,34244630952,'¡¾attention¡¿ÎªÁË·ÀÖ','2013-6-19 00:43')
+insert into threads(tid,postid) values ('2402855353','34243845659')
+insert into posts(postid,postcontent,timestamp) values('34243845659, 'branch Ïà¹Ø http://w','2013-06-19 00:19')
+handling lzl:34246462060
+insert into lzl(postid,spid,content,timestamp) values(34243845659,34246462060,'²é¿´±¾µØ·ÖÖ§£º$ git ','2013-6-19 02:47')
+handling lzl:34246483430
+insert into lzl(postid,spid,content,timestamp) values(34243845659,34246483430,'É¾³ı·ÖÖ§£º$ git bran','2013-6-19 02:50')
+handling lzl:34246483905
+insert into lzl(postid,spid,content,timestamp) values(34243845659,34246483905,'É¾³ıÔ¶³Ì·ÖÖ§£º$ git ','2013-6-19 02:50')
+insert into threads(tid,postid) values ('2402855353','34246490516')
+insert into posts(postid,postcontent,timestamp) values('34246490516, '3£©°æ±¾(tag)²Ù×÷Ïà¹Ø','2013-06-19 02:51')
+insert into threads(tid,postid) values ('2402855353','34246596597')
+insert into posts(postid,postcontent,timestamp) values('34246596597, 'Ê¹ÓÃgit¹¤×÷Á÷³Ì http','2013-06-19 03:05')
+insert into threads(tid,postid) values ('2402855353','34246675535')
+insert into posts(postid,postcontent,timestamp) values('34246675535, 'git É¾³ıµ±Ç°±¾µØ¹¤×÷','2013-06-19 03:17')
+insert into threads(tid,postid) values ('2402855353','40595874205')
+insert into posts(postid,postcontent,timestamp) values('40595874205, 'Õâ¸öÌû×Ó¾¹È»±»¶ÈÄï¸ø','2013-10-21 10:37')
+insert into threads(tid,postid) values ('2402855353','40596026833')
+insert into posts(postid,postcontent,timestamp) values('40596026833, '¹ûÈ»Ìù°ÉÒ²ÊÇ²»°²È«µÄ','2013-10-21 10:41')
+update thread:2402855353 timestamp:2013-10-21 11:16 post:40597294324
+update thread_details set timestamp='2013-10-21 11:16'
+insert into threads(tid,postid) values ('2402855353','40597294324')
+insert into posts(postid,postcontent,timestamp) values('40597294324, 'git remote add origi','2013-10-21 11:16')
+handling lzl:40643557532
+insert into lzl(postid,spid,content,timestamp) values(40597294324,40643557532,'$ ssh -T git@github.','2013-10-22 12:55')
+title:ÊıÑ§ÓëËã·¨
+tid:1803366011
+insert into thread_details(tid,title,timestamp) values ('1803366011','ÊıÑ§ÓëËã·¨','0')
+handling thread:1803366011
+insert into threads(tid,postid) values ('1803366011','23293600834')
+insert into posts(postid,postcontent,timestamp) values('23293600834, 'ÕæÊÇºÜÓĞ°®µÄÒ»¶Ô','2012-08-19 19:15')
+insert into threads(tid,postid) values ('1803366011','24434597558')
+insert into posts(postid,postcontent,timestamp) values('24434597558, 'Ëã·¨ÖĞµÄ´¿ÊıÑ§ pure ','2012-09-21 13:29')
+insert into threads(tid,postid) values ('1803366011','24524454436')
+insert into posts(postid,postcontent,timestamp) values('24524454436, 'ËùÎ½µÄËã·¨£¬¾ÍÊÇÓÃ¼Æ','2012-09-23 22:46')
+handling lzl:30623175846
+[FAILED]myEncode: <type 'unicode'>
+[ERROR] 'gbk' codec can't encode character u'\u2200' in position 35: illegal multibyte sequence
+insert into lzl(postid,spid,content,timestamp) values(24524454436,30623175846,'ç®—æ³•ä¸€èˆ¬ç”¨æ¥è§£å†³ä¸€ç±»æ•°å­¦é—®é¢˜ã€‚è¾“å…¥æ˜¯ä¸å›º','2013-3-22 15:03')
+[FAILED] <type 'unicode'>
+[ERROR] 'latin-1' codec can't encode characters in position 79-116: ordinal not in range(256)
+handling lzl:33739534237
+insert into lzl(postid,spid,content,timestamp) values(24524454436,33739534237,'Ò»ÇĞ½ÔÁ÷³Ì£¬Ò»ÇĞ½ÔÊı','2013-6-7 19:40')
+insert into threads(tid,postid) values ('1803366011','24645734251')
+insert into posts(postid,postcontent,timestamp) values('24645734251, 'È¨ÍşµÄËµ·¨£º 1 Ê±¼ä¸','2012-09-27 21:49')
+insert into threads(tid,postid) values ('1803366011','24978018548')
+insert into posts(postid,postcontent,timestamp) values('24978018548, '13 DP ×´Ì¬Ñ¹ËõÀà----','2012-10-06 21:33')
+insert into threads(tid,postid) values ('1803366011','24978953666')
+insert into posts(postid,postcontent,timestamp) values('24978953666, '8 Êı¾İ½á¹¹ splay----','2012-10-06 21:53')
+handling lzl:33039777934
+insert into lzl(postid,spid,content,timestamp) values(24978953666,33039777934,'','2013-5-21 23:28')
+insert into threads(tid,postid) values ('1803366011','30725786084')
+insert into posts(postid,postcontent,timestamp) values('30725786084, 'strengthen ablity of','2013-03-25 01:29')
+insert into threads(tid,postid) values ('1803366011','30800502847')
+insert into posts(postid,postcontent,timestamp) values('30800502847, 'Éñ¾­ÍøÂç¡¢bm/bpËã·¨','2013-03-27 09:14')
+insert into threads(tid,postid) values ('1803366011','32146018457')
+insert into posts(postid,postcontent,timestamp) values('32146018457, '¼¼ÊõÔüÂ·¹ı','2013-05-01 02:58')
+insert into threads(tid,postid) values ('1803366011','32224727672')
+insert into posts(postid,postcontent,timestamp) values('32224727672, 'Ò»°ãµÄËã·¨£¬ÆäºËĞÄµÄ','2013-05-03 00:22')
+insert into threads(tid,postid) values ('1803366011','33252137084')
+insert into posts(postid,postcontent,timestamp) values('33252137084, 'tarjian dfs dfsÏÂ£¬·','2013-05-27 00:28')
+handling lzl:33252608549
+insert into lzl(postid,spid,content,timestamp) values(33252137084,33252608549,'Ò»Ö±²»ÖªµÀ »¹¿ÉÒÔÕâÑ','2013-5-27 00:45')
+handling lzl:33293339069
+insert into lzl(postid,spid,content,timestamp) values(33252137084,33293339069,'µ¥´¿lca:visit(x):for','2013-5-28 01:31')
+handling lzl:33293407990
+insert into lzl(postid,spid,content,timestamp) values(33252137084,33293407990,'¼Ç×¡Á½¸öµã¶¼·ÃÎÊµ½µÄ','2013-5-28 01:36')
+handling lzl:33293444735
+insert into lzl(postid,spid,content,timestamp) values(33252137084,33293444735,'getF(x)Ó¦¸ÃÎªgetF(i.','2013-5-28 01:38')
+insert into threads(tid,postid) values ('1803366011','33264479047')
+insert into posts(postid,postcontent,timestamp) values('33264479047, 'ÁíÒ»ÖÖLCAËã·¨ 2.4.1Ì','2013-05-27 12:05')
+handling lzl:33264678806
+insert into lzl(postid,spid,content,timestamp) values(33264479047,33264678806,'Logn²éÕÒÊÇÒ»¸öÁÁµã¡£','2013-5-27 12:11')
+handling lzl:33292945571
+insert into lzl(postid,spid,content,timestamp) values(33264479047,33292945571,'h¼Ó¼ÓÓ¦¸ÃÅ²³öÀ´','2013-5-28 01:07')
+insert into threads(tid,postid) values ('1803366011','33289666406')
+insert into posts(postid,postcontent,timestamp) values('33289666406, 'É¨Ã¤Ìù£ºÁ½ÖÖÉú³ÉÊ÷Ëã','2013-05-27 23:23')
+handling lzl:33290255398
+insert into lzl(postid,spid,content,timestamp) values(33289666406,33290255398,'http://xiangce.baidu','2013-5-27 23:37')
+insert into threads(tid,postid) values ('1803366011','33292425284')
+insert into posts(postid,postcontent,timestamp) values('33292425284, 'SPLAY£ºÁùÖÖĞı×ª ×óĞı','2013-05-28 00:43')
+handling lzl:33292712100
+insert into lzl(postid,spid,content,timestamp) values(33292425284,33292712100,'splayµÄÏë·¨ºÜ¼òµ¥£¬½','2013-5-28 00:55')
+insert into threads(tid,postid) values ('1803366011','33740118428')
+insert into posts(postid,postcontent,timestamp) values('33740118428, 'diliklieÇóµ½µ¥Ô´S×î¶','2013-06-07 19:54')
+insert into threads(tid,postid) values ('1803366011','33740232082')
+insert into posts(postid,postcontent,timestamp) values('33740232082, 'Í¼µÄ×î¶ÌÂ·¾¶SPFA·´¸´','2013-06-07 19:57')
+handling lzl:34306925719
+insert into lzl(postid,spid,content,timestamp) values(33740232082,34306925719,'','2013-6-20 14:18')
+insert into threads(tid,postid) values ('1803366011','39003354458')
+insert into posts(postid,postcontent,timestamp) values('39003354458, 'kmpËã·¨£º 1 Çópre[n]','2013-09-16 11:16')
+insert into threads(tid,postid) values ('1803366011','40570298167')
+insert into posts(postid,postcontent,timestamp) values('40570298167, 'Â¥Ìì³É¹ØÓÚËÑË÷ÓÅ»¯ h','2013-10-20 18:55')
+update thread:1803366011 timestamp:2013-10-23 11:17 post:40683961620
+update thread_details set timestamp='2013-10-23 11:17'
+insert into threads(tid,postid) values ('1803366011','40683961620')
+insert into posts(postid,postcontent,timestamp) values('40683961620, 'ĞÙÑÀÀûÆ¥Åä¹ı³Ì£º É¾³','2013-10-23 11:17')
+title:UVaÍÆ¼öÌâÄ¿
+tid:2423062444
+insert into thread_details(tid,title,timestamp) values ('2423062444','UVaÍÆ¼öÌâÄ¿','0')
+handling thread:2423062444
+insert into threads(tid,postid) values ('2423062444','34687196831')
+insert into posts(postid,postcontent,timestamp) values('34687196831, 'ÏÂÃæ¸ø³öµÄÌâÄ¿¹²¼Æ56','2013-06-28 22:19')
+insert into threads(tid,postid) values ('2423062444','34687242741')
+insert into posts(postid,postcontent,timestamp) values('34687242741, 'µÚ¾ÅÕÂ£ºÍ¼±éÀú 9.1 P','2013-06-28 22:20')
+insert into threads(tid,postid) values ('2423062444','34687257769')
+insert into posts(postid,postcontent,timestamp) values('34687257769, 'Èı¡¢ USACO http://ww','2013-06-28 22:20')
+update thread:2423062444 timestamp:2013-10-22 19:36 post:40657550327
+update thread_details set timestamp='2013-10-22 19:36'
+insert into threads(tid,postid) values ('2423062444','40657550327')
+insert into posts(postid,postcontent,timestamp) values('40657550327, '´Ë°ÉÏÈÊÕ²ØÁË noip¹·.','2013-10-22 19:36')
+handling lzl:40659064870
+insert into lzl(postid,spid,content,timestamp) values(40657550327,40659064870,'Å£±Æ¡£noipÕâÖÖ¸ß¶ËµÄ','2013-10-22 20:09')
+title:Ì¸Ö°ÒµÂß¼­
+tid:2649513063
+insert into thread_details(tid,title,timestamp) values ('2649513063','Ì¸Ö°ÒµÂß¼­','0')
+handling thread:2649513063
+insert into threads(tid,postid) values ('2649513063','40295103921')
+insert into posts(postid,postcontent,timestamp) values('40295103921, 'µ±ÏÂITÒµÖ÷Òª°üº¬ÈıÖÖ','2013-10-14 13:15')
+insert into threads(tid,postid) values ('2649513063','40296512605')
+insert into posts(postid,postcontent,timestamp) values('40296512605, 'ÏúÊÛ´Ó¸ĞĞÔÉÏÀ´Ëµ£¬Í¨','2013-10-14 13:52')
+handling lzl:40334926928
+insert into lzl(postid,spid,content,timestamp) values(40296512605,40334926928,'ÓĞÈË³£ËµÏúÊÛÒªÒÀ¿¿¸ö','2013-10-15 11:05')
+handling lzl:40335093648
+insert into lzl(postid,spid,content,timestamp) values(40296512605,40335093648,'¸öÈË÷ÈÁ¦´ÓÀíĞÔ²ãÃæ£¬','2013-10-15 11:10')
+handling lzl:40335234261
+insert into lzl(postid,spid,content,timestamp) values(40296512605,40335234261,'»Ø¸´ ÊñÉ½ÎŞÓ°½£ :¸½¼','2013-10-15 11:14')
+handling lzl:40597970219
+insert into lzl(postid,spid,content,timestamp) values(40296512605,40597970219,'ÏúÊÛ²»ÔÚºõËµÁË¶àÉÙ£¬','2013-10-21 11:35')
+update thread:2649513063 timestamp:2013-10-22 05:26 post:40630946013
+update thread_details set timestamp='2013-10-22 05:26'
+insert into threads(tid,postid) values ('2649513063','40630946013')
+insert into posts(postid,postcontent,timestamp) values('40630946013, 'ÊñÉ½ÑĞ¾¿ÆğÏúÊÛÀ´¡£','2013-10-22 05:26')
+title:ºó×º×Ô¶¯»ú
+tid:2662785919
+insert into thread_details(tid,title,timestamp) values ('2662785919','ºó×º×Ô¶¯»ú','0')
+handling thread:2662785919
+update thread:2662785919 timestamp:2013-10-21 23:31 post:40625751380
+update thread_details set timestamp='2013-10-21 23:31'
+insert into threads(tid
