@@ -1,29 +1,21 @@
--- phpMyAdmin SQL Dump
--- version 3.1.3.1
--- http://www.phpmyadmin.net
---
--- 主机: localhost
--- 生成日期: 2013 年 10 月 29 日 09:10
--- 服务器版本: 5.1.33
--- PHP 版本: 5.2.9-2
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
 --
--- 数据库: `tieba`
+--  `tieba`
 --
-CREATE DATABASE `tieba` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+CREATE DATABASE if not exists `tieba` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 USE `tieba`;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `lzls`
+-- `lzls`
 --
 
 CREATE TABLE IF NOT EXISTS `lzls` (
   `postid` bigint(20) DEFAULT NULL,
-  `spid` bigint(20) DEFAULT NOT NULL,
+  `spid` bigint(20) DEFAULT NULL,
   `content` text,
   `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
   PRIMARY KEY (`spid`),
@@ -32,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `lzls` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `posts`
+--  `posts`
 --
 
 CREATE TABLE IF NOT EXISTS `posts` (
@@ -46,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `posts` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `thread_details`
+--  `thread_details`
 --
 
 CREATE TABLE IF NOT EXISTS `thread_details` (
@@ -59,11 +51,12 @@ CREATE TABLE IF NOT EXISTS `thread_details` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `threads`
+--  `threads`
 --
 
 CREATE TABLE IF NOT EXISTS `threads` (
   `tid` bigint(20) DEFAULT NULL,
-  `postid` bigint(20) DEFAULT NULL
+  `postid` bigint(20) DEFAULT NULL,
+  PRIMARY KEY (`postid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 

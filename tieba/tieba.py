@@ -8,7 +8,7 @@ import urllib
 import MySQLdb as sql
 import json
 import string
-fp=open('test2.html')
+#fp=open('test2.html')
 #soup=bs(fp)
 #print soup.find_all("div class=\"p_content\"")
 
@@ -35,23 +35,23 @@ class Tieba:
     self.db="db"
   def insertPost(self,post_id, post_content,time):
     sql="insert into posts(postid,postcontent,timestamp) values ('%s','%s','%s')"%(post_id,post_content,time)
-    print "insert into posts(postid,postcontent,timestamp) values('%s, '%s','%s')"%(post_id,post_content[0:20],time)
+    #print "insert into posts(postid,postcontent,timestamp) values('%s, '%s','%s')"%(post_id,post_content[0:20],time)
     myexec(sql)
   def insertThread(self,thread_id,post_id):
     sql="insert into threads(tid,postid) values ('%s','%s')"%(thread_id,post_id)
-    print sql
+    #print sql
     myexec(sql)
   def insertThreadDetails(self,thread_id,title):
     sql="insert into thread_details(tid,title,timestamp) values ('%s','%s','%s')"%(thread_id,title,'0')
-    print sql
+    #print sql
     myexec(sql)
   def updateThreadTimestamp(self,thread_id,time):
     sql="update thread_details set timestamp=\'%s\'"%(time);
-    print sql
+    #print sql
     myexec1(sql)
   def insertLzl(self,post_id,spid,content,time):
     sql="insert into lzls(postid,spid,content,timestamp) values(%s,%s,'%s','%s')"%(post_id,spid,content,time)
-    print "insert into lzls(postid,spid,content,timestamp) values(%s,%s,'%s','%s')"%(post_id,spid,content[0:20],time)
+    #print "insert into lzls(postid,spid,content,timestamp) values(%s,%s,'%s','%s')"%(post_id,spid,content[0:20],time)
     myexec1(sql)
   def clear(self):
     sql="delete from posts where 1=1"
