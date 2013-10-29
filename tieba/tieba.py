@@ -50,8 +50,8 @@ class Tieba:
     print sql
     myexec1(sql)
   def insertLzl(self,post_id,spid,content,time):
-    sql="insert into lzl(postid,spid,content,timestamp) values(%s,%s,'%s','%s')"%(post_id,spid,content,time)
-    print "insert into lzl(postid,spid,content,timestamp) values(%s,%s,'%s','%s')"%(post_id,spid,content[0:20],time)
+    sql="insert into lzls(postid,spid,content,timestamp) values(%s,%s,'%s','%s')"%(post_id,spid,content,time)
+    print "insert into lzls(postid,spid,content,timestamp) values(%s,%s,'%s','%s')"%(post_id,spid,content[0:20],time)
     myexec1(sql)
   def clear(self):
     sql="delete from posts where 1=1"
@@ -59,6 +59,8 @@ class Tieba:
     sql="delete from threads where 1=1"
     myexec1(sql);
     sql="delete from thread_details where 1=1"
+    myexec1(sql);
+    sql="delete from lzls where 1=1"
     myexec1(sql);
 def saveFile(html,filename):
   file=open(filename,'w')
@@ -99,7 +101,7 @@ db = sql.connect("127.0.0.1","root","","tieba" )
 cursor = db.cursor()
 tieba=Tieba()
 #clear all database of this tieba
-tieba.clear();
+#tieba.clear();
 
 def myOpen(url):
   import urllib,urllib2,cookielib
