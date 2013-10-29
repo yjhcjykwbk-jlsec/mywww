@@ -43,6 +43,7 @@ class DB{
         return mysql_num_rows($this->Query_ID);
     }function get_rows_array(){
         $rows=mysql_num_rows($this->Query_ID);
+        $this->Row_Array=array();
         for($i=0;$i<$rows;$i++){
             if(!mysql_data_seek($this->Query_ID,$i))
                 $this->halt("mysql_data_seek failed at row".$i);

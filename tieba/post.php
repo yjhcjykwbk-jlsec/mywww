@@ -24,20 +24,23 @@
                   <li><span><a class="p_post_del" href="#">删除</a>&nbsp;</span></li>
                 </ul>
             </div>
+            <?php if(count($POST['lzl'])>0){?>
             <div class="j_lzl_container core_reply_wrapper" data-field="{&quot;pid&quot;:40704045971,&quot;floor_num&quot;:2}" style="display:">
                 <div class="core_reply_border_top"></div>
                 <div class="j_lzl_c_b_a core_reply_content">
                     <ul class="j_lzl_m_w" style="display:">
+                        <?php foreach($POST['lzl'] as $LZL){?>
                         <li class="lzl_single_post j_lzl_s_p first_no_border" data-field="{&quot;pid&quot;:40704045971,&quot;spid&quot;:&quot;$spid&quot;,&quot;user_name&quot;:&quot;\u8700\u5c71\u65e0\u5f71\u5251&quot;,&quot;portrait&quot;:&quot;5c19caf1c9bdceded3b0bda3ac06&quot;}">
                             <a class="l_post_anchor" name="$spid"></a>
                             <div class="lzl_cnt"> <span class="lzl_content_main">  
-                            <?php echo "lzl"; ?>
+                            <?php echo c($LZL['content']); ?>
                           </span> 
-                                <div class="lzl_content_reply"><span class="lzl_jb"></span><span class="lzl_op_list j_lzl_o_l" style=""><a href="#" class="j_lzl_ban">封</a>&nbsp;|&nbsp;<a href="#" class="j_lzl_del">删除</a>&nbsp;|&nbsp;</span><span class="lzl_time"><?php echo $POST['timestamp']; ?></span>
+                                <div class="lzl_content_reply"><span class="lzl_jb"></span><span class="lzl_op_list j_lzl_o_l" style=""><a href="#" class="j_lzl_ban">封</a>&nbsp;|&nbsp;<a href="#" class="j_lzl_del">删除</a>&nbsp;|&nbsp;</span><span class="lzl_time"><?php echo $LZL['timestamp']; ?></span>
                                     <a href="#" class="lzl_s_r">回复</a>
                                 </div>
                             </div>
                         </li>
+                        <?php } ?>
                         <li class="lzl_li_pager j_lzl_l_p lzl_li_pager_s" data-field="{&quot;total_num&quot;:2,&quot;total_page&quot;:1}">
                             <p class="j_lzl_p"><a href="##">我也说一句</a>
                             </p>
@@ -48,5 +51,6 @@
                 </div>
                 <div class="core_reply_border_bottom"></div>
             </div>
+            <?php }?>
         </div>
     </td></tr></table>

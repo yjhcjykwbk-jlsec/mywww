@@ -35,7 +35,7 @@
             border:1px solid #5c9dff
         }
     </style>
-    <link href="http://bdimg.share.baidu.com/static/css/bdsstyle.css?cdnversion=20130704" rel="stylesheet" type="text/css">
+    <link href="tieba.css" rel="stylesheet" type="text/css">
 </head>
 
 <body class="skin_8" spellcheck="false">
@@ -80,18 +80,20 @@
                               <?php }?>
                             </ul>
 
-                            <div id="frs_list_pager" class="pager clearfix"><span class="cur">1</span>
-                                <a href="/f?kw=%BB%AA%B3%BF%D3%EE&amp;tp=0&amp;pn=50">2</a>
-                                <a href="/f?kw=%BB%AA%B3%BF%D3%EE&amp;tp=0&amp;pn=100">3</a>
-                                <a href="/f?kw=%BB%AA%B3%BF%D3%EE&amp;tp=0&amp;pn=150">4</a>
-                                <a href="/f?kw=%BB%AA%B3%BF%D3%EE&amp;tp=0&amp;pn=200">5</a>
-                                <a href="/f?kw=%BB%AA%B3%BF%D3%EE&amp;tp=0&amp;pn=250">6</a>
-                                <a href="/f?kw=%BB%AA%B3%BF%D3%EE&amp;tp=0&amp;pn=300">7</a>
-                                <a href="/f?kw=%BB%AA%B3%BF%D3%EE&amp;tp=0&amp;pn=350">8</a>
-                                <a href="/f?kw=%BB%AA%B3%BF%D3%EE&amp;tp=0&amp;pn=400">9</a>
-                                <a href="/f?kw=%BB%AA%B3%BF%D3%EE&amp;tp=0&amp;pn=450">10</a>
-                                <a href="/f?kw=%BB%AA%B3%BF%D3%EE&amp;tp=0&amp;pn=50" class="next">下一页&gt;</a>
-                                <a href="/f?kw=%BB%AA%B3%BF%D3%EE&amp;tp=0&amp;pn=92300" class="last">尾页</a>
+                            <div id="frs_list_pager" class="pager clearfix">
+                            <?php
+                              $page=$PN-5>0?$PN-5:1;
+                              $i=0;      
+                              while($i<10 && $page<$PN+5){
+                                if($page==$PN){    
+                                ?>
+                                <span class="cur"><?php echo $PN;?></span>
+                                <?php }else{?>
+                                <a href="?mod=threads&pn=<?php echo $page;?>"><?php echo $page;?></a>
+                                <?php }
+                                $page++;$i++;
+                              }?>
+                              <a href="?mod=threads&pn=15" class="last">尾页</a>
                             </div>
                         </div>
                     </div>

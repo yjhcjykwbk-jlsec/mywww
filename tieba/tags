@@ -1,0 +1,85 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACTION	posts.php	/^      $ACTION="getPosts";$/;"	v
+ACTION	threads.php	/^  $ACTION="getThreads";$/;"	v
+DB	db.php	/^class DB{$/;"	c
+DB	posts.php	/^    $DB=new DB();$/;"	v
+DB	threads.php	/^  $DB=new DB();$/;"	v
+Database	db.php	/^        if($Database=="") $Database=$this->Database;$/;"	v
+Database	db.php	/^    var $Database="tieba";$/;"	v
+Fields_Array	db.php	/^    var $Fields_Array;\/\/缓存返回集合的各列名字$/;"	v
+Host	db.php	/^        if($Host=="") $Host=$this->Host;$/;"	v
+Host	db.php	/^    var $Host="127.0.0.1:3306";$/;"	v
+Link_ID	db.php	/^            $this->Link_ID=@mysql_pconnect($Host,$User,$Pwd);$/;"	v
+Link_ID	db.php	/^    var $Link_ID=0;\/\/$/;"	v
+MOD	index.php	/^    $MOD=$_ENV['mod'];$/;"	v
+PN	posts.php	/^      $PN=$_ENV['pn'];$/;"	v
+PN	posts.php	/^    else $PN=1;$/;"	v
+PN	threads.php	/^  $PN=isset($_ENV['pn'])?$_ENV['pn']:1;$/;"	v
+POSTLIST	postmanager.php	/^      $POSTLIST=$DB->get_rows_array();$/;"	v
+Pwd	db.php	/^        if($Pwd=="")  $Pwd=$this->Pwd;$/;"	v
+Pwd	db.php	/^    var $Pwd="";$/;"	v
+Query_ID	db.php	/^            $this->Query_ID=0;$/;"	v
+Query_ID	db.php	/^        $this->Query_ID=mysql_query($query,$this->Link_ID);$/;"	v
+Query_ID	db.php	/^    var $Query_ID=0;$/;"	v
+Rows_Array	db.php	/^    var $Rows_Array;\/\/缓存返回集合的各行$/;"	v
+THREAD	postmanager.php	/^      $THREAD=$tmp[0];$/;"	v
+THREADLIST	postmanager.php	/^      $THREADLIST=$DB->get_rows_array();$/;"	v
+TID	posts.php	/^      $TID=$_ENV['tid'];$/;"	v
+Tieba	tieba.py	/^class Tieba:$/;"	c
+User	db.php	/^        if($User=="") $User=$this->User;$/;"	v
+User	db.php	/^    var $User="root";$/;"	v
+_ENV	index.php	/^  $_ENV=$_REQUEST;$/;"	v
+__init__	tieba.py	/^  def __init__(self):$/;"	m	class:Tieba
+bs	tieba.py	/^from bs4 import BeautifulSoup as bs$/;"	i
+c	index.php	/^  function c($a){return iconv('GB2312','UTF-8',$a);}$/;"	f
+clear	tieba.py	/^  def clear(self):$/;"	m	class:Tieba
+cmp	index.php	/^  function cmp($a,$b){return isset($a)&&isset($b)&&strcmp($a,$b)==0;}$/;"	f
+connect	db.php	/^    function connect($Database="",$Host="",$User="",$Pwd=""){$/;"	f
+cookielib	tieba.py	/^  import urllib,urllib2,cookielib$/;"	i
+cursor	tieba.py	/^cursor = db.cursor()$/;"	v
+db	tieba.py	/^db = sql.connect("127.0.0.1","root","","tieba" )$/;"	v
+error	db.php	/^        $error=mysql_error();$/;"	v
+fields	db.php	/^        $fields=mysql_num_fields($this->Query_ID);$/;"	v
+getNextPage	tieba.py	/^def getNextPage(o_url,page):$/;"	f
+getPager1	tieba.py	/^def getPager1(doc):#doc is a pyquery obj$/;"	f
+getPager2	tieba.py	/^def getPager2(doc):$/;"	f
+handleMainPage	tieba.py	/^def handleMainPage(doc,parameters):$/;"	f
+handlePages	tieba.py	/^def handlePages(url,page,getPager,func,parameters):$/;"	f
+handlePostPage	tieba.py	/^def handlePostPage(doc,parameters):$/;"	f
+i	posts.php	/^                          $i=0;$/;"	v
+i	threads.php	/^                                <?php $i=0;foreach($THREADLIST as $THREAD){$/;"	v
+i	threads.php	/^                              $i=0;      $/;"	v
+insertLzl	tieba.py	/^  def insertLzl(self,post_id,spid,content,time):$/;"	m	class:Tieba
+insertPost	tieba.py	/^  def insertPost(self,post_id, post_content,time):$/;"	m	class:Tieba
+insertThread	tieba.py	/^  def insertThread(self,thread_id,post_id):$/;"	m	class:Tieba
+insertThreadDetails	tieba.py	/^  def insertThreadDetails(self,thread_id,title):$/;"	m	class:Tieba
+json	tieba.py	/^import json$/;"	i
+myEncode	tieba.py	/^def myEncode(text):$/;"	f
+myOpen	tieba.py	/^def myOpen(url):$/;"	f
+myPrint	tieba.py	/^def myPrint(content):$/;"	f
+myexec	tieba.py	/^def myexec(sql):$/;"	f
+myexec1	tieba.py	/^def myexec1(sql): $/;"	f
+num	postmanager.php	/^      $num=($PN-1)*30;$/;"	v
+num	postmanager.php	/^      $num=($PN-1)*50;$/;"	v
+page	threads.php	/^                              $page=$PN-5>0?$PN-5:1;$/;"	v
+parameters	tieba.py	/^parameters={}$/;"	v
+pyq	tieba.py	/^from pyquery import PyQuery as pyq$/;"	i
+rows	db.php	/^        $rows=mysql_num_rows($this->Query_ID);$/;"	v
+saveFile	tieba.py	/^def saveFile(html,filename):$/;"	f
+sql	postmanager.php	/^      $sql="select * from posts,threads where ".$/;"	v
+sql	postmanager.php	/^      $sql="select * from thread_details where tid=".$TID;$/;"	v
+sql	tieba.py	/^import MySQLdb as sql$/;"	i
+strQ2B	tieba.py	/^def strQ2B(ustring):$/;"	f
+string	tieba.py	/^import string$/;"	i
+sys	tieba.py	/^import sys$/;"	i
+tieba	tieba.py	/^tieba=Tieba()$/;"	v
+tmp	postmanager.php	/^      $tmp=$DB->get_rows_array();$/;"	v
+updateThreadTimestamp	tieba.py	/^  def updateThreadTimestamp(self,thread_id,time):$/;"	m	class:Tieba
+urllib	tieba.py	/^  import urllib,urllib2,cookielib$/;"	i
+urllib	tieba.py	/^import urllib$/;"	i
+urllib2	tieba.py	/^  import urllib,urllib2,cookielib$/;"	i
