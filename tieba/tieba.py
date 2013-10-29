@@ -179,7 +179,7 @@ def handlePostPage(doc,parameters):
     post_content=pyq(d_post_content).text()
     #if is the last post
     if i==len(l_posts)-1:
-      print "update thread:"+thread_id+" timestamp:"+time+" post:"+post_id
+      #print "update thread:"+thread_id+" timestamp:"+time+" post:"+post_id
       tieba.updateThreadTimestamp(thread_id,time)
     #print "handling post:"+post_id 
     tieba.insertThread(thread_id,post_id)
