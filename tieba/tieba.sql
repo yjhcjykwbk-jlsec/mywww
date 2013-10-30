@@ -15,10 +15,10 @@ USE `tieba`;
 
 CREATE TABLE IF NOT EXISTS `lzls` (
   `postid` bigint(20) DEFAULT NULL,
-  `spid` bigint(20) DEFAULT NULL,
+  `spid` bigint(20),
   `content` text,
-  `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-  PRIMARY KEY (`spid`),
+  `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`spid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -57,6 +57,7 @@ CREATE TABLE IF NOT EXISTS `thread_details` (
 CREATE TABLE IF NOT EXISTS `threads` (
   `tid` bigint(20) DEFAULT NULL,
   `postid` bigint(20) DEFAULT NULL,
+  `timestamp` timestamp,
   PRIMARY KEY (`postid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 

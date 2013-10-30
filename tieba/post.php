@@ -1,5 +1,5 @@
 <?php require_once "postmanager.php"; ?>
-    <table class="l_post" width="100%"><tr>
+    <table class="l_post" width="100%" ><tr>
     <td class="d_author"></td>
     <td class="d_post_content_main">
         <div class="p_content">

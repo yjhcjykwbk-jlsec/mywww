@@ -37,8 +37,8 @@ class Tieba:
     sql="insert into posts(postid,postcontent,timestamp) values ('%s','%s','%s')"%(post_id,post_content,time)
     #print "insert into posts(postid,postcontent,timestamp) values('%s, '%s','%s')"%(post_id,post_content[0:20],time)
     myexec(sql)
-  def insertThread(self,thread_id,post_id):
-    sql="insert into threads(tid,postid) values ('%s','%s')"%(thread_id,post_id)
+  def insertThread(self,thread_id,post_id,time):
+    sql="insert into threads(tid,postid,timestamp) values ('%s','%s','%s')"%(thread_id,post_id,time)
     #print sql
     myexec(sql)
   def insertThreadDetails(self,thread_id,title):
@@ -46,7 +46,7 @@ class Tieba:
     #print sql
     myexec(sql)
   def updateThreadTimestamp(self,thread_id,time):
-    sql="update thread_details set timestamp=\'%s\'"%(time);
+    sql="update thread_details set timestamp='%s' where tid=%s"%(time,thread_id);
     #print sql
     myexec1(sql)
   def insertLzl(self,post_id,spid,content,time):
@@ -105,9 +105,12 @@ tieba=Tieba()
 
 def myOpen(url):
   import urllib,urllib2,cookielib
-  opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookielib.LWPCookieJar()))
+  proxy_support=urllib2.ProxyHandler({'http':'http://I303035:Stevenberge123@proxy:8083'})
+  #opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookielib.LWPCookieJar()))
+  opener = urllib2.build_opener(proxy_support, urllib2.HTTPHandler)
   html=opener.open(url).read()
-  saveFile(html,'temp.html')
+  return html
+  #saveFile(html,'temp.html')
  
 def getPager1(doc):#doc is a pyquery obj
   return doc('li.l_pager')('.pager_theme_2') 
@@ -124,7 +127,7 @@ def getNextPage(o_url,page):
 
 def handlePages(url,page,getPager,func,parameters):
   #html=fp.read();#gbk 
-  #myOpen(url)
+  #html=myOpen(url)
   html=pyq(url);
   doc=pyq(html)
   #handlePostPage(doc)
@@ -180,8 +183,8 @@ def handlePostPage(doc,parameters):
     if i==len(l_posts)-1:
       #print "update thread:"+thread_id+" timestamp:"+time+" post:"+post_id
       tieba.updateThreadTimestamp(thread_id,time)
-    #print "handling post:"+post_id 
-    tieba.insertThread(thread_id,post_id)
+    print "handling post:"+post_id 
+    tieba.insertThread(thread_id,post_id,time)
     post_content=myEncode(post_content)
     #post_content=repr(post_content);
     tieba.insertPost(post_id,post_content,time)

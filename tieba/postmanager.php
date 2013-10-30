@@ -27,7 +27,7 @@ if($ACTION=="getPosts"&&isset($PN)&&isset($TID)){
   //选择主题，从start个开始
 }else if($ACTION=="getThreads"&&isset($PN)){
   $num=($PN-1)*50;
-  $DB->query("select * from thread_details order by timestamp ".
+  $DB->query("select * from thread_details order by timestamp desc".
       " limit ".$num.",50");
   $THREADLIST=$DB->get_rows_array();
 } 
