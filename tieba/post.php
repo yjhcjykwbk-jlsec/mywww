@@ -32,6 +32,7 @@
                         <?php foreach($POST['lzl'] as $LZL){?>
                         <li class="lzl_single_post j_lzl_s_p first_no_border" data-field="{&quot;pid&quot;:40704045971,&quot;spid&quot;:&quot;$spid&quot;,&quot;user_name&quot;:&quot;\u8700\u5c71\u65e0\u5f71\u5251&quot;,&quot;portrait&quot;:&quot;5c19caf1c9bdceded3b0bda3ac06&quot;}">
                             <a class="l_post_anchor" name="$spid"></a>
+                            <div class="j_user_card lzl_p_p" ></div>
                             <div class="lzl_cnt"> <span class="lzl_content_main">  
                             <?php echo c($LZL['content']); ?>
                           </span> 

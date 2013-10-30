@@ -89,7 +89,9 @@ body, button, input, select, textarea, td, th {
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
 }
-
+ul, ol {
+    list-style: none;
+}
 .p_content {
     position: relative;
     min-height: 145px;
@@ -353,7 +355,13 @@ body, button, input, select, textarea, td, th {
 /*lzl:楼中楼*/
     text-align: right;
 }
-
+.lzl_p_p {
+    float: left;
+    width: 32px;
+    height: 32px;
+    border: 1px #ccc solid;
+    padding: 1px;
+}
 li.j_lzl_s_p {
     margin-top: 6px;
     padding-top: 10px;
