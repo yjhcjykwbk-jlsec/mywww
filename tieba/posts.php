@@ -108,6 +108,30 @@
                           }
                           ?>
                         </div>
+                        <div class="p_thread thread_theme_4" id="thread_theme_4">
+                          <div class="l_thread_info">
+                          <ul class="l_posts_num">
+                            <li class="l_pager pager_theme_3"><span class="tP">1</span>
+                            <?php
+                              $page=1;
+                              $num=(int)($THREAD['postnum']/30+1);
+                              while($page<$num){
+                                if($page!=$PN){
+                              ?>
+                              <a href="?mod=posts&tid=<?php echo $TID;?>&pn=<?php echo $page;?>"><?php echo $page;?></a>
+                              <?php }else{ ?>
+                              <span class="tP"><?php echo $PN;?></span> 
+                              <?php }$page++;
+                              }?>
+                              <a href="?mod=posts&tid=<?php echo $TID;?>&pn=<?php echo $num;?>">尾页</a>
+                            </li>
+                            <li class="l_reply_num" style="margin-left:2px; margin-right:10px">共有<span class="red"><?php echo $num;?></span>页</li>
+                            <li class="l_reply_num">跳到 <input theme="3" id="jumpPage3" max-page="<?php echo $num;?>" type="text" style="width:30px;height:14px;"> 
+                            页&nbsp;<button id="pager_go3" type="button" value="确定" style="padding: 0 2px 0 2px;height:21px;line-height:15px;">确定</button>&nbsp;</li>
+                            <li class="l_reply_num">回复贴:<span class="red" style="margin-right:3px"><?php echo $THREAD['postnum'];?></span></li>
+                          </ul>
+                          </div>
+                        </div>
                     </div>
                 </div>
             </div>

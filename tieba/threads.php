@@ -47,7 +47,7 @@
                         <div id="content_leftList" class="content_leftList clearfix">
                             <ul id="thread_list" class="threadlist">
                                 <?php $i=0;foreach($THREADLIST as $THREAD){
-                                  $THREAD['postnum']=1;$THREAD['digest']="this is digest";
+                                  $THREAD['digest']="this is digest";
                                   $THREAD['title']=c($THREAD['title']);                                  
                                   if($i++%2==0){ ?>
                                 <li class="j_thread_list" data-field="">
@@ -84,7 +84,7 @@
                             <?php
                               $page=$PN-5>0?$PN-5:1;
                               $i=0;      
-                              while($i<10 && $page<$PN+5){
+                              while($i<10 && $page<15){
                                 if($page==$PN){    
                                 ?>
                                 <span class="cur"><?php echo $PN;?></span>

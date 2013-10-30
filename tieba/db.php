@@ -66,6 +66,9 @@ class DB{
             @mysql_free_result($this->Query_ID);
             $this->Query_ID=0;
         }
+    }function get($sql){
+      $this->query($sql);
+      return $this->get_rows_array();
     }
 }
 ?>

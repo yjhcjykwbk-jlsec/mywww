@@ -150,6 +150,7 @@ def handlePages(url,page,getPager,func,parameters):
 def handleMainPage(doc,parameters):
     threadlist_texts=doc('.threadlist_title')
     for threadlist_text in threadlist_texts:
+      threadlist_detail=pyq(threadlist_text).parent().sibling()('.threadlist_abs').text()
       j_th_tit=pyq(threadlist_text)('a')
       title=myEncode(j_th_tit.text())
       href=pyq(j_th_tit).attr('href')
@@ -160,8 +161,9 @@ def handleMainPage(doc,parameters):
       print "tid:"+tid
       tieba.insertThreadDetails(tid,title)
       parameters['thread_id']=tid
-      #handle with each thread
-      handlePages('http://tieba.baidu.com/p/'+tid,1,getPager1,handlePostPage,parameters)
+      #handle with each thread 
+      #you can kick this if you just want to crawl thread details
+      #handlePages('http://tieba.baidu.com/p/'+tid,1,getPager1,handlePostPage,parameters)
 
 #handle with the posts page
 def handlePostPage(doc,parameters):
