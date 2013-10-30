@@ -58,9 +58,9 @@
                     <div class="l_thread_info">
                         <ul class="l_posts_num">
                             <li class="l_pager pager_theme_2"></li>
-                            <li class="l_reply_num" style="margin-left:2px; margin-right:10px">共有<span class="red">1</span>页</li>
+                            <li class="l_reply_num" style="margin-left:2px; margin-right:10px">共有<span class="red"><?php $s=(int)(count($POSTLIST)/30+1); echo $s; ?></span>页</li>
                             <li class="l_reply_num"></li>
-                            <li class="l_reply_num">回复贴:<span class="red" style="margin-right:3px">7</span>
+                            <li class="l_reply_num">回复贴:<span class="red" style="margin-right:3px"><?php echo count($POSTLIST);?>篇</span>
                             </li>
                         </ul>
                         <div class="l_thread_manage">
