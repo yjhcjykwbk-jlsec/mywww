@@ -15,6 +15,15 @@ if($ACTION=="getPosts"&&isset($PN)&&isset($TID)){
   $DB->query($sql);
   $tmp=$DB->get_rows_array();
   $THREAD=$tmp[0];
+
+  //获取主题时间排序序号
+  $sql="set @i=0";
+  $DB->query($sql);
+  $sql="select temp.order from (select @i:=@i+1 as `order`,tid from thread_details"
+    ." order by timestamp desc ) as temp where temp.tid=".$TID;
+  $DB->query($sql);
+  $tmp=$DB->get_rows_array();
+  $THREAD['seqnum']=$tmp['0']['order'];
   foreach($POSTLIST as $i =>$tmp){
     $sql="select * from lzls where postid=".$tmp['postid'];
     $DB->query($sql);

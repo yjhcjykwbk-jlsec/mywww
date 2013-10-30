@@ -64,6 +64,7 @@
                             </li>
                         </ul>
                         <div class="l_thread_manage">
+                            <div class="d_del_thread"><a class="j_thread_delete" href="?mod=threads&pn=<?php echo (int)($THREAD['seqnum']/50+1);?>">返回</a></div>
                             <div class="d_del_thread"><a class="j_thread_delete" href="#">删除主题</a>
                             </div>
                             <div id="d_post_manage" style="display: none;">
