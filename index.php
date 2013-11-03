@@ -111,9 +111,9 @@ height: 145px;}
 		<h3>access</h3>
 		<ul><li>
 			<a href="http://localhost" target="_blank">local</a>
+			<a href="../tieba/" target="_blank">贴吧</a>
 			<a href="http://219.223.254.55/portal/index_default.jsp" target="_blank">网关</a>
 			<a href="http://219.223.254.55/portal/wlan_login.jsp" target="_blank">wifi</a>
-			<a href="chrome://downloads/" target="_blank">down</a>
 			<a href="http://localhost/phpmyadmin" target="_blank">phpadmin</a>
 			</li><li>
 			1.music
