@@ -144,23 +144,37 @@ height: 145px;}
 			<div name="searchercontainer" onload="_load();document.search_web.search.focus();" scroll="yes" screen_capture_injected="true">
 			<!-- nav -->
 			<div id="nav">
-			<a href="#" class="one here" onclick="showLabel(this);return false;" id="nav_web"><span>网页</span></a>
-			<a href="#" class="two" onclick="showLabel(this);return false;" id="nav_photo"><span>图片</span></a>
-			<a href="#" class="three" onclick="showLabel(this);return false;" id="nav_music"><span>音乐</span></a>
+      <script>
+        function showLabel(s){
+          if(!window.curNav)
+            window.curNav=search_web;
+          window.curNav.style.display="none";
+          switch(s){
+          case "nav_music":window.curNav=search_music;break;
+          case "nav_photo":window.curNav=search_photo;break;
+          case "nav_web":window.curNav=search_web;break;
+          case "nav_video":window.curNav=search_video;break;
+          }
+          window.curNav.style.display="block";
+        }
+      </script>
+			<a href="#" class="one here" onclick="showLabel(this.id);return false;" id="nav_web"><span>网页</span></a>
+			<a href="#" class="two" onclick="showLabel(this.id);return false;" id="nav_photo"><span>图片</span></a>
+			<a href="#" class="three" onclick="showLabel(this.id);return false;" id="nav_music"><span>音乐</span></a>
 			<a href="#" class="four" onclick="showLabel(this);return false;" id="nav_video"><span>影视</span></a>
 			</div>
 			<div id="search_form" STYLE="font-size:10pt;">
 			<form action="http://so.classic023.com/search.asp" method="post" target="_blank" id="search_web" name="search_web">
 			<input type="hidden" name="want" value="">
-			<input size='14px' class="s_input" type="text" name="search" id="search" onmouseover="this.focus()" autocomplete="off"><input  type="submit" class="s_btn" id="sbtn" value="搜网页"><p><input type="radio" name="engine" value="baidu" checked="">默认 <input type="radio" name="engine" value="baidugoogle">百度+谷歌<input type="radio" name="engine" value="google">谷歌<input type="radio" name="engine" value="sogou">搜狗 <input type="radio" name="engine" value="bing">必应 <input type="radio" name="engine" value="yodao">有道 <input type="radio" name="engine" value="googleen">Google </p><input type="hidden">
+			<input size='14px' class="s_input" type="text" value="请输入要搜索的网址" name="search" id="search" onmouseover="this.focus()" autocomplete="off"><input  type="submit" class="s_btn" id="sbtn" value="搜网页"><p><input type="radio" name="engine" value="baidu" checked="">默认 <input type="radio" name="engine" value="baidugoogle">百度+谷歌<input type="radio" name="engine" value="google">谷歌<input type="radio" name="engine" value="sogou">搜狗 <input type="radio" name="engine" value="bing">必应 <input type="radio" name="engine" value="yodao">有道 <input type="radio" name="engine" value="googleen">Google </p><input type="hidden">
 			</form>
 			<form action="http://so.classic023.com/search.asp" method="get" target="_blank" id="search_photo" style="display:none">
 			<input type="hidden" name="want" value="photo">
-			<input class="s_input" type="text" value="请输入您要搜索的图片！" name="search" onmouseover="this.focus()" onblur="if (value ==''){value='请输入您要搜索的图片！'}" onfocus="this.select()" onclick="if(this.value=='请输入您要搜索的图片！')this.value=''"><input type="submit" class="s_btn" value="搜图片"><p><input type="radio" name="engine" value="sogou" checked="">搜狗 <input type="radio" name="engine" value="bing">必应 <input type="radio" name="engine" value="yodao">有道 <input type="radio" name="engine" value="iask">爱问 <input type="radio" name="engine" value="googleen">Google</p><input type="hidden">
+			<input class="s_input" type="text" value="请输入您要搜索的图片！" name="search" onmouseover="this.focus()" onblur="if (value ==''){value='请输入您要搜索的图片！'}" onfocus="this.select()" onclick="if(this.value=='请输入您要搜索的图片！')this.value=''"><input type="submit" class="s_btn" value="图片"><p><input type="radio" name="engine" value="sogou" checked="">搜狗 <input type="radio" name="engine" value="bing">必应 <input type="radio" name="engine" value="yodao">有道 <input type="radio" name="engine" value="iask">爱问 <input type="radio" name="engine" value="googleen">Google</p><input type="hidden">
 			</form>
 			<form action="http://so.classic023.com/search.asp" method="get" target="_blank" id="search_music" style="display:none">
 			<input type="hidden" name="want" value="music">
-			<input class="s_input" type="text" value="请输入歌曲名、歌手名或歌词中的一部分！" name="search" onmouseover="this.focus()" onblur="if (value ==''){value='请输入歌曲名、歌手名或歌词中的一部分！'}" onfocus="this.select()" onclick="if(this.value=='请输入歌曲名、歌手名或歌词中的一部分！')this.value=''"><input type="submit" class="s_btn" value="搜音乐"><p><input type="radio" name="engine" value="" checked="">默认 <input type="radio" name="engine" value="baidu">百度 <input type="radio" name="engine" value="soso">搜搜 <input type="radio" name="engine" value="sogou">搜狗<input type="radio" name="engine" value="gougougc">歌词</p><input type="hidden">
+			<input class="s_input" type="text" value="请输入歌曲名、歌手名或歌词中的一部分！" name="search" onmouseover="this.focus()" onblur="if (value ==''){value='请输入歌曲名、歌手名或歌词中的一部分！'}" onfocus="this.select()" onclick="if(this.value=='请输入歌曲名、歌手名或歌词中的一部分！')this.value=''"><input type="submit" class="s_btn" value="音乐"><p><input type="radio" name="engine" value="" checked="">默认 <input type="radio" name="engine" value="baidu">百度 <input type="radio" name="engine" value="soso">搜搜 <input type="radio" name="engine" value="sogou">搜狗<input type="radio" name="engine" value="gougougc">歌词</p><input type="hidden">
 			</form>
 			<form action="http://so.classic023.com/search.asp" method="get" target="_blank" id="search_video" style="display:none">
 			<input type="hidden" name="want" value="video">
@@ -465,6 +479,7 @@ $begin=$pg-5>0?$pg-5:0; $end=$pg+5; for($k=$begin;$k<$end;$k++){ ?>
 	</tr>
 </table>
 <!-- the end of file -->
+
 <div  style="Z-INDEX:-1;POSITION:absolute;WIDTH:0px;TOP:10px;LEFT:0px">
 </div>
 </div>
