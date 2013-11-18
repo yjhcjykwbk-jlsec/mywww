@@ -465,10 +465,32 @@ $begin=$pg-5>0?$pg-5:0; $end=$pg+5; for($k=$begin;$k<$end;$k++){ ?>
 	</tr>
 </table>
 <!-- the end of file -->
-
 <div  style="Z-INDEX:-1;POSITION:absolute;WIDTH:0px;TOP:10px;LEFT:0px">
 </div>
 </div>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<div id="musicbox" style="margin-left:500px;margin-right:0px;">
+		<embed src="http://www.xiami.com/widget/1588651_319959_235_346_cccccc_dddddd_0/albumPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>
+		<embed src="http://www.xiami.com/widget/1588651_17575258_235_346_cccccc_dddddd_0/collectPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>
+		<embed src="http://www.xiami.com/widget/1588651_1990146_235_346_cccccc_dddddd_0/collectPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>
+		<embed src="http://www.xiami.com/widget/1588651_4396705_235_346_cccccc_dddddd_0/collectPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>
 </div>
 <!-- <div id='footer'></div> -->
 </html>
