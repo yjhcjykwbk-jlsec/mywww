@@ -228,7 +228,7 @@ height: 145px;}
       <button type="submit" onclick="window.open('http://hi.baidu.com/tag/'+tagname.value+'/feeds','newwindow');return false;">搜</button>
       <button type="submit" onclick="window.open('http://www.ittang.com/plus/search.php?kwtype=0&keyword='+tagname.value+'','newwindow');return false;">IT</button>
       <button type="submit" onclick="window.open('https://github.com/search?type=&ref=simplesearch&q='+tagname.value+'','newwindow');return false;">git</button>
-      <button type="submit" onclick="window.open('http://harmattan-dev.nokia.com/docs/platform-api-reference/xml/daily-docs/libqt4/'+tagname.value+'.html','newwindow');return false;">qt</button>
+      <button type="submit" onclick="window.open('/libqt4/'+tagname.value+'-members.html','newwindow');return false;">qt</button>
       <button type="submit" onclick="window.open('http://www.oschina.net/search?scope=code&q='+tagname.value+'','newwindow');return false;">oschina</button>
       </form>
 			</li><li>
