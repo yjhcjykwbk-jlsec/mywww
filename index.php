@@ -164,7 +164,7 @@ height: 145px;}
 			<a href="#" class="four" onclick="showLabel(this);return false;" id="nav_video"><span>影视</span></a>
 			</div>
 			<div id="search_form" STYLE="font-size:10pt;">
-			<form action="http://so.classic023.com/search.asp" method="post" target="_blank" id="search_web" name="search_web">
+			<form action="http://so.classic023.com/search.asp" method="get" target="_blank" id="search_web" name="search_web">
 			<input type="hidden" name="want" value="">
 			<input size='14px' class="s_input" type="text" value="请输入要搜索的网址" name="search" id="search" onmouseover="this.focus()" autocomplete="off"><input  type="submit" class="s_btn" id="sbtn" value="搜网页"><p><input type="radio" name="engine" value="baidu" checked="">默认 <input type="radio" name="engine" value="baidugoogle">百度+谷歌<input type="radio" name="engine" value="google">谷歌<input type="radio" name="engine" value="sogou">搜狗 <input type="radio" name="engine" value="bing">必应 <input type="radio" name="engine" value="yodao">有道 <input type="radio" name="engine" value="googleen">Google </p><input type="hidden">
 			</form>
