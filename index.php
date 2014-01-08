@@ -1,21 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh" lang="zh" dir="ltr">
 <script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="../underscore.js"></script>
-<script type="text/javascript" src="../backbone.js"></script>
-<script type="text/javascript">
-function pull_urls(){other_links.innerHTML="";$.ajax({ url:"pull.php", data:"pull_url=1", type:'post', dataType:'json', success:function(result){ other_links.innerHTML="";for(var i=0;i<result.length;i++){ newrow=other_links.insertRow(other_links.rows.length); newcol=newrow.insertCell(0);newcol.innerHTML=result[i][0]; newcol=newrow.insertCell(1); newcol.innerHTML=result[i][1]; newcol=newrow.insertCell(2); newcol.innerHTML="<a target=_blank href="+result[i][2]+">"+result[i][2].substring(0,20)+"</a>";newcol=newrow.insertCell(3);newcol.innerHTML="<button onclick=del_url("+result[i][0]+")>del</button>";} }});} 
-function pull_urls_div(){other_links_div.innerHTML="";$.ajax({ url:"pull.php", data:"pull_url=1", type:'post', dataType:'json', success:function(result){ other_links.innerHTML="";for(var i=0;i<result.length;i++){ other_links.innerHTML+="<a target=_blank href="+result[i][2]+" style=\"font-size:"+Math.ceil(Math.random()*6+8)+"pt;\">"+result[i][1]+"</a><a href='' onclick='del_url("+result[i][0]+")'>... </a>";} }});} 
-</script>
-<script type="text/javascript">
-function del_url(id){ if(confirm("will delete url:"+id)) $.ajax({ url:"push.php",data:"link_id="+id+"&del_url=1", success:function(result){ pull_urls(); }});}
-</script> 
-<script type="text/javascript">
-function push_urls(linkname,linkvalue){ $.ajax({ url:"push.php", data:"link_name="+linkname+"&link_value="+linkvalue, success:function(result){alert(result);}}); }
-</script>
-<script type="text/javascript">
-function del_urls(){ if(confirm("will delete all urls!"))if(confirm("do you really want to clear all recorded urls?")) $.ajax({ url:"push.php", data:"", success:alert("didnot clear all urls")}); }
-</script>
+<script type="text/javascript" src="index.js"></script>
 <style>
 div.td_title {
 	height: 38px;
@@ -79,7 +65,6 @@ td#col_1{ opacity:0.9 }
 td#col_1{ opacity:0.6 }
 td#col_2{ opacity:0.8 }
 td#col_3{ opacity:0.8; }
-td#col_4{ opacity:0.8; }
 #container { 
 	background-color: #000333
 	width:100%;
@@ -104,8 +89,8 @@ height: 145px;}
 <div id='container' style="margin-top:50px;margin-right:140px">
 	<div id='flow_1' style="opacity:0.02;Z-INDEX:0;POSITION:absolute;top:53px;LEFT:-30px;display:none"> <img src="1.jpg" width="500px"></div>
 <!--	<div id='header'> </div> -->
-	<div id='body' style="width:76%;margin-left:auto;margin-right:100px;padding:15px 15px 20px 15px;background-color:rgba(243, 243, 243, 0.57);">	
-		<table style="border-collapse:none;table-layout:fixed;background-color:#ffffff;"  align="center"><tr>
+	<div id='body' style="width:76%;margin-left:auto;margin-right:100px;padding:15px 55px 10px 15px;background-color:rgba(243, 243, 243, 0.57);">	
+		<table style="border-collapse:none;table-layout:fixed;background-color:#ffffff;padding-right:30px;"  align="center"><tr>
 		<td id='col_1' width=20% bgcolor='f1e6d4'>
 		<div style="margin-left:10px;margin-right:10px;padding:5px 5px 5px 5px"><!-- bgcolor='F1E6D4' -->  <!--'F1E6D4'-->
 		<h3>access</h3>
@@ -234,28 +219,126 @@ height: 145px;}
 			</li><li>
 			<font size=2>9.留言板</font>
 			<table id="replies" border=1>
-<?php //这个是服务器主动运行的,属于php直接调用
-require_once("pull.php");?><?php
-$pg=isset($_REQUEST['reply_pg'])?$_REQUEST['reply_pg']:-1; $pgsize=5;?> 
-			</table>
-<script type="text/javascript">
-function display_reply(res){ replies.innerHTML=""; for(i=0;i<res.length;i++) { newrow=replies.insertRow(replies.rows.length); newcol=newrow.insertCell(0);newcol.innerHTML=res[i][0]; newcol=newrow.insertCell(0);newcol.innerHTML=res[i][1]; }
-}			  <!-- 这个是client运行的，服务器被动响应，client再处理结果和显示-->
-<!--对于服务器被动经过http请求的响应，一般是php的main入口处理-->
-<!--这个是客户端ajax请求的，属于php间接调用-->
-function pull_reply(pg){ $.ajax({url:"pull.php",dataType:"json",data:"reply_pg="+pg+"&pgsize=5",success:function(res){display_reply(res);} }); }
-</script>
-<?php
-$begin=$pg-5>0?$pg-5:0; $end=$pg+5; for($k=$begin;$k<$end;$k++){ ?>
+			<?php //这个是服务器主动运行的,属于php直接调用
+			require_once("pull.php");?><?php
+			$pg=isset($_REQUEST['reply_pg'])?$_REQUEST['reply_pg']:-1; $pgsize=5;?> 
+					</table>
+			<?php
+			$begin=$pg-5>0?$pg-5:0; $end=$pg+5; for($k=$begin;$k<$end;$k++){ ?>
 				<a href="javascript:void(0);" onclick="pull_reply(<?php echo $k ?>);" ><?php echo $k?></a>
-			<?php } ?>
-</ul>
-	</div></td>
+					<?php } ?>
+	</ul>
+</div></td>
 
-	<td id='col_2' width=20% bgcolor='fafafa' border=0><!-- effeff-->
+	<td id='col_2' width=63% bgcolor='#fafafa'> <!--efffff-->
+		<div>
+			<h2>ALGORITHM</h2>
+			<ul><li>
+				在线评测平台
+				<table frame="hsides" width=100% style="table-layout:fixed;" >
+					<td><a  target="_blank" href="http://www.lydsy.com/JudgeOnline/">bzoj</a></td>
+					<td><a  target="_blank" href="http://poj.org">poj</a></td>
+					<td><a  target="_blank" href="http://judge.noi.cn/problemlist">NOIs</a></td>
+					<td><a  target="_blank" href="http://poj.grids.cn/">pjo</a></td>
+					<td><a  target="_blank" href="http://acm.hdu.edu.cn/">hdu</a></td>
+					<td><a  target="_blank" href="http://acm.csu.edu.cn/OnlineJudge/">csu-answer</a></td>
+					<td><a  target="_blank" href="http://acm.zju.edu.cn/onlinejudge/">zoj</a></td>
+					<td><a  target="_blank" href="http://www.codeforces.com/problemset">codeforce</a></td>
+					<td><a  target="_blank" href="http://www.tyvj.cn/">zvvj</a></td>
+					<td><a  target="_blank" href="http://acm.timus.ru/">ural</a></td>
+					<td><a  target="_blank" href=http://www.spoj.pl/">spoj</a></td>
+				</table>
+				</li>
+				<li>
+					<font size=5 strong black><a href="pull.php?action=pullUrl" target="_blank">your links</a></font>
+					<font size=1 face="arial" color="green" align='center'>
+					<p><div name="tags_div" id="tags_div" style="width:500px;"></div></p>
+					<div name="other_links_div" id="other_links_div" width="600px"> </div>
+					<table name="other_links" id="other_links" width="600px" align='center'> </table>
+					</font>
+					<script type="text/javascript">
+						pull_tags_div();
+						//	pull_urls();
+						pull_urls_div();
+					</script>
+				</li><li>
+				oier博客
+				<table  frame="hsides" width="100%" style="table-layout:fixed;" ><tr>
+						<td><a  target="_blank" href="/wjbzbmr/blog">CLJ</a></td>
+						<td><a  target="_blank" href="/中国脑筋/blog">7k+顾昱洲(GYZ/ym)</a></td>
+						<td><a  target="_blank" href="/oimaster/blog">oimaster(JZP)</a></td>
+						<td><a  target="_blank" href="/coolinging/blog">coolinging</a></td>
+						<td><a  target="_blank" href="/http://hi.baidu.com/new/billdu">applepi杜宇飞(dyf)</a></td>
+						<td><a  target="_blank" href="/mikeni2006/blog">nzk</a></td>
+						<td><a  target="_blank" href="/coolypf/blog">coolypf</a></td>
+						<td><a  target="_blank" href="http://fanhq666.blog.163.com/">FHQ</a></td>
+						</tr><tr>
+						<td><a  target="_blank" href="http://hi.baidu.com/zradiance/home">毕克</a></td>
+						<td><a  target="_blank" href="/lydrainbowcat/blog">lyd(李煜东)</a></td>
+						<td><a  target="_blank" href="http://hi.baidu.com/new/wwwaaannngggrs">kac</a></td>
+						<td><a  target="_blank" href="http://hi.baidu.com/new/huyuanming11">hym</a></td>
+						<td><a  target="_blank" href="http://hi.baidu.com/cao_ximeng/blog">cxm</a></td>
+						<td><a  target="_blank" href="http://hi.baidu.com/roofalison/blog/category/%C8%ED%BC%FE%C9%E8%BC%C6">root</a></td>
+						<td><a  target="_blank" href="http://hi.baidu.com/new/dextrom">dextrom</a></td>
+						</tr><tr>
+						<td><a target="_blank" href="http://blog.csdn.net/jxy859/article/category/1107773">jxy859(hdu)</a></td>
+						<td><a target="_blank" href="http://blog.csdn.net/roosephu">lyp神牛</a></td>
+						<td><a target="_blank" href="http://blog.csdn.net/huyuncong">hyc图论王子</a></td>
+						<td><a target="_blank" href="http://blog.sina.com.cn/u/2014505350">idl</a></td>
+						<td><a target="_blank" href="http://blog.csdn.net/cjoilmd">lmd</a></td>
+						<td><a target="_blank" href="http://blog.csdn.net/woshitanwei">tw</a></td>
+						<td><a target="_blank" href="http://www.dxmtb.com/blog/">小哈</a></td>
+					</tr>
+				</table>
+				</li><li>
+				基础库
+				<table  frame="hsides" width=100% style="table-layout:fixed;" >
+					<td><a  target="_blank" href="http://en.cppreference.com/w/cpp">STL</a></td>
+					<td><a  target="_blank" href="http://php.net/manual/en/function.sha1.php">php</a></td>
+					<td><a  target="_blank" href="http://www.cplusplus.com/reference/cstdio/">c++</a></td>
+					<td><a  target="_blank" href="http://www.w3school.com.cn/">W3C</a></td>
+					<td><a  target="_blank" href="http://localhost/python_standard_lib.html">python lib</a></td>
+					<td><a  target="_blank" href="http://wiki.ubuntu.org.cn/Shell%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80">shell</a></td>
+				</table>
+				</li><li>
+				算法资料
+				<table  frame="hsides" width=100% style="table-layout:fixed;" >
+					<td><a  target="_blank" href="http://acmicpc.info/archives/category/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/icpc/icpc-2012-%E4%BA%9A%E6%B4%B2%E5%8C%BA">acm/icpc题解</a></td>
+					<td><a  target="_blank" href="http://pan.baidu.com/disk/home#dir/path=%2FDocuments%2F%E7%AB%9E%E8%B5%9B%E8%AE%BA%E6%96%87">集训队论文</a></td>
+					<td><a  target="_blank" href="http://pan.baidu.com/disk/home#dir/path=%2FDocuments%2F%E7%AB%9E%E8%B5%9B%E4%B9%A6%E7%B1%8D">集训队书籍</a></td>
+					<td><a  target="_blank" href="http://tieba.baidu.com/p/1217076472">noi_tieba</a></td>
+					<td><a  target="_blank" href="http://www.oifans.cn/oibook">noi知识库</a></td>
+				</table>
+				</li><li>
+				代码
+				<table  frame="hsides" width=100% style="table-layout:fixed;" >
+					<td><a  target="_blank" href="http://my.csdn.net/my/code">csdn_code</a></td>
+					<td><a  target="_blank" href="http://pan.baidu.com/disk/home#dir/path=%2FDocuments%2Foj%E6%BA%90%E7%A0%81">XOJ_code</a></td>
+						<td><a  target="_blank" href="http://blog.csdn.net/coolypf/article/details/7832827">五子棋</a></td>
+						<td><a  target="_blank" href="http://blog.csdn.net/coolypf/article/details/7832795">角斗士</a></td>
+						<td><a  target="_blank" href="http://blog.csdn.net/coolypf/article/details/7832754">数独</a></td>
+						<td><a  target="_blank" href="http://code.google.com/hosting/">googlecode</a></td>
+						<td><a  target="_blank" href="http://www.codesoso.net/default.aspx">codesoso</a></td>
+						<td><a  target="_blank" href="http://www.codeforge.cn/"><strong>codeforge</strong></a></td>
+				</table>
+				</li></ul>
+			</div>
+
+			<div class=td_content>PROJECTS
+				<ul><li>
+						<a  target="_blank" href="https://github.com/alibaba/canal">canal</a>
+						<a  target="_blank" href="http://i.pku.edu.cn/renrenplugin">renrenp</a>
+						<a  target="_blank" href="http://astar.baidu.com/index.php?mod=cms&act=gy_detail&id=18">ypf</a>
+						<a  target="_blank" href="http://ftp3.ie.freebsd.org/pub/">oschina</a>
+						<a  target="_blank" href="http://www.csdn.net/article/2011-08-11/302961">crazy web</a>
+						<a  target="_blank" href="https://code.google.com/p/mrrm/">ypf_mrrm...</a>
+					</li>
+				</ul>
+		</div>
+	</td>
+
+	<td id='col_3' width=20% bgcolor='fafafa' border=0><!-- effeff-->
 		<h3>personal</h3>
-
-
 		<div>
 			<ul style="display: inline-block; overflow: hidden; font-size: 12px; font-weight: bold; word-wrap: break-word;">
 			<li><img  src="http://tp3.sinaimg.cn/2635728142/180/22831012745/1" width="150" height="145" alt="请叫我老xu"></li>
@@ -357,152 +440,23 @@ $begin=$pg-5>0?$pg-5:0; $end=$pg+5; for($k=$begin;$k<$end;$k++){ ?>
 						</form>
 						<button onclick="push_urls(push_url_form.link_name.value,push_url_form.link_value.value);">添加</button>
 						<button type="ff" id="dd" name="dd" onclick="del_urls();return;">清空</button>
-						<script>s=true;function display_urls(){ if(s) {s=false;pull_urls();} else pull_urls_div();}</script>
+						<script>s=true;function display_urls(){ if(s) {s=false;pull_urls("");} else pull_urls_div("");}</script>
 						<button type="ff" id="dd" name="dd" onclick="display_urls();return;">显示</button>
 				</li>
 		</ul>
 		</div>
-
 	</td>
 
-	<td id='col_3' width=43% bgcolor='#fafafa'> <!--efffff-->
-		<div>
-			<h2>ALGORITHM</h2>
-			<ul><li>
-				在线评测平台
-				<table frame="hsides" width=100% style="table-layout:fixed;" >
-					<td><a  target="_blank" href="http://www.lydsy.com/JudgeOnline/">bzoj</a></td>
-					<td><a  target="_blank" href="http://poj.org">poj</a></td>
-					<td><a  target="_blank" href="http://judge.noi.cn/problemlist">NOIs</a></td>
-					<td><a  target="_blank" href="http://poj.grids.cn/">pjo</a></td>
-					<td><a  target="_blank" href="http://acm.hdu.edu.cn/">hdu</a></td>
-					<td><a  target="_blank" href="http://acm.csu.edu.cn/OnlineJudge/">csu-answer</a></td>
-					<td><a  target="_blank" href="http://acm.zju.edu.cn/onlinejudge/">zoj</a></td>
-					<td><a  target="_blank" href="http://www.codeforces.com/problemset">codeforce</a></td>
-					<td><a  target="_blank" href="http://www.tyvj.cn/">zvvj</a></td>
-					<td><a  target="_blank" href="http://acm.timus.ru/">ural</a></td>
-					<td><a  target="_blank" href=http://www.spoj.pl/">spoj</a></td>
-				</table>
-				</li><li>
-				oier博客
-				<table  frame="hsides" width=100% style="table-layout:fixed;" ><tr>
-						<td><a  target="_blank" href="/wjbzbmr/blog">CLJ</a></td>
-						<td><a  target="_blank" href="/中国脑筋/blog">7k+顾昱洲(GYZ/ym)</a></td>
-						<td><a  target="_blank" href="/oimaster/blog">oimaster(JZP)</a></td>
-						<td><a  target="_blank" href="/coolinging/blog">coolinging</a></td>
-						<td><a  target="_blank" href="/http://hi.baidu.com/new/billdu">applepi杜宇飞(dyf)</a></td>
-						<td><a  target="_blank" href="/mikeni2006/blog">nzk</a></td>
-						<td><a  target="_blank" href="/coolypf/blog">coolypf</a></td>
-						<td><a  target="_blank" href="http://fanhq666.blog.163.com/">FHQ</a></td>
-						</tr><tr>
-						<td><a  target="_blank" href="http://hi.baidu.com/zradiance/home">毕克</a></td>
-						<td><a  target="_blank" href="/lydrainbowcat/blog">lyd(李煜东)</a></td>
-						<td><a  target="_blank" href="http://hi.baidu.com/new/wwwaaannngggrs">kac</a></td>
-						<td><a  target="_blank" href="http://hi.baidu.com/new/huyuanming11">hym</a></td>
-						<td><a  target="_blank" href="http://hi.baidu.com/cao_ximeng/blog">cxm</a></td>
-						<td><a  target="_blank" href="http://hi.baidu.com/roofalison/blog/category/%C8%ED%BC%FE%C9%E8%BC%C6">root</a></td>
-						<td><a  target="_blank" href="http://hi.baidu.com/new/dextrom">dextrom</a></td>
-						</tr><tr>
-						<td><a target="_blank" href="http://blog.csdn.net/jxy859/article/category/1107773">jxy859(hdu)</a></td>
-						<td><a target="_blank" href="http://blog.csdn.net/roosephu">lyp神牛</a></td>
-						<td><a target="_blank" href="http://blog.csdn.net/huyuncong">hyc图论王子</a></td>
-						<td><a target="_blank" href="http://blog.sina.com.cn/u/2014505350">idl</a></td>
-						<td><a target="_blank" href="http://blog.csdn.net/cjoilmd">lmd</a></td>
-						<td><a target="_blank" href="http://blog.csdn.net/woshitanwei">tw</a></td>
-						<td><a target="_blank" href="http://www.dxmtb.com/blog/">小哈</a></td>
-					</tr>
-				</table>
-				</li><li>
-					<font size=5 strong black><a href="pull.php?pull_url=1" target="_blank">your links</a></font>
-					<font size=1 face="arial" color="green" align='center'>
-					<div name="other_links_div" id="other_links_div" width="500px">
-					</div>
-					<table name="other_links" id="other_links" width="500px" align='center'>
-	<script type="text/javascript">
-	//	pull_urls();
-	pull_urls_div();
-			</script>
-					</table></font>
-				</li><li>
-				基础库
-				<table  frame="hsides" width=100% style="table-layout:fixed;" >
-					<td><a  target="_blank" href="http://en.cppreference.com/w/cpp">STL</a></td>
-					<td><a  target="_blank" href="http://php.net/manual/en/function.sha1.php">php</a></td>
-					<td><a  target="_blank" href="http://www.cplusplus.com/reference/cstdio/">c++</a></td>
-					<td><a  target="_blank" href="http://www.w3school.com.cn/">W3C</a></td>
-					<td><a  target="_blank" href="http://localhost/python_standard_lib.html">python lib</a></td>
-					<td><a  target="_blank" href="http://wiki.ubuntu.org.cn/Shell%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80">shell</a></td>
-				</table>
-				</li><li>
-				算法资料
-				<table  frame="hsides" width=100% style="table-layout:fixed;" >
-					<td><a  target="_blank" href="http://acmicpc.info/archives/category/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/icpc/icpc-2012-%E4%BA%9A%E6%B4%B2%E5%8C%BA">acm/icpc题解</a></td>
-					<td><a  target="_blank" href="http://pan.baidu.com/disk/home#dir/path=%2FDocuments%2F%E7%AB%9E%E8%B5%9B%E8%AE%BA%E6%96%87">集训队论文</a></td>
-					<td><a  target="_blank" href="http://pan.baidu.com/disk/home#dir/path=%2FDocuments%2F%E7%AB%9E%E8%B5%9B%E4%B9%A6%E7%B1%8D">集训队书籍</a></td>
-					<td><a  target="_blank" href="http://tieba.baidu.com/p/1217076472">noi_tieba</a></td>
-					<td><a  target="_blank" href="http://www.oifans.cn/oibook">noi知识库</a></td>
-				</table>
-				</li><li>
-				代码
-				<table  frame="hsides" width=100% style="table-layout:fixed;" >
-					<td><a  target="_blank" href="http://my.csdn.net/my/code">csdn_code</a></td>
-					<td><a  target="_blank" href="http://pan.baidu.com/disk/home#dir/path=%2FDocuments%2Foj%E6%BA%90%E7%A0%81">XOJ_code</a></td>
-						<td><a  target="_blank" href="http://blog.csdn.net/coolypf/article/details/7832827">五子棋</a></td>
-						<td><a  target="_blank" href="http://blog.csdn.net/coolypf/article/details/7832795">角斗士</a></td>
-						<td><a  target="_blank" href="http://blog.csdn.net/coolypf/article/details/7832754">数独</a></td>
-						<td><a  target="_blank" href="http://code.google.com/hosting/">googlecode</a></td>
-						<td><a  target="_blank" href="http://www.codesoso.net/default.aspx">codesoso</a></td>
-						<td><a  target="_blank" href="http://www.codeforge.cn/"><strong>codeforge</strong></a></td>
-				</table>
-				</li></ul>
-			</div>
-
-			<div class=td_content>PROJECTS
-				<ul><li>
-						<a  target="_blank" href="https://github.com/alibaba/canal">canal</a>
-						<a  target="_blank" href="http://i.pku.edu.cn/renrenplugin">renrenp</a>
-						<a  target="_blank" href="http://astar.baidu.com/index.php?mod=cms&act=gy_detail&id=18">ypf</a>
-						<a  target="_blank" href="http://ftp3.ie.freebsd.org/pub/">oschina</a>
-						<a  target="_blank" href="http://www.csdn.net/article/2011-08-11/302961">crazy web</a>
-						<a  target="_blank" href="https://code.google.com/p/mrrm/">ypf_mrrm...</a>
-					</li>
-				</ul>
-		</div>
-	</td>
-
-	<td id='col_4'width='21%' border='hidden' bgcolor='fafafa' align='center'border=0>
-		 <strong> music time</strong><br>
-			<embed id='music_box' src="http://www.xiami.com/widget/1588651_2452_190_316_F1F1F1_fafafa_0/artisthotPlayer.swf" type="application/x-shockwave-flash" width="190" height="316" wmode="opaque"></embed>
-			<br/><br/><br/>
-			<embed id='music_box' src="http://www.xiami.com/widget/1588651_17575258_190_316_f1f1f1_fafafa_0/collectPlayer.swf" type="application/x-shockwave-flash" width="190" height="316" wmode="opaque"></embed>
-
-	</td>
-	</tr>
+</tr>
 </table>
 <!-- the end of file -->
 
+</div>
+</div>
+<br/>
 <div  style="Z-INDEX:-1;POSITION:absolute;WIDTH:0px;TOP:10px;LEFT:0px">
 </div>
-</div>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<div id="musicbox" style="margin-left:500px;margin-right:0px;">
+<div id="musicbox" style="margin-left:500px;margin-right:0px;display:none;">
 		<embed src="http://www.xiami.com/widget/1588651_319959_235_346_cccccc_dddddd_0/albumPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>
 		<embed src="http://www.xiami.com/widget/1588651_17575258_235_346_cccccc_dddddd_0/collectPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>
 		<embed src="http://www.xiami.com/widget/1588651_1990146_235_346_cccccc_dddddd_0/collectPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>
