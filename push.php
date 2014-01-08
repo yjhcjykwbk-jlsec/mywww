@@ -3,25 +3,25 @@
 //注意：是$_REQUEST['..']不是$POST['..']，各种变量如果写错了就是空值，很难查出错误。
 //注意：php的变量要加$，js不加。php写掉$了会读不出来。
 require_once("db.php");
-function upload($linkname,$linkvalue,$linktags){
+function _addUrl($linkname,$linkvalue,$linktags){
 	$db=new mydb;
 	$db->connect();
 	return $db->query("insert into my_db.urls
 		(linkname,linkvalue,tags) values('$linkname','$linkvalue','$linktags');");
 }
-function set($linkid,$linkname,$linkvalue,$linktags){
+function _setUrl($linkid,$linkname,$linkvalue,$linktags){
 	$db=new mydb;
 	$db->connect();
 	$sql="update my_db.urls set ".
 		"linkname='$linkname',linkvalue='$linkvalue',tags='$linktags' where linkid='$linkid'";
 	return $sql.":".$db->query($sql);
 }
-function handleClear(){
+function clearUrl(){
 	$db=new mydb;
 	$db->connect();
 	return $db->query("delete from my_db.urls where 1=1;");
 }
-function handleDel(){
+function delUrl(){
 	$db=new mydb;
 	$db->connect();
 	if(isset($_REQUEST['link_id'])){
@@ -37,45 +37,80 @@ function handleDel(){
 	}
 	else echo("link_id not set");
 }
-function handlePush(){
+function addUrl(){
 	if(isset($_REQUEST['link_name'])&&isset($_REQUEST['link_value'])){
 		$linkname=$_REQUEST['link_name'];
 		$linkvalue=$_REQUEST['link_value'];
 		$linktags=isset($_REQUEST['link_tags'])?$_REQUEST['link_tags']:"";
 		if($linkname!=""&&$linkvalue!=""){
-			if(($res=upload($linkname,$linkvalue,$linktags))==1) 
+			if(($res=_addUrl($linkname,$linkvalue,$linktags))==1) 
 				return "upload ".$linkname.":".$linkvalue." succeessfully";
 			else return $res;
 		}
 	}
 	return "link_name or link_value not set";
 }
-function handleSet(){
+function setUrl(){
+	echo "seturl";
 	if(isset($_REQUEST['link_id'])){
 		$linkid=$_REQUEST['link_id'];
 		$linkname=$_REQUEST['link_name']?$_REQUEST['link_name']:"";
 		$linkvalue=$_REQUEST['link_value']?$_REQUEST['link_value']:"";
 		$linktags=isset($_REQUEST['link_tags'])?$_REQUEST['link_tags']:"";
-		if(($res=set($linkid,$linkname,$linkvalue,$linktags))==1) 
+		if(($res=_setUrl($linkid,$linkname,$linkvalue,$linktags))==1) 
 			return "success";
 	}
 	return "fail";
 }
+function delTag(){
+	if(!isset($_REQUEST['tag'])) {
+		echo "tag not set";
+		return;
+	}
+	$tag=$_REQUEST['tag'];
+	$db=new mydb;
+	$db->connect();
+	$db->query("select * from my_db.urls;");
+	$res=$db->get_rows_array();
+	$sql="";
+	foreach($res as $i=>$row){
+		$tags=$row[3]?$row[3]:"";
+		$tagsArr=split(',',$tags);
+		$t=array_search($tag,$tagsArr);
+		if($t||$t===0){
+			array_splice($tagsArr,$t,1);//remove the t element
+			$row[3]=$tags=implode(',',$tagsArr);
+			$sql="update my_db.urls set tags='$tags' where linkid='$row[0]';\n";
+			$db->query($sql);
+		}
+	}
+	//after change
+	$db->query("select * from my_db.urls;");
+	$res=$db->get_rows_array();
+	echo "<pre>";
+	print_r($res);
+	echo "</pre>";
+}
+
 function main(){
 	$action=$_REQUEST['action']?$_REQUEST['action']:"";
 	if($action=="clearUrl"){
-		echo handleClear();
+		echo clearUrl();
 		return;
 	}
 	else if($action=="delUrl"){
-		echo handleDel();
+		echo delUrl();
 		return;
 	}
-	else if($action="setUrl"){
-		echo handleSet();
+	else if($action=="setUrl"){
+		echo setUrl();
 		return;
 	}
-	else echo handlePush();
+	else if($action=="delTag"){
+		echo delTag();
+		return;
+	}
+	else echo addUrl();
 }
 main();
 ?>

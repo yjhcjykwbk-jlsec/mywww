@@ -35,7 +35,8 @@ function pullUrls($tag){
 		foreach($res as $row){
 			$tags=$row[3]?$row[3]:"";
 			$tagsArr=split(',',$tags);
-			if(array_search($tag,$tagsArr)!==NULL){
+			$t=array_search($tag,$tagsArr);
+			if($t||$t===0){
 				$temp[]=$row;
 			}
 		}

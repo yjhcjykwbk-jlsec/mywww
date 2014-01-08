@@ -30,9 +30,9 @@ function pull_urls_div(tag){
 		url:"pull.php", 
 		data:"action=pullUrl"+para, type:'post', dataType:'json', 
 		success:function(result){
-			other_links.innerHTML="";
+			other_links_div.innerHTML="";
 			for(var i=0; i<result.length; i++){
-				other_links.innerHTML+="<a target=_blank href="+result[i][2]+
+				other_links_div.innerHTML+="<a target=_blank href="+result[i][2]+
 		" style=\"font-size:"+Math.ceil(Math.random()*6+8)+"pt;\">"+result[i][1]+"</a>"+
 		"<a class='edit-url' id='"+result[i][0]+"' href=''"+
 		// onclick='"+ //function(ev){"+
@@ -63,11 +63,16 @@ function pull_tags_div(){
 			console.log("pull_tags_div():");
 			console.log(result);
 			window.result=result;
-			for(var i=0; i<result.length; i++){
+			tags_div.innerHTML+=
+		"<a href='' target='__blank' onclick='pull_urls_div("+"\""+"\""+");return false;'"+
+		" style=\"font-size:"+Math.ceil(Math.random()*6+8)+"pt;\">*.. </a>";
+			for(key in result){
+				resulti=result[key];
+				if(resulti=="") continue;
 					tags_div.innerHTML+=
-		"<a href='' target='__blank' onclick='pull_urls_div("+"\""+result[i]+"\""+");return false;'"+
-		" style=\"font-size:"+Math.ceil(Math.random()*6+8)+"pt;\">"
-		+result[i]+"</a>";
+		"<a href='' target='__blank' onclick='pull_urls_div("+"\""+resulti+"\""+");return false;'"+
+		" style=\"font-size:"+Math.ceil(Math.random()*6+8)+"pt;\">" +resulti+"</a>"+
+		"<a href='' class='del-tag' onclick='del_tag(\""+resulti+"\");return false;'>..</a>";
 				}
 		}
 	}
@@ -86,14 +91,27 @@ function del_url(id){
 		}
 		);
 }
+function del_tag(tag){
+	if(confirm("will delete tag:"+tag)) 
+		$.ajax({
+			url:"push.php",
+			data:"action=delTag&tag="+tag, 
+			success:function(result){
+				console.log(result);
+				alert(result);
+				pull_tags_div("")
+			}
+		}
+		);
+}
 function set_url(linkid,linkname,linkvalue,linktags){
 	$.ajax({
 		url:"push.php", 
 		data:"action=setUrl&link_id="+linkid+"&link_name="+linkname+"&link_value="+linkvalue+"&link_tags="+linktags, 
 		success:function(result){
-			alert(result);
 			set_result=$('.edit-url-form label[name="set-result"]');
 			set_result.attr("value","设置成功");
+			pull_tags_div("");
 		}
 	}
 	);
@@ -115,6 +133,9 @@ function del_urls(){
 				url:"push.php", 
 				data:"", success:alert("didnot clear all urls")}
 				);
+}
+function close_popup(){
+	popup.css('display','none');
 }
 function display_reply(res){
 	replies.innerHTML="";

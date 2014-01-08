@@ -263,14 +263,14 @@ $begin=$pg-5>0?$pg-5:0; $end=$pg+5; for($k=$begin;$k<$end;$k++){ ?>
 				<li>
 					<font size=5 strong black><a href="pull.php?action=pullUrl" target="_blank">your links</a></font>
 					<font size=1 face="arial" color="green" align='center'>
-					<p><div name="tags_div" id="tags_div" style="width:500px;"></div></p>
-					<div name="other_links_div" id="other_links_div" width="600px"> </div>
+					<p><div name="tags_div" id="tags_div" style="width:500px;height:30px;"></div></p>
+					<div name="other_links_div" id="other_links_div" style="width:600px;height:350px;"> </div>
 					<table name="other_links" id="other_links" width="600px" align='center'> </table>
 					</font>
 	<script type="text/javascript">
 	pull_tags_div();
 //	pull_urls();
-pull_urls_div();
+pull_urls_div("");
 </script>
 				</li><li>
 				oier博客
@@ -467,7 +467,7 @@ pull_urls_div();
 
 <div class="popup" style="display:none; position:absolute; top: 100px; left: 150px; z-index:100; border: 2px solid rgba(0, 0, 0, 0); box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);">
 <div class="content" style="display: table; width: 200px; padding: 10px; background: #fff; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;">
-<a href="#" class="close" onclick="popup.css('display','none');return false;" ><img src="http://stat.codeforces.ru/images/facebox/closelabel.png" title="close" class="close_image"></a>
+<a href="#" class="close" onclick="close_popup();return false;" ><img src="http://stat.codeforces.ru/images/facebox/closelabel.png" title="close" class="close_image"></a>
 <div class="edit-url-div" style="width: 200px; height: 200px; overflow: auto; padding: 1em; margin: 1em; font-size: 12px; display: block; ">
 <form id="edit_url_form" class="edit-url-form"> 
 <input name="link_id" style="display:none"/>
@@ -475,7 +475,12 @@ linkname<br><input name="link_name" value='linkname'/><br>
 linkvalue<br><input name="link_value" value='linkvalue'/><br>
 tags<br><input type='text' name="link_tags" value='tags'/><br>
 <a href='' onclick='return false;'>delete</a>
-<button value='set' onclick='console.log("after click():");a=edit_url_form;console.log(a);console.log(a.link_name);set_url(a.link_id.value,a.link_name.value,a.link_value.value,a.link_tags.value);return false;'>set</button>
+<button value='set' 
+	onclick='console.log("after click():");
+	a=edit_url_form;console.log(a);console.log(a.link_name);
+	set_url(a.link_id.value,a.link_name.value,a.link_value.value,a.link_tags.value);
+	close_popup();
+	return false;'>set</button>
 <label name="set-result" value="">
 </form>
 </div>
