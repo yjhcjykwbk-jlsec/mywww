@@ -9,6 +9,13 @@ function upload($linkname,$linkvalue,$linktags){
 	return $db->query("insert into my_db.urls
 		(linkname,linkvalue,tags) values('$linkname','$linkvalue','$linktags');");
 }
+function set($linkid,$linkname,$linkvalue,$linktags){
+	$db=new mydb;
+	$db->connect();
+	$sql="update my_db.urls set ".
+		"linkname='$linkname',linkvalue='$linkvalue',tags='$linktags' where linkid='$linkid'";
+	return $sql.":".$db->query($sql);
+}
 function handleClear(){
 	$db=new mydb;
 	$db->connect();
@@ -43,14 +50,29 @@ function handlePush(){
 	}
 	return "link_name or link_value not set";
 }
+function handleSet(){
+	if(isset($_REQUEST['link_id'])){
+		$linkid=$_REQUEST['link_id'];
+		$linkname=$_REQUEST['link_name']?$_REQUEST['link_name']:"";
+		$linkvalue=$_REQUEST['link_value']?$_REQUEST['link_value']:"";
+		$linktags=isset($_REQUEST['link_tags'])?$_REQUEST['link_tags']:"";
+		if(($res=set($linkid,$linkname,$linkvalue,$linktags))==1) 
+			return "success";
+	}
+	return "fail";
+}
 function main(){
 	$action=$_REQUEST['action']?$_REQUEST['action']:"";
 	if($action=="clearUrl"){
 		echo handleClear();
 		return;
 	}
-	if($action=="delUrl"){
+	else if($action=="delUrl"){
 		echo handleDel();
+		return;
+	}
+	else if($action="setUrl"){
+		echo handleSet();
 		return;
 	}
 	else echo handlePush();

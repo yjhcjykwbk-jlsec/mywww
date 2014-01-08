@@ -3,6 +3,17 @@
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="index.js"></script>
 <style>
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td 
+{
+	// margin: 0;
+	// padding: 0;
+}
+body {
+	font-size: 87.5%;
+}
+body, select, input {
+	font-family: verdana,arial,sans-serif;
+}
 div.td_title {
 	height: 38px;
 	background: transparent url(images/panel-title.png) left bottom no-repeat;
@@ -66,83 +77,83 @@ td#col_1{ opacity:0.6 }
 td#col_2{ opacity:0.8 }
 td#col_3{ opacity:0.8; }
 #container { 
-	background-color: #000333
-	width:100%;
+background-color: #000333
+width:100%;
 }
 body{
 	background-repeat: no-repeat;
 	background-color:#ffffff;
-  background: url(bg.jpg) no-repeat right top;
+	background: url(bg.jpg) no-repeat right top;
 	font-size:12px;font-family:Arial,Console,Verdana,Courier New;
 }
 #header { width: 900px; height: 10px; Z-INDEX:1; POSITION:relative; margin: 0 auto; padding: 90px 0 0 0; text-align: left; }
 #footer { border-top: none !important;  
 "background: url(blog/bot_bg.jpg) no-repeat bottom center; "
-height: 145px;} 
-</style>
-<!-- "	background-image:url('blog/body_bg.jpg');" "	color:#362e2b;"
-"	background-attachment:scroll; background-position:center top; "
-"	background: url(blog/head_bg.jpg) repeat-x center top;"
--->
-<head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> </head>
-<title>####</title>
-<div id='container' style="margin-top:50px;margin-right:140px">
+	height: 145px;} 
+	</style>
+	<!-- "	background-image:url('blog/body_bg.jpg');" "	color:#362e2b;"
+	"	background-attachment:scroll; background-position:center top; "
+	"	background: url(blog/head_bg.jpg) repeat-x center top;"
+	-->
+	<head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> </head>
+	<title>####</title>
+	<div id='container' style="margin-top:50px;margin-right:140px">
 	<div id='flow_1' style="opacity:0.02;Z-INDEX:0;POSITION:absolute;top:53px;LEFT:-30px;display:none"> <img src="1.jpg" width="500px"></div>
-<!--	<div id='header'> </div> -->
+	<!--	<div id='header'> </div> -->
 	<div id='body' style="width:76%;margin-left:auto;margin-right:100px;padding:15px 55px 10px 15px;background-color:rgba(243, 243, 243, 0.57);">	
-		<table style="border-collapse:none;table-layout:fixed;background-color:#ffffff;padding-right:30px;"  align="center"><tr>
-		<td id='col_1' width=20% bgcolor='f1e6d4'>
-		<div style="margin-left:10px;margin-right:10px;padding:5px 5px 5px 5px"><!-- bgcolor='F1E6D4' -->  <!--'F1E6D4'-->
-		<h3>access</h3>
-		<ul><li>
-			<a href="http://localhost" target="_blank">local</a>
-			<a href="../tieba/" target="_blank">贴吧</a>
-			<a href="http://219.223.254.55/portal/index_default.jsp" target="_blank">网关</a>
-			<a href="http://219.223.254.55/portal/wlan_login.jsp" target="_blank">wifi</a>
-			<a href="http://localhost/phpmyadmin" target="_blank">phpadmin</a>
-			</li><li>
-			1.music
-			<table frame="hsides" width=100% style="table-layout:fixed;" >
-			<td><a  target="_blank" href="http://mp3.sogou.com/music.so?query=%BC%D9%C8%E7%B0%AE%D3%D0%CC%EC%D2%E2+%BF%A8%C2%E5%B6%F9&class=1&pf=&w=02009900&st=&ac=1&sourcetype=sugg&_asf=mp3.sogou.com&_ast=1358149570"> sogou</a></td>
-			<td><a  target="_blank" href="http://www.xiami.com">xiami</a></td>
-			<td><a  target="_blank" href="http://y.qq.com/webplayer/p.html">qq</a></td>
-			<td><a  target="_blank" href="http://kzone.kuwo.cn/mlog/Collect?uid=66169041&type=pl">kuwo</a></td>
-			<td><a  target="_blank" href="http://tieba.baidu.com/p/1203286964?pn=3">tieba</a></td>
-			</table></li><li>
-			2.pic
-			<table frame="hsides" width=100% style="table-layout:fixed;" >
-			<td><a  target="_blank" href="http://huaban.com">huaban</a></td>
-			<td><a  target="_blank" href="http://xiangce.baidu.com/u/419566195">百度相册</a></td>
-			<td><a  target="_blank" href="http://hi.baidu.com/brandohero/albumcreate/multipicture/album/">album</a></td>
-			</table></li><li>
-			3.space
-			<table frame="hsides" width=100% style="table-layout:fixed;" >
-			<td><a  target="_blank" href="http://qzone.qq.com">qzone</a></td>
-			<td><a  target="_blank" href="http://hi.baidu.com/new/loveu"><font p strong size=4 color="#633333">baidu</font></a></td>
-			</table></li><li>
-			4.search
-			<table frame="hsides" width=100% style="table-layout:fixed;" >
-			<td><a  target="_blank" href="http://google.com">google</a></td>
-			<td><a  target="_blank" href="http://freecode.com/search">freecode</a></td>
-			</table>
-			<script type="text/javascript" charset="utf-8" src="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/page_context.js"></script><script type="text/javascript" language="JavaScript" src="js/search.js"></script>
-			<div name="searchercontainer" onload="_load();document.search_web.search.focus();" scroll="yes" screen_capture_injected="true">
-			<!-- nav -->
-			<div id="nav">
-      <script>
-        function showLabel(s){
-          if(!window.curNav)
-            window.curNav=search_web;
-          window.curNav.style.display="none";
-          switch(s){
-          case "nav_music":window.curNav=search_music;break;
-          case "nav_photo":window.curNav=search_photo;break;
-          case "nav_web":window.curNav=search_web;break;
-          case "nav_video":window.curNav=search_video;break;
-          }
-          window.curNav.style.display="block";
-        }
-      </script>
+	<table style="border-collapse:none;table-layout:fixed;background-color:#ffffff;padding-right:30px;"  align="center"><tr>
+	<td id='col_1' width=20% bgcolor='f1e6d4'>
+	<div style="margin-left:10px;margin-right:10px;padding:5px 5px 5px 5px"><!-- bgcolor='F1E6D4' -->  <!--'F1E6D4'-->
+	<h3>access</h3>
+	<ul><li>
+	<a href="http://localhost" target="_blank">local</a>
+	<a href="../tieba/" target="_blank">贴吧</a>
+	<a href="http://219.223.254.55/portal/index_default.jsp" target="_blank">网关</a>
+	<a href="http://219.223.254.55/portal/wlan_login.jsp" target="_blank">wifi</a>
+	<a href="http://localhost/phpmyadmin" target="_blank">phpadmin</a>
+	</li><li>
+	1.music
+	<table frame="hsides" width=100% style="table-layout:fixed;" >
+	<td><a  target="_blank" href="http://mp3.sogou.com/music.so?query=%BC%D9%C8%E7%B0%AE%D3%D0%CC%EC%D2%E2+%BF%A8%C2%E5%B6%F9&class=1&pf=&w=02009900&st=&ac=1&sourcetype=sugg&_asf=mp3.sogou.com&_ast=1358149570"> sogou</a></td>
+	<td><a  target="_blank" href="http://www.xiami.com">xiami</a></td>
+	<td><a  target="_blank" href="http://y.qq.com/webplayer/p.html">qq</a></td>
+	<td><a  target="_blank" href="http://kzone.kuwo.cn/mlog/Collect?uid=66169041&type=pl">kuwo</a></td>
+	<td><a  target="_blank" href="http://tieba.baidu.com/p/1203286964?pn=3">tieba</a></td>
+	</table></li><li>
+	2.pic
+	<table frame="hsides" width=100% style="table-layout:fixed;" >
+	<td><a  target="_blank" href="http://huaban.com">huaban</a></td>
+	<td><a  target="_blank" href="http://xiangce.baidu.com/u/419566195">百度相册</a></td>
+	<td><a  target="_blank" href="http://hi.baidu.com/brandohero/albumcreate/multipicture/album/">album</a></td>
+	</table></li><li>
+	3.space
+	<table frame="hsides" width=100% style="table-layout:fixed;" >
+	<td><a  target="_blank" href="http://qzone.qq.com">qzone</a></td>
+	<td><a  target="_blank" href="http://hi.baidu.com/new/loveu"><font p strong size=4 color="#633333">baidu</font></a></td>
+	</table></li><li>
+	4.search
+	<table frame="hsides" width=100% style="table-layout:fixed;" >
+	<td><a  target="_blank" href="http://google.com">google</a></td>
+	<td><a  target="_blank" href="http://freecode.com/search">freecode</a></td>
+	</table>
+	<script type="text/javascript" charset="utf-8" src="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/page_context.js"></script><script type="text/javascript" language="JavaScript" src="js/search.js"></script>
+<div name="searchercontainer" onload="_load();document.search_web.search.focus();" scroll="yes" screen_capture_injected="true">
+<!-- nav -->
+<div id="nav">
+<script>
+function showLabel(s){
+	if(!window.curNav)
+		window.curNav=search_web;
+	window.curNav.style.display="none";
+	switch(s){
+	case "nav_music":window.curNav=search_music;break;
+	case "nav_photo":window.curNav=search_photo;break;
+	case "nav_web":window.curNav=search_web;break;
+	case "nav_video":window.curNav=search_video;break;
+	}
+	window.curNav.style.display="block";
+}
+</script>
 			<a href="#" class="one here" onclick="showLabel(this.id);return false;" id="nav_web"><span>网页</span></a>
 			<a href="#" class="two" onclick="showLabel(this.id);return false;" id="nav_photo"><span>图片</span></a>
 			<a href="#" class="three" onclick="showLabel(this.id);return false;" id="nav_music"><span>音乐</span></a>
@@ -204,27 +215,27 @@ height: 145px;}
 			<td><a  target="_blank" href="http://wenku.baidu.com/">百度文库</a></td>
 			<td><a  target="_blank" href="http://i.yunduan.cn/">cloud</a></td>
 			</table></li><li>
-      <font size=2>8.输入你想要察看的标签</font>
-      <form action="">
-      <input size='14px' type="text" id="tagname" value=""/>
-      <button type="submit" onclick="window.open('http://tieba.baidu.com/f/search/res?ie=utf-8&kw=%E8%9C%80%E5%B1%B1%E5%89%91%E5%AE%A2&rn=10&un=&sm=1&qw='+tagname.value+'','newwindow');return false;">贴吧</button>
-      <button type="submit" onclick="window.open('http://www.dewen.org/search/?q='+tagname.value,'newwindow');return false;">德问</button>
-      <button type="submit" onclick="window.open('http://hi.baidu.com/loveu/archive/tag/'+tagname.value,'newwindow');return false;">hi</button>
-      <button type="submit" onclick="window.open('http://hi.baidu.com/tag/'+tagname.value+'/feeds','newwindow');return false;">搜</button>
-      <button type="submit" onclick="window.open('http://www.ittang.com/plus/search.php?kwtype=0&keyword='+tagname.value+'','newwindow');return false;">IT</button>
-      <button type="submit" onclick="window.open('https://github.com/search?type=&ref=simplesearch&q='+tagname.value+'','newwindow');return false;">git</button>
-      <button type="submit" onclick="window.open('/libqt4/'+tagname.value+'-members.html','newwindow');return false;">qt</button>
-      <button type="submit" onclick="window.open('http://www.oschina.net/search?scope=code&q='+tagname.value+'','newwindow');return false;">oschina</button>
-      </form>
+			<font size=2>8.输入你想要察看的标签</font>
+			<form action="">
+			<input size='14px' type="text" id="tagname" value=""/>
+			<button type="submit" onclick="window.open('http://tieba.baidu.com/f/search/res?ie=utf-8&kw=%E8%9C%80%E5%B1%B1%E5%89%91%E5%AE%A2&rn=10&un=&sm=1&qw='+tagname.value+'','newwindow');return false;">贴吧</button>
+			<button type="submit" onclick="window.open('http://www.dewen.org/search/?q='+tagname.value,'newwindow');return false;">德问</button>
+			<button type="submit" onclick="window.open('http://hi.baidu.com/loveu/archive/tag/'+tagname.value,'newwindow');return false;">hi</button>
+			<button type="submit" onclick="window.open('http://hi.baidu.com/tag/'+tagname.value+'/feeds','newwindow');return false;">搜</button>
+			<button type="submit" onclick="window.open('http://www.ittang.com/plus/search.php?kwtype=0&keyword='+tagname.value+'','newwindow');return false;">IT</button>
+			<button type="submit" onclick="window.open('https://github.com/search?type=&ref=simplesearch&q='+tagname.value+'','newwindow');return false;">git</button>
+			<button type="submit" onclick="window.open('/libqt4/'+tagname.value+'-members.html','newwindow');return false;">qt</button>
+			<button type="submit" onclick="window.open('http://www.oschina.net/search?scope=code&q='+tagname.value+'','newwindow');return false;">oschina</button>
+			</form>
 			</li><li>
 			<font size=2>9.留言板</font>
 			<table id="replies" border=1>
-			<?php //这个是服务器主动运行的,属于php直接调用
-			require_once("pull.php");?><?php
-			$pg=isset($_REQUEST['reply_pg'])?$_REQUEST['reply_pg']:-1; $pgsize=5;?> 
+<?php //这个是服务器主动运行的,属于php直接调用
+require_once("pull.php");?><?php
+$pg=isset($_REQUEST['reply_pg'])?$_REQUEST['reply_pg']:-1; $pgsize=5;?> 
 					</table>
-			<?php
-			$begin=$pg-5>0?$pg-5:0; $end=$pg+5; for($k=$begin;$k<$end;$k++){ ?>
+<?php
+$begin=$pg-5>0?$pg-5:0; $end=$pg+5; for($k=$begin;$k<$end;$k++){ ?>
 				<a href="javascript:void(0);" onclick="pull_reply(<?php echo $k ?>);" ><?php echo $k?></a>
 					<?php } ?>
 	</ul>
@@ -256,11 +267,11 @@ height: 145px;}
 					<div name="other_links_div" id="other_links_div" width="600px"> </div>
 					<table name="other_links" id="other_links" width="600px" align='center'> </table>
 					</font>
-					<script type="text/javascript">
-						pull_tags_div();
-						//	pull_urls();
-						pull_urls_div();
-					</script>
+	<script type="text/javascript">
+	pull_tags_div();
+//	pull_urls();
+pull_urls_div();
+</script>
 				</li><li>
 				oier博客
 				<table  frame="hsides" width="100%" style="table-layout:fixed;" ><tr>
@@ -450,10 +461,27 @@ height: 145px;}
 </tr>
 </table>
 <!-- the end of file -->
-
 </div>
 </div>
 <br/>
+
+<div class="popup" style="display:none; position:absolute; top: 100px; left: 150px; z-index:100; border: 2px solid rgba(0, 0, 0, 0); box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);">
+<div class="content" style="display: table; width: 200px; padding: 10px; background: #fff; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;">
+<a href="#" class="close" onclick="popup.css('display','none');return false;" ><img src="http://stat.codeforces.ru/images/facebox/closelabel.png" title="close" class="close_image"></a>
+<div class="edit-url-div" style="width: 200px; height: 200px; overflow: auto; padding: 1em; margin: 1em; font-size: 12px; display: block; ">
+<form id="edit_url_form" class="edit-url-form"> 
+<input name="link_id" style="display:none"/>
+linkname<br><input name="link_name" value='linkname'/><br> 
+linkvalue<br><input name="link_value" value='linkvalue'/><br>
+tags<br><input type='text' name="link_tags" value='tags'/><br>
+<a href='' onclick='return false;'>delete</a>
+<button value='set' onclick='console.log("after click():");a=edit_url_form;console.log(a);console.log(a.link_name);set_url(a.link_id.value,a.link_name.value,a.link_value.value,a.link_tags.value);return false;'>set</button>
+<label name="set-result" value="">
+</form>
+</div>
+</div>
+</div>
+
 <div  style="Z-INDEX:-1;POSITION:absolute;WIDTH:0px;TOP:10px;LEFT:0px">
 </div>
 <div id="musicbox" style="margin-left:500px;margin-right:0px;display:none;">

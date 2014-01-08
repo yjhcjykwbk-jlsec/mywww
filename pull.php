@@ -68,7 +68,7 @@ function main(){
 	else if($action=='editUrl'){
 		$id=isset($_REQUEST['link_id'])?$_REQUEST['link_id']:"";
 		$res=pullUrl($id);
-		return $res;
+		echo json_encode($res);
 	}
 	// else if($action=='reply_pg'){
 		// $res=pull_pull1($_REQUEST['reply_pg'],$_REQUEST['pgsize']);

@@ -2,7 +2,6 @@
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="index.js"></script>
 <?php
-$linkname=$_REQUEST['link_name'];
 $linkid=$_REQUEST['link_id'];
 include "pull.php";
 echo "<pre>";
