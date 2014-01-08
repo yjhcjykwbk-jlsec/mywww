@@ -60,6 +60,9 @@ function pull_tags_div(){
 		url:"pull.php", 
 		data:"action=pullTag", type:'post', dataType:'json', 
 		success:function(result){
+			console.log("pull_tags_div():");
+			console.log(result);
+			window.result=result;
 			for(var i=0; i<result.length; i++){
 					tags_div.innerHTML+=
 		"<a href='' target='__blank' onclick='pull_urls_div("+"\""+result[i]+"\""+");return false;'"+
