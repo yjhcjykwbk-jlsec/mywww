@@ -445,14 +445,16 @@ pull_urls_div("");
 					</div></li>
 					<li>
 						<h6> 备用链接 </h6>
-						<form id="push_url_form" name="push_url_form" method="post" action="push.php">
-							<label><font size="2" p strong>链接名称</font></label><input size='10px' name="link_name" value="link name"  onclick="this.value=''"/><br/>
-							<label><font size="2" p strong>链接内容</font></label><input size='10px' name="link_value" value=""  onclick="this.value=''"/><br/>
+						 <!--form id="push_url_form" name="push_url_form" method="post" action="push.php"></form -->
+						<form name="push_url_form" id="push_url_form">
+						<label><font size="2" p strong>链接名称</font></label><input size='10px' name="link_name" value="link name"  onclick="this.value=''"/><br/>
+						<label><font size="2" p strong>链接内容</font></label><input size='10px' name="link_value" value="xx"  onclick="this.value=''"/><br/>
+						<label><font size="2" p strong>链接标签</font></label><input size='10px' name="link_tags" value="yy"  onclick="this.value=''"/><br/>
 						</form>
-						<button onclick="push_urls(push_url_form.link_name.value,push_url_form.link_value.value);">添加</button>
-						<button type="ff" id="dd" name="dd" onclick="del_urls();return;">清空</button>
-						<script>s=true;function display_urls(){ if(s) {s=false;pull_urls("");} else pull_urls_div("");}</script>
-						<button type="ff" id="dd" name="dd" onclick="display_urls();return;">显示</button>
+						<button onclick="push_url(push_url_form.link_name.value,push_url_form.link_value.value,push_url_form.link_tags.value);">添加</button>
+						<button type="ff" id="dd" name="dd" onclick="del_urls();return false;">清空</button>
+						<script>s=true;</script>
+						<button type="ff" id="dd" name="dd" onclick="display_urls();return false;">显示</button>
 				</li>
 		</ul>
 		</div>
@@ -474,10 +476,11 @@ pull_urls_div("");
 linkname<br><input name="link_name" value='linkname'/><br> 
 linkvalue<br><input name="link_value" value='linkvalue'/><br>
 tags<br><input type='text' name="link_tags" value='tags'/><br>
-<a href='' onclick='return false;'>delete</a>
+<a href='' onclick='id=edit_url_form.link_id.value;del_url(id);return false;'>delete</a>
 <button value='set' 
 	onclick='console.log("after click():");
-	a=edit_url_form;console.log(a);console.log(a.link_name);
+	a=edit_url_form;
+	console.log(a);console.log(a.link_name);
 	set_url(a.link_id.value,a.link_name.value,a.link_value.value,a.link_tags.value);
 	close_popup();
 	return false;'>set</button>

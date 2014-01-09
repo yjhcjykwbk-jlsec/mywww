@@ -110,7 +110,8 @@ function main(){
 		echo delTag();
 		return;
 	}
-	else echo addUrl();
+	else if($action=="addUrl") 
+		echo addUrl();
 }
 main();
 ?>

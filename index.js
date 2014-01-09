@@ -1,11 +1,11 @@
 function pull_urls(tag){
+	other_links_div.innerHTML="";
 	other_links.innerHTML="";
 	para=tag==""?"":"&tag="+tag;
 	$.ajax({
 		url:"pull.php", 
 		data:"action=pullUrl"+para, type:'post', dataType:'json', 
 		success:function(result){
-			other_links.innerHTML="";
 			for(var i=0; i<result.length; i++)
 	{
 		newrow=other_links.insertRow(other_links.rows.length);
@@ -24,13 +24,13 @@ function pull_urls(tag){
 }
 function pull_urls_div(tag){
 	other_links_div.innerHTML="";
+	other_links.innerHTML="";
 	if(tag!="") para="&tag="+tag;
 	else para="";
 	$.ajax({
 		url:"pull.php", 
 		data:"action=pullUrl"+para, type:'post', dataType:'json', 
 		success:function(result){
-			other_links_div.innerHTML="";
 			for(var i=0; i<result.length; i++){
 				other_links_div.innerHTML+="<a target=_blank href="+result[i][2]+
 		" style=\"font-size:"+Math.ceil(Math.random()*6+8)+"pt;\">"+result[i][1]+"</a>"+
@@ -54,6 +54,16 @@ function pull_urls_div(tag){
 	}
 	);
 }
+flag=true;
+function display_urls(){
+	if(flag) {
+		flag=false;pull_urls("");
+	} 
+	else {
+		flag=true;pull_urls_div("");
+	}
+}
+
 function pull_tags_div(){
 	tags_div.innerHTML="";
 	$.ajax({
@@ -87,6 +97,7 @@ function del_url(id){
 				console.log(result);
 				alert(result);
 				pull_urls("")
+				close_popup();
 			}
 		}
 		);
@@ -116,10 +127,10 @@ function set_url(linkid,linkname,linkvalue,linktags){
 	}
 	);
 }
-function push_urls(linkname,linkvalue,linktags){
+function push_url(linkname,linkvalue,linktags){
 	$.ajax({
 		url:"push.php", 
-		data:"action=pushUrl&link_name="+linkname+"&link_value="+linkvalue+"&link_tags="+linktags, 
+		data:"action=addUrl&link_name="+linkname+"&link_value="+linkvalue+"&link_tags="+linktags, 
 		success:function(result){
 			alert(result);
 		}
