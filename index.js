@@ -1,4 +1,4 @@
-function pull_urls(tag){
+function pull_urls_table(tag){
 	other_links_div.innerHTML="";
 	other_links.innerHTML="";
 	para=tag==""?"":"&tag="+tag;
@@ -57,7 +57,7 @@ function pull_urls_div(tag){
 flag=true;
 function display_urls(){
 	if(flag) {
-		flag=false;pull_urls("");
+		flag=false;pull_urls_table("");
 	} 
 	else {
 		flag=true;pull_urls_div("");
@@ -96,7 +96,7 @@ function del_url(id){
 			success:function(result){
 				console.log(result);
 				alert(result);
-				pull_urls("")
+				pull_urls_div("")
 				close_popup();
 			}
 		}
