@@ -103,7 +103,7 @@ function del_url(id){
 		);
 }
 function del_tag(tag){
-	if(confirm("will delete tag:"+tag)) 
+	if(confirm("!!!!!!!!!!will delete tag:"+tag)) 
 		$.ajax({
 			url:"push.php",
 			data:"action=delTag&tag="+tag, 
