@@ -151,3 +151,4 @@ UNLOCK TABLES;
 -- Dump completed on 2014-01-11 12:47:35
 update my_db.urls set tags='' where linkid='147';
 ;
+update my_db.urls set linkname='scikt-learning',linkvalue='http://scikit-learn.org/stable/',tags='Machine-Learning' where linkid='219';

@@ -14,7 +14,7 @@ function pull_urls_table(tag){
 		newcol=newrow.insertCell(1);
 		newcol.innerHTML=result[i][1];
 		newcol=newrow.insertCell(2);
-		newcol.innerHTML="<a target=_blank href="+result[i][2]+">"+result[i][2].substring(0,20)+"</a>";
+		newcol.innerHTML="<a target=_blank"+result[i][0]+" href="+result[i][2]+">"+result[i][2].substring(0,20)+"</a>";
 		newcol=newrow.insertCell(3);
 		newcol.innerHTML="<button onclick=del_url("+result[i][0]+")>del</button>";
 	}
@@ -32,7 +32,7 @@ function pull_urls_div(tag){
 		data:"action=pullUrl"+para, type:'post', dataType:'json', 
 		success:function(result){
 			for(var i=0; i<result.length; i++){
-				other_links_div.innerHTML+="<a target=_blank href="+result[i][2]+
+				other_links_div.innerHTML+="<a target=_blank"+result[i][0]+" href="+result[i][2]+
 		" style=\"font-size:"+Math.ceil(Math.random()*6+8)+"pt;\">"+result[i][1]+"</a>"+
 		"<a class='edit-url' id='"+result[i][0]+"' href=''"+
 		// onclick='"+ //function(ev){"+
