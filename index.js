@@ -133,7 +133,8 @@ function push_url(linkname,linkvalue,linktags){
 		data:"action=addUrl&link_name="+linkname+"&link_value="+linkvalue+"&link_tags="+linktags, 
 		success:function(result){
 			alert(result);
-			pull_url("");
+			pull_tags_div("");
+			pull_urls_div();
 		}
 	}
 	);
