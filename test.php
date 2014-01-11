@@ -22,4 +22,11 @@ var_dump(array_merge($a, $b));
 // $c = $a + $b; 
 // var_dump($c); 
 // var_dump(array_merge($a, $b)); 
+$end=";\n";
+$file=fopen("log.sql","a");
+fwrite($file,"helloworld".$end);
+fwrite($file,"helloworld".$end);
+fwrite($file,"helloworld".$end);
+fwrite($file,"helloworld".$end);
+fclose($file);
 ?>

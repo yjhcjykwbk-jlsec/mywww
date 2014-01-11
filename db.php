@@ -29,11 +29,12 @@ class mydb{
         $this->connect();
     }function __destruct(){
         mysql_close($this->Link_ID);
-    }function query($query){
+    }function query($query,$log=false){
         if(!$this->Query_ID)
             $this->free();
         if(!$this->Link_ID) 
             $this->connect();
+				if($log)$this->log($query);
         $this->Query_ID=mysql_query($query,$this->Link_ID);
         if(!$this->Query_ID)
             $this->halt("sql query failed");
@@ -64,6 +65,11 @@ class mydb{
             @mysql_free_result($this->Query_ID);
             $this->Query_ID=0;
         }
-    }
+		}function log($sql){
+			$end=";\n";
+			$file=fopen("log.sql","a");
+			fwrite($file,$sql.$end);
+			fclose($file);
+		}	
 }
 ?>

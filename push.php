@@ -7,14 +7,14 @@ function _addUrl($linkname,$linkvalue,$linktags){
 	$db=new mydb;
 	$db->connect();
 	return $db->query("insert into my_db.urls
-		(linkname,linkvalue,tags) values('$linkname','$linkvalue','$linktags');");
+		(linkname,linkvalue,tags) values('$linkname','$linkvalue','$linktags');",true);
 }
 function _setUrl($linkid,$linkname,$linkvalue,$linktags){
 	$db=new mydb;
 	$db->connect();
 	$sql="update my_db.urls set ".
 		"linkname='$linkname',linkvalue='$linkvalue',tags='$linktags' where linkid='$linkid'";
-	return $sql.":".$db->query($sql);
+	return $sql.":".$db->query($sql,true);
 }
 function clearUrl(){
 	$db=new mydb;
@@ -26,8 +26,8 @@ function delUrl(){
 	$db->connect();
 	if(isset($_REQUEST['link_id'])){
 		$linkid=$_REQUEST['link_id'];
-		if(($db->query("insert into my_db.del_urls select * from my_db.urls where linkid=".$linkid.";"))==1){
-			if(($res=$db->query("delete from my_db.urls where linkid=".$linkid.";"))==1)
+		if(($db->query("insert into my_db.del_urls select * from my_db.urls where linkid=".$linkid.";",true))==1){
+			if(($res=$db->query("delete from my_db.urls where linkid=".$linkid.";",true))==1)
 				echo("delete url ".$linkid." successfully");
 			else {
 				echo("delete from urls failed");
@@ -81,7 +81,7 @@ function delTag(){
 			array_splice($tagsArr,$t,1);//remove the t element
 			$row[3]=$tags=implode(',',$tagsArr);
 			$sql="update my_db.urls set tags='$tags' where linkid='$row[0]';\n";
-			$db->query($sql);
+			$db->query($sql,true);
 		}
 	}
 	//after change
