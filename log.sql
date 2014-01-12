@@ -152,3 +152,7 @@ UNLOCK TABLES;
 update my_db.urls set tags='' where linkid='147';
 ;
 update my_db.urls set linkname='scikt-learning',linkvalue='http://scikit-learn.org/stable/',tags='Machine-Learning' where linkid='219';
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('machinelearnprojects','http://machinelearningmastery.com/self-study-machine-learning-projects/','Machine-Learning');;
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('python-packages','https://pypi.python.org/simple/','python');;

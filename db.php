@@ -66,7 +66,7 @@ class mydb{
             $this->Query_ID=0;
         }
 		}function log($sql){
-			$end=";\n";
+			$end="\n";
 			$file=fopen("log.sql","a");
 			fwrite($file,$sql.$end);
 			fclose($file);
