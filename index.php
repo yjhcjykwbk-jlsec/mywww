@@ -449,7 +449,38 @@ pull_urls_div("");
 						<form name="push_url_form" id="push_url_form">
 						<label><font size="2" p strong>链接名称</font></label><input size='10px' name="link_name" value="link name"  onclick="this.value=''"/><br/>
 						<label><font size="2" p strong>链接内容</font></label><input size='10px' name="link_value" value="xx"  onclick="this.value=''"/><br/>
-						<label><font size="2" p strong>链接标签</font></label><input size='10px' name="link_tags" value="yy"  onclick="this.value=''"/><br/>
+						<label><font size="2" p strong>链接标签</font></label>
+						<textarea size='100px' name="link_tags" value="yy"  onclick="this.value=''"></textarea><br/>
+						<script>
+							$(function(){
+							console.log("pull_tags()");
+							var f=function(options){
+								console.log(options);
+								if(options!=null){
+									for(key in options){
+										if(options[key]=="") continue;
+										var item=new Option(options[key],options[key]);
+										select_tag.options.add(item);
+									}
+								}
+								select_tag.onclick=function(){
+									var text=
+									select_tag.options[select_tag.selectedIndex].text;
+									console.log(text);
+									push_url_form.link_tags.value+=","+text;
+									select_tag.options.remove(select_tag.selectedIndex);
+								}
+								push_url_form.link_tags.onchange=function(){
+									var selectedTags=split(',',push_url_form.link_tags.value);
+									console.log(selectedTags);
+								}
+							};
+							pull_tags(f);
+							});
+						</script>
+						 <select id='select_tag' multiple="multiple" size="6" style="width:186px;" id="leftSel">  
+								<!-- <option value="1">0</option>   -->
+							</select>  
 						</form>
 						<button onclick="push_url(push_url_form.link_name.value,push_url_form.link_value.value,push_url_form.link_tags.value);">添加</button>
 						<button type="ff" id="dd" name="dd" onclick="del_urls();return false;">清空</button>

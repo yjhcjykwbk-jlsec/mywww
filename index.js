@@ -63,7 +63,17 @@ function display_urls(){
 		flag=true;pull_urls_div("");
 	}
 }
-
+function pull_tags(callback){
+	$.ajax({
+		url:"pull.php", 
+		data:"action=pullTag", type:'post', dataType:'json', 
+		success:function(tags){
+			window.tags=tags;
+			callback(tags);
+		}
+	});
+	return null;
+}
 function pull_tags_div(){
 	tags_div.innerHTML="";
 	$.ajax({
