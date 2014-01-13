@@ -450,18 +450,31 @@ pull_urls_div("");
 						<label><font size="2" p strong>链接名称</font></label><input size='10px' name="link_name" value="link name"  onclick="this.value=''"/><br/>
 						<label><font size="2" p strong>链接内容</font></label><input size='10px' name="link_value" value="xx"  onclick="this.value=''"/><br/>
 						<label><font size="2" p strong>链接标签</font></label>
-						<textarea size='100px' name="link_tags" value="yy"  onclick="this.value=''"></textarea><br/>
+						<textarea size='100px' name="link_tags" value="yy" ></textarea><br/>
 						<script>
 							$(function(){
 							console.log("pull_tags()");
 							var f=function(options){
-								console.log(options);
-								if(options!=null){
-									for(key in options){
-										if(options[key]=="") continue;
-										var item=new Option(options[key],options[key]);
-										select_tag.options.add(item);
+								var refreshTags=function(){
+									console.log("refreshTags():");
+									console.log(options);
+									select_tag.options.length=0
+									if(options!=null){
+										var temp=[];
+										for(key in options){
+											if(options[key]=="") continue;
+											temp.push(options[key]);
+										}
+										temp.sort();
+										for(key in temp){
+											var item=new Option(temp[key],temp[key]);
+											select_tag.options.add(item);
+										}
 									}
+								};
+								push_url_form.link_tags.onclick=function(){
+									this.value='';
+									refreshTags();
 								}
 								select_tag.onclick=function(){
 									var text=
@@ -470,10 +483,13 @@ pull_urls_div("");
 									push_url_form.link_tags.value+=","+text;
 									select_tag.options.remove(select_tag.selectedIndex);
 								}
-								push_url_form.link_tags.onchange=function(){
-									var selectedTags=split(',',push_url_form.link_tags.value);
-									console.log(selectedTags);
-								}
+								// push_url_form.link_tags.onchange=function(){
+									// var str=push_url_form.link_tags.value;
+									// console.log(str);
+									// if(str==null||str=="") return;
+									// var selectedTags=str.split(',');
+									// console.log(selectedTags);
+								// }
 							};
 							pull_tags(f);
 							});
