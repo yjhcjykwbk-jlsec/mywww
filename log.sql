@@ -159,3 +159,8 @@ insert into my_db.urls
 		(linkname,linkvalue,tags) values('java-thread-model','http://tobeno1.iteye.com/blog/941275','java,os');
 insert into my_db.urls
 		(linkname,linkvalue,tags) values('machinel-ppts','http://ztl2004.github.io/MachineLearningWeekly/index.html',',Machine-Learning');
+update my_db.urls set linkname='ML-weekly',linkvalue='http://ztl2004.github.io/MachineLearningWeekly/index.html',tags=',Machine-Learning' where linkid='223'
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('css-font-style','http://www.html5china.com/CSS3/20101226_743.html',',web');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('css-background','http://hi.baidu.com/zyyhyzazwm/item/72dc6c9a40513acf1a49df56',',web');

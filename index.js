@@ -1,3 +1,34 @@
+/*this is hash*/
+function hashCode(strKey)  
+{  
+	var hash = 0;  
+	if(strKey!=null)  
+	{  
+		for (var i = 0; i < strKey.length; i++)  
+		{  
+			hash = hash * 7 + strKey.charCodeAt(i);  
+			hash%=100;
+		}  
+	}  
+	return hash;  
+}  
+
+var colorList = ["#93dd80","#74bBdF","#eea9ee","#eeac8e","#a6a2cc","#ab7777","#79a006","#aba006","#ee9c4b"]; 
+function getColorByRandom(){ 
+	var colorIndex = Math.floor(Math.random()*colorList.length); 
+	var color = colorList[colorIndex]; 
+	// colorList.splice(colorIndex,1); 
+	return color; 
+} 
+function getColor(tag){
+	var colorIndex=hashCode(tag);
+	console.log(tag);
+	colorIndex%=colorList.length;
+	console.log(colorIndex);
+	var color = colorList[colorIndex]; 
+	return color; 
+} 
+
 function pull_urls_table(tag){
 	other_links_div.innerHTML="";
 	other_links.innerHTML="";
@@ -33,7 +64,7 @@ function pull_urls_div(tag){
 		success:function(result){
 			for(var i=0; i<result.length; i++){
 				other_links_div.innerHTML+="<a target=_blank"+result[i][0]+" href="+result[i][2]+
-		" style=\"font-size:"+Math.ceil(Math.random()*6+8)+"pt;\">"+result[i][1]+"</a>"+
+		" style=\"font-size:"+Math.ceil(Math.random()*5+11)+"pt;font:bold;color:"+getColorByRandom()+";\">"+result[i][1]+"</a>"+
 		"<a class='edit-url' id='"+result[i][0]+"' href=''"+
 		// onclick='"+ //function(ev){"+
 		// // "console.log(ev);return false;}'"+
@@ -86,14 +117,14 @@ function pull_tags_div(){
 			tags_div.innerHTML+=
 		"<a href='' target='__blank' onclick='pull_urls_div("+"\""+"\""+");return false;'"+
 		" style=\"font-size:"+Math.ceil(Math.random()*6+8)+"pt;\">*.. </a>";
-			for(key in result){
-				resulti=result[key];
-				if(resulti=="") continue;
-					tags_div.innerHTML+=
+	for(key in result){
+		resulti=result[key];
+		if(resulti=="") continue;
+		tags_div.innerHTML+=
 		"<a href='' target='__blank' onclick='pull_urls_div("+"\""+resulti+"\""+");return false;'"+
-		" style=\"font-size:"+Math.ceil(Math.random()*6+8)+"pt;\">" +resulti+"</a>"+
-		"<a href='' class='del-tag' onclick='del_tag(\""+resulti+"\");return false;'>..</a>";
-				}
+		" style=\"font-size:"+Math.ceil(Math.random()*6+13)+"pt;color:"+getColor(resulti)+";\">" +resulti+"</a>"+
+		"<a href='' class='del-tag' onclick='del_tag(\""+resulti+"\");return false;'>.</a>..";
+	}
 		}
 	}
 	);
@@ -107,7 +138,7 @@ function del_url(id){
 				console.log(result);
 				alert(result);
 				pull_urls_div("")
-				close_popup();
+			close_popup();
 			}
 		}
 		);
@@ -128,24 +159,24 @@ function del_tag(tag){
 function set_url(linkid,linkname,linkvalue,linktags){
 	$.ajax({
 		url:"push.php", 
-		data:"action=setUrl&link_id="+linkid+"&link_name="+linkname+"&link_value="+linkvalue+"&link_tags="+linktags, 
-		success:function(result){
-			set_result=$('.edit-url-form label[name="set-result"]');
-			set_result.attr("value","设置成功");
-			pull_tags_div("");
-		}
+	data:"action=setUrl&link_id="+linkid+"&link_name="+linkname+"&link_value="+linkvalue+"&link_tags="+linktags, 
+	success:function(result){
+		set_result=$('.edit-url-form label[name="set-result"]');
+		set_result.attr("value","设置成功");
+		pull_tags_div("");
+	}
 	}
 	);
 }
 function push_url(linkname,linkvalue,linktags){
 	$.ajax({
 		url:"push.php", 
-		data:"action=addUrl&link_name="+linkname+"&link_value="+linkvalue+"&link_tags="+linktags, 
-		success:function(result){
-			alert(result);
-			pull_tags_div("");
-			pull_urls_div();
-		}
+	data:"action=addUrl&link_name="+linkname+"&link_value="+linkvalue+"&link_tags="+linktags, 
+	success:function(result){
+		alert(result);
+		pull_tags_div("");
+		pull_urls_div();
+	}
 	}
 	);
 }
@@ -178,7 +209,7 @@ function display_reply(res){
 function pull_reply(pg){
 	$.ajax({
 		url:"pull.php",dataType:"json",
-		data:"reply_pg="+pg+"&pgsize=5",success:function(res){
+	data:"reply_pg="+pg+"&pgsize=5",success:function(res){
 		display_reply(res);
 	}
 	}
@@ -198,25 +229,25 @@ function edit_url(x,y,id){
 		url:"pull.php",dataType:"json", 
 		data:"action=editUrl&link_id="+id, 
 		success:function(result){
-		if(result.length>0){
-			result=result[0];
-			linkname=result[1];
-			linkvalue=result[2];
-			linktags=result[3];
-			console.log(result);
-			//remember the variable name cannot has '-'!
-			link_id=$('.edit-url-form input[name="link_id"]');
-			link_id.attr("value",id);
-			link_name=$('.edit-url-form input[name="link_name"]');
-			link_name[0].value=linkname;
-			link_value=$('.edit-url-form input[name="link_value"]');
-			console.log(link_value[0].value);
-			link_value[0].value=linkvalue;
-			link_tags=$('.edit-url-form input[name="link_tags"]');
-			link_tags.attr("value",linktags);
-			// console.log(form.children());	
-			// console.log($(form)('#linkname'));	
-		}
+			if(result.length>0){
+				result=result[0];
+				linkname=result[1];
+				linkvalue=result[2];
+				linktags=result[3];
+				console.log(result);
+				//remember the variable name cannot has '-'!
+				link_id=$('.edit-url-form input[name="link_id"]');
+				link_id.attr("value",id);
+				link_name=$('.edit-url-form input[name="link_name"]');
+				link_name[0].value=linkname;
+				link_value=$('.edit-url-form input[name="link_value"]');
+				console.log(link_value[0].value);
+				link_value[0].value=linkvalue;
+				link_tags=$('.edit-url-form input[name="link_tags"]');
+				link_tags.attr("value",linktags);
+				// console.log(form.children());	
+				// console.log($(form)('#linkname'));	
+			}
 		}
 	});
 	// $edit_url_form.html(content);

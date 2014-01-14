@@ -100,7 +100,7 @@ body{
 	<div id='container' style="margin-top:50px;margin-right:140px">
 	<div id='flow_1' style="opacity:0.02;Z-INDEX:0;POSITION:absolute;top:53px;LEFT:-30px;display:none"> <img src="1.jpg" width="500px"></div>
 	<!--	<div id='header'> </div> -->
-	<div id='body' style="width:76%;margin-left:auto;margin-right:100px;padding:15px 55px 10px 15px;background-color:rgba(243, 243, 243, 0.57);">	
+	<div id='body' style="width:76%;margin-left:auto;margin-right:100px;padding:25px 30px 20px 30px;background-color:rgba(243, 243, 243, 0.57);">	
 	<table style="border-collapse:none;table-layout:fixed;background-color:#ffffff;padding-right:30px;"  align="center"><tr>
 	<td id='col_1' width=20% bgcolor='f1e6d4'>
 	<div style="margin-left:10px;margin-right:10px;padding:5px 5px 5px 5px"><!-- bgcolor='F1E6D4' -->  <!--'F1E6D4'-->
@@ -263,9 +263,16 @@ $begin=$pg-5>0?$pg-5:0; $end=$pg+5; for($k=$begin;$k<$end;$k++){ ?>
 				<li>
 					<font size=5 strong black><a href="pull.php?action=pullUrl" target="_blank">your links</a></font>
 					<font size=1 face="arial" color="green" align='center'>
-					<p><div name="tags_div" id="tags_div" style="width:500px;height:30px;"></div></p>
-					<div name="other_links_div" id="other_links_div" style="width:600px;height:350px;"> </div>
-					<table name="other_links" id="other_links" width="600px" align='center'> </table>
+					<p><div name="tags_div" id="tags_div" style="minWidth:600px;height:100px;
+						text-shadow: 1px 1px 6px #ddd;
+						text-align: center;
+						"></div></p>
+					<div name="other_links_div" id="other_links_div" 
+						style="minWidth:600px;height:450px;
+						text-shadow: 1px 1px 3px #ddd;
+						text-align: center;
+						border-radius: 8px; padding: 10px;"> </div>
+					<table name="other_links" id="other_links" minWidth="600px" align='center'> </table>
 					</font>
 	<script type="text/javascript">
 	pull_tags_div();
