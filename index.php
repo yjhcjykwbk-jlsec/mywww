@@ -87,10 +87,10 @@ body{
 	font-size:12px;font-family:Arial,Console,Verdana,Courier New;
 }
 #header { width: 900px; height: 10px; Z-INDEX:1; POSITION:relative; margin: 0 auto; padding: 90px 0 0 0; text-align: left; }
-#footer { border-top: none !important;  
-"background: url(blog/bot_bg.jpg) no-repeat bottom center; "
-	height: 145px;} 
-	</style>
+#footer { border-top: none !important;  height: 145px;} 
+ul { padding-left:15px; }
+li { list-style:none;margin-left:0;}
+</style>
 	<!-- "	background-image:url('blog/body_bg.jpg');" "	color:#362e2b;"
 	"	background-attachment:scroll; background-position:center top; "
 	"	background: url(blog/head_bg.jpg) repeat-x center top;"
@@ -99,9 +99,12 @@ body{
 	<title>####</title>
 	<div id='container' style="margin-top:30px;margin-left:auto;margin-right:auto;">
 	<div id='flow_1' style="opacity:0.02;Z-INDEX:0;POSITION:absolute;top:53px;LEFT:-30px;display:none"> <img src="1.jpg" width="500px"></div>
-	<div id='body' style="width:95%;margin-left:auto;margin-right:auto;padding:20px 20px 20px 20px;border-radius:10px;background-color:rgba(243, 243, 243, 0.57);">	
-	<table style="border-collapse:none;table-layout:fixed;background-color:rgba(255,255,255,0.86);"  align="center"><tr>
-	<td id='col_1' width=20% bgcolor='f1e6d4'>
+	<div id='body' style="width:95%;margin-left:auto;margin-right:auto;padding:20px 20px 20px 20px;border-radius:10px;
+		background-color:rgba(243, 243, 243, 0.57);">	
+	<table style="border-collapse:none;table-layout:fixed;
+		background-color:rgba(15,43,55,0.6);"  align="center"><tr>
+	<td id='col_1' width=20% bgcolor='#42a272'>
+<!-- 'f1e6d4' -->
 	<div style="margin-left:10px;margin-right:10px;padding:5px 5px 5px 5px"><!-- bgcolor='F1E6D4' -->  <!--'F1E6D4'-->
 	<h3>access</h3>
 	<ul><li>
@@ -270,7 +273,7 @@ $begin=$pg-5>0?$pg-5:0; $end=$pg+5; for($k=$begin;$k<$end;$k++){ ?>
 						style="minWidth:600px;minHeight:450px;
 						text-shadow: 1px 1px 3px #ddd;
 						text-align: center;
-						border-radius: 8px; padding: 10px;"> </div>
+						border-radius: 8px; padding:10px 30px 20px 30px;"> </div>
 					<table name="other_links" id="other_links" minWidth="600px" align='center'> </table>
 					</font>
 	<script type="text/javascript">
