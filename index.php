@@ -97,10 +97,10 @@ body{
 	-->
 	<head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> </head>
 	<title>####</title>
-	<div id='container' style="margin-top:30px;margin-left:20px;margin-right:20px;">
+	<div id='container' style="margin-top:30px;margin-left:auto;margin-right:auto;">
 	<div id='flow_1' style="opacity:0.02;Z-INDEX:0;POSITION:absolute;top:53px;LEFT:-30px;display:none"> <img src="1.jpg" width="500px"></div>
-	<div id='body' style="width:90%;margin-left:auto;margin-right:auto;padding:25px 30px 20px 30px;background-color:rgba(243, 243, 243, 0.57);">	
-	<table style="border-collapse:none;table-layout:fixed;background-color:#ffffff;padding-right:30px;"  align="center"><tr>
+	<div id='body' style="width:95%;margin-left:auto;margin-right:auto;padding:20px 20px 20px 20px;border-radius:10px;background-color:rgba(243, 243, 243, 0.57);">	
+	<table style="border-collapse:none;table-layout:fixed;background-color:rgba(255,255,255,0.86);"  align="center"><tr>
 	<td id='col_1' width=20% bgcolor='f1e6d4'>
 	<div style="margin-left:10px;margin-right:10px;padding:5px 5px 5px 5px"><!-- bgcolor='F1E6D4' -->  <!--'F1E6D4'-->
 	<h3>access</h3>
