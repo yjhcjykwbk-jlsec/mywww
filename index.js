@@ -169,6 +169,9 @@ function set_url(linkid,linkname,linkvalue,linktags){
 	);
 }
 function push_url(linkname,linkvalue,linktags){
+	// linkvalue=encodeURIComponent(linkvalue);
+	linkvalue=escape(linkvalue);
+	console.log("push_url():link_value:"+linkvalue);
 	$.ajax({
 		url:"push.php", 
 	data:"action=addUrl&link_name="+linkname+"&link_value="+linkvalue+"&link_tags="+linktags, 

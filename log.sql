@@ -164,3 +164,49 @@ insert into my_db.urls
 		(linkname,linkvalue,tags) values('css-font-style','http://www.html5china.com/CSS3/20101226_743.html',',web');
 insert into my_db.urls
 		(linkname,linkvalue,tags) values('css-background','http://hi.baidu.com/zyyhyzazwm/item/72dc6c9a40513acf1a49df56',',web');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('search-engine-watch:ocr','http://searchenginewatch.com/topic/ocr','web,ocr');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('google-ocr','http://www.labnol.org/software/google-ocr-software-review/7208/','web,ocr,google');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('ocr-search','http://www.google.com.hk/','');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('ocr-search','http://www.google.com.hk/','');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('ocr-search','http://www.google.com.hk/','');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('ocr-search','http://www.google.com.hk/','');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('ocr-search','http://www.google.com.hk/','');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('ocr-search',''http://www.google.com.hk/','');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('ocr-search',''http://www.google.com.hk/','');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('ocr-search',''encodeURIComponent'',',ocr,google');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('link name',''&&&###//'','');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('link name',''&&&###//''''''','');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('link name',''&&&###//''''''','');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('link name',''&&&###//''''''','');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('link name',''aaa'','');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('link name','xx','');
+insert into my_db.del_urls select * from my_db.urls where linkid=233;
+delete from my_db.urls where linkid=233;
+insert into my_db.del_urls select * from my_db.urls where linkid=232;
+delete from my_db.urls where linkid=232;
+insert into my_db.del_urls select * from my_db.urls where linkid=231;
+delete from my_db.urls where linkid=231;
+insert into my_db.del_urls select * from my_db.urls where linkid=230;
+delete from my_db.urls where linkid=230;
+insert into my_db.del_urls select * from my_db.urls where linkid=229;
+delete from my_db.urls where linkid=229;
+insert into my_db.del_urls select * from my_db.urls where linkid=228;
+delete from my_db.urls where linkid=228;
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('link name','##&&','');

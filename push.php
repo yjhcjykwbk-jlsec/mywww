@@ -50,6 +50,7 @@ function addUrl(){
 	}
 	return "link_name or link_value not set";
 }
+//set url 
 function setUrl(){
 	echo "seturl";
 	if(isset($_REQUEST['link_id'])){
