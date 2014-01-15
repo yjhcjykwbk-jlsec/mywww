@@ -210,3 +210,5 @@ insert into my_db.del_urls select * from my_db.urls where linkid=228;
 delete from my_db.urls where linkid=228;
 insert into my_db.urls
 		(linkname,linkvalue,tags) values('link name','##&&','');
+insert into my_db.del_urls select * from my_db.urls where linkid=234;
+delete from my_db.urls where linkid=234;

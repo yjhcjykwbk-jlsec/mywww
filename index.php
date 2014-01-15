@@ -77,13 +77,12 @@ td#col_1{ opacity:0.6 }
 td#col_2{ opacity:0.8 }
 td#col_3{ opacity:0.8; }
 #container { 
-background-color: #000333
-width:100%;
+	background: url(body_bg.jpg) no-repeat;
+	background-position: center 0;
+	width:100%;
 }
 body{
-	background-repeat: no-repeat;
-	background-color:#ffffff;
-	background: url(bg.jpg) no-repeat right top;
+	background-color: #6a6f83;
 	font-size:12px;font-family:Arial,Console,Verdana,Courier New;
 }
 #header { width: 900px; height: 10px; Z-INDEX:1; POSITION:relative; margin: 0 auto; padding: 90px 0 0 0; text-align: left; }
@@ -97,9 +96,10 @@ li { list-style:none;margin-left:0;}
 	-->
 	<head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> </head>
 	<title>####</title>
-	<div id='container' style="margin-top:30px;margin-left:auto;margin-right:auto;">
+	<body>
+	<div id='container' style="margin-top:30px;margin:0">
 	<div id='flow_1' style="opacity:0.02;Z-INDEX:0;POSITION:absolute;top:53px;LEFT:-30px;display:none"> <img src="1.jpg" width="500px"></div>
-	<div id='body' style="width:95%;margin-left:auto;margin-right:auto;padding:20px 20px 20px 20px;border-radius:10px;
+	<div id='body' style="width:85%;margin-left:auto;margin-right:auto;padding:20px 20px 20px 20px;border-radius:10px;
 		background-color:rgba(243, 243, 243, 0.57);">	
 	<table style="border-collapse:none;table-layout:fixed;
 		background-color:rgba(15,43,55,0.6);"  align="center"><tr>
@@ -555,4 +555,5 @@ tags<br><input type='text' name="link_tags" value='tags'/><br>
 		<embed src="http://www.xiami.com/widget/1588651_4396705_235_346_cccccc_dddddd_0/collectPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>
 </div>
 <!-- <div id='footer'></div> -->
+</body>
 </html>
