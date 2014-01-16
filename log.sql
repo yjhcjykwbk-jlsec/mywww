@@ -218,3 +218,5 @@ insert into my_db.urls
 		(linkname,linkvalue,tags) values('插画1','http://tianlang71.blog.163.com/blog/static/21382612120131203323295/','插画');
 insert into my_db.urls
 		(linkname,linkvalue,tags) values('插画2','http://zhpan.com.cn/w/search/?r=mf&query=%ca%d6%bb%e6%b9%c5%d7%b0%c3%c0%c5%ae','插画');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('一眼万年','http://music4.tianya.cn/upmusicfile/2008/4/10/156203_16138600.mp3?','音乐');
