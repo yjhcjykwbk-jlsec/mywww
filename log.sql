@@ -212,3 +212,9 @@ insert into my_db.urls
 		(linkname,linkvalue,tags) values('link name','##&&','');
 insert into my_db.del_urls select * from my_db.urls where linkid=234;
 delete from my_db.urls where linkid=234;
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('dailiang','http://www.cnblogs.com/daniel-D/archive/2013/06/02/3113445.html',',Machine-Learning');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('插画1','http://tianlang71.blog.163.com/blog/static/21382612120131203323295/','插画');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('插画2','http://zhpan.com.cn/w/search/?r=mf&query=%ca%d6%bb%e6%b9%c5%d7%b0%c3%c0%c5%ae','插画');
