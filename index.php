@@ -72,7 +72,6 @@ a:hover {
 a:active {
 	text-decoration: none;
 	}
-td#col_1{ opacity:0.9 }
 td#col_1{ opacity:0.6 }
 td#col_2{ opacity:0.8 }
 td#col_3{ opacity:0.8; }
@@ -102,7 +101,7 @@ li { list-style:none;margin-left:0;}
 	<div id='body' style="width:85%;margin-left:auto;margin-right:auto;padding:20px 20px 20px 20px;border-radius:10px;
 		background-color:rgba(243, 243, 243, 0.57);">	
 	<table style="border-collapse:none;table-layout:fixed;
-		background-color:rgba(15,43,55,0.6);"  align="center"><tr>
+		background-color:rgba(215,243,255,0.6);"  align="center"><tr>
 	<td id='col_1' width=20% bgcolor='#42a272'>
 <!-- 'f1e6d4' -->
 	<div style="margin-left:10px;margin-right:10px;padding:5px 5px 5px 5px"><!-- bgcolor='F1E6D4' -->  <!--'F1E6D4'-->

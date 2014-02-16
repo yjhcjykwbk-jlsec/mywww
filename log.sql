@@ -220,3 +220,7 @@ insert into my_db.urls
 		(linkname,linkvalue,tags) values('插画2','http://zhpan.com.cn/w/search/?r=mf&query=%ca%d6%bb%e6%b9%c5%d7%b0%c3%c0%c5%ae','插画');
 insert into my_db.urls
 		(linkname,linkvalue,tags) values('一眼万年','http://music4.tianya.cn/upmusicfile/2008/4/10/156203_16138600.mp3?','音乐');
+insert into my_db.del_urls select * from my_db.urls where linkid=231;
+insert into my_db.del_urls select * from my_db.urls where linkid=230;
+insert into my_db.del_urls select * from my_db.urls where linkid=231;
+delete from my_db.urls where linkid=231;
