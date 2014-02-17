@@ -224,3 +224,9 @@ insert into my_db.del_urls select * from my_db.urls where linkid=231;
 insert into my_db.del_urls select * from my_db.urls where linkid=230;
 insert into my_db.del_urls select * from my_db.urls where linkid=231;
 delete from my_db.urls where linkid=231;
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('基于稀疏编码的图像特征提取和去噪','http://www.zjb.org.cn/art/2008/5/15/art_98_224.html',',Machine-Learning');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('基于稀疏编码的入侵检测','http://wenku.baidu.com/link?url=bR8A7malhw2MxE8dSx49sE-ZhO9pcWafMUAwy1QcWVOTvl8b9X4dPHses5wxJLNyPabmqShB_R7Uv-jLSE3VZA7k7JQGdXRLx6pQxdtUTY3',',Machine-Learning');
+insert into my_db.del_urls select * from my_db.urls where linkid=232;
+delete from my_db.urls where linkid=232;
