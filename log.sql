@@ -230,3 +230,17 @@ insert into my_db.urls
 		(linkname,linkvalue,tags) values('基于稀疏编码的入侵检测','http://wenku.baidu.com/link?url=bR8A7malhw2MxE8dSx49sE-ZhO9pcWafMUAwy1QcWVOTvl8b9X4dPHses5wxJLNyPabmqShB_R7Uv-jLSE3VZA7k7JQGdXRLx6pQxdtUTY3',',Machine-Learning');
 insert into my_db.del_urls select * from my_db.urls where linkid=232;
 delete from my_db.urls where linkid=232;
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('中山大学就业指导中心','http://career.sysu.edu.cn/(S(ikvjd1frm3xggq55lqtpzrnh))/Management_Field/Public/ViewLecture.aspx?id=2196','就业');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('排序算法','http://www.cppblog.com/mzty/archive/2005/12/15/1770.html','算法');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('Multilingual OCR Research and Applications: An Overview','http://delivery.acm.org/10.1145/2510000/2509977/a1-peng.pdf','ocr');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('clucene','http://mylovejsj.blog.163.com/blog/static/38673975200910831856334/','search');
+update my_db.urls set tags='' where linkid='235';
+
+update my_db.urls set tags='' where linkid='236';
+
+update my_db.urls set tags='' where linkid='237';
+
