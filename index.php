@@ -76,7 +76,7 @@ td#col_1{ opacity:0.6 }
 td#col_2{ opacity:0.8 }
 td#col_3{ opacity:0.8; }
 #container { 
-	background: url(body_bg.jpg) no-repeat;
+	background: url(bg.jpg) no-repeat;
 	background-position: center 0;
 	width:100%;
 }

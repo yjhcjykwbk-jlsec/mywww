@@ -244,3 +244,9 @@ update my_db.urls set tags='' where linkid='236';
 
 update my_db.urls set tags='' where linkid='237';
 
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('winsty-autocoder','http://winsty.net/dlt.html',',Machine-Learning');
+update my_db.urls set linkname='基于稀疏编码的图像特征提取和去噪(1',linkvalue='http://www.zjb.org.cn/art/2008/5/15/art_98_224.html',tags=',Machine-Learning' where linkid='238'
+insert into my_db.del_urls select * from my_db.urls where linkid=239;
+delete from my_db.urls where linkid=239;
+update my_db.urls set linkname='基于稀疏编码的图像特征提取',linkvalue='http://www.zjb.org.cn/art/2008/5/15/art_98_224.html',tags=',Machine-Learning' where linkid='238'
