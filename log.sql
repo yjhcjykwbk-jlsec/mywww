@@ -250,3 +250,13 @@ update my_db.urls set linkname='基于稀疏编码的图像特征提取和去噪
 insert into my_db.del_urls select * from my_db.urls where linkid=239;
 delete from my_db.urls where linkid=239;
 update my_db.urls set linkname='基于稀疏编码的图像特征提取',linkvalue='http://www.zjb.org.cn/art/2008/5/15/art_98_224.html',tags=',Machine-Learning' where linkid='238'
+insert into my_db.del_urls select * from my_db.urls where linkid=235;
+delete from my_db.urls where linkid=235;
+insert into my_db.del_urls select * from my_db.urls where linkid=237;
+delete from my_db.urls where linkid=237;
+insert into my_db.del_urls select * from my_db.urls where linkid=236;
+delete from my_db.urls where linkid=236;
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('pattern google','http://scholar.google.com/scholar?q=image process pattern recognition&btnG=&hl=en&as_sdt=0%2C5&as_ylo=2013',',ocr');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('边缘检测','http://www.cqvip.com/main/none.aspx?lngid=4618333',',ocr');
