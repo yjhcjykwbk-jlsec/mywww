@@ -260,3 +260,20 @@ insert into my_db.urls
 		(linkname,linkvalue,tags) values('pattern google','http://scholar.google.com/scholar?q=image process pattern recognition&btnG=&hl=en&as_sdt=0%2C5&as_ylo=2013',',ocr');
 insert into my_db.urls
 		(linkname,linkvalue,tags) values('边缘检测','http://www.cqvip.com/main/none.aspx?lngid=4618333',',ocr');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('sphinx','http://hot66hot.iteye.com/blog/1759559','ocr');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('视频推荐算法','http://www.wentrue.net/blog/?p=1181','算法');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('手机即时通讯','http://www.cnblogs.com/luxiaofeng54/archive/2011/03/14/1984026.html','xmpp');
+update my_db.urls set linkname='基于XMPP协议的手机多方多端即时通讯方案',linkvalue='http://www.cnblogs.com/luxiaofeng54/archive/2011/03/14/1984026.html',tags='xmpp' where linkid='249'
+update my_db.urls set linkname='基于XMPP协议的手机多方多端即时通讯方案',linkvalue='http://www.cnblogs.com/luxiaofeng54/archive/2011/03/14/1984026.html',tags='xmpp' where linkid='249'
+update my_db.urls set linkname='手机即时通讯方案',linkvalue='http://www.cnblogs.com/luxiaofeng54/archive/2011/03/14/1984026.html',tags='xmpp' where linkid='249'
+update my_db.urls set linkname='啊啊啊',linkvalue='http://www.cnblogs.com/luxiaofeng54/archive/2011/03/14/1984026.html',tags='xmpp' where linkid='249'
+update my_db.urls set linkname='aa',linkvalue='http://www.cnblogs.com/luxiaofeng54/archive/2011/03/14/1984026.html',tags='xmpp' where linkid='249'
+update my_db.urls set linkname='基于XMPP协议的手机多方多端即时通讯方案',linkvalue='http://www.cnblogs.com/luxiaofeng54/archive/2011/03/14/1984026.html',tags='xmpp' where linkid='249'
+update my_db.urls set linkname='手机即时通讯方案',linkvalue='http://www.cnblogs.com/luxiaofeng54/archive/2011/03/14/1984026.html',tags='xmpp' where linkid='249'
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('jwchat搭建在线聊天','http://blog.sina.com.cn/s/blog_4b9d0957010008rx.html','xmpp');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('xmpp定义','http://my.eoe.cn/967832/archive/10682.html','xmpp');
