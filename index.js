@@ -74,7 +74,7 @@ function pull_urls_div(tag){
 		// onclick='"+ //function(ev){"+
 		// // "console.log(ev);return false;}'"+
 		// "edit_url(this," +result[i][0]+");return false;'"+
-		">..</a>";
+		">..  </a>";
 	//here use each to add a listener to everyone
 	$("a.edit-url").each(function() {
 		var id=$(this).attr('id');
