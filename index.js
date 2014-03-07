@@ -14,7 +14,7 @@ function hashCode(strKey)
 }  
 
 var colorList = ["#93dd80","#74bBdF","#eea9ee","#eeac8e","#a6a2cc","#ab7777","#79a006","#aba006","#ee9c4b"]; 
-var darkColors=["#000000","#008080","#808000","#800080","#800000","#008000","#000080"];
+var darkColors=["#101010","#106060","#606010","#601060","#601010","#106010","#101060"];
 function getColorByRandom(){ 
 	// var colorIndex = Math.floor(Math.random()*colorList.length); 
 	// var color = colorList[colorIndex]; 
@@ -69,7 +69,7 @@ function pull_urls_div(tag){
 		success:function(result){
 			for(var i=0; i<result.length; i++){
 				other_links_div.innerHTML+="<a target=_blank"+result[i][0]+" href="+result[i][2]+
-		" style=\"font-size:"+Math.ceil(Math.random()*3+10)+"pt;font-weight:bold;color:"+getColorByRandom()+";\">"+result[i][1]+"</a>"+
+		" style=\"font-size:"+Math.ceil(Math.random()*6+9)+"pt;color:"+getColorByRandom()+";\">"+result[i][1]+"</a>"+
 		"<a class='edit-url' id='"+result[i][0]+"' href=''"+
 		// onclick='"+ //function(ev){"+
 		// // "console.log(ev);return false;}'"+
@@ -127,7 +127,7 @@ function pull_tags_div(){
 		if(resulti=="") continue;
 		tags_div.innerHTML+=
 		"<a href='' target='__blank' onclick='pull_urls_div("+"\""+resulti+"\""+");return false;'"+
-		" style=\"font-weight:bold;font-size:"+Math.ceil(Math.random()*5+10)+"pt;color:"+getColor(resulti)+";\">" +resulti+"</a>"+
+		" style=\"font-weight:bold;font-size:"+Math.ceil(Math.random()*5+10)+"pt;color:"+getColorByRandom()+";\">" +resulti+"</a>"+
 		"<a href='' class='del-tag' onclick='del_tag(\""+resulti+"\");return false;'>.</a>..";
 	}
 		}
