@@ -69,7 +69,7 @@ function pull_urls_div(tag){
 		success:function(result){
 			for(var i=0; i<result.length; i++){
 				other_links_div.innerHTML+="<a target=_blank"+result[i][0]+" href="+result[i][2]+
-		" style=\"font-size:"+Math.ceil(Math.random()*5+8)+"pt;font:bold;color:"+getColorByRandom()+";\">"+result[i][1]+"</a>"+
+		" style=\"font-size:"+Math.ceil(Math.random()*3+10)+"pt;font-weight:bold;color:"+getColorByRandom()+";\">"+result[i][1]+"</a>"+
 		"<a class='edit-url' id='"+result[i][0]+"' href=''"+
 		// onclick='"+ //function(ev){"+
 		// // "console.log(ev);return false;}'"+
@@ -121,13 +121,13 @@ function pull_tags_div(){
 			window.result=result;
 			tags_div.innerHTML+=
 		"<a href='' target='__blank' onclick='pull_urls_div("+"\""+"\""+");return false;'"+
-		" style=\"font-size:"+Math.ceil(Math.random()*6+9)+"pt;\">*.. </a>";
+		" style=\"font-size:"+Math.ceil(Math.random()*5+10)+"pt;\">*.. </a>";
 	for(key in result){
 		resulti=result[key];
 		if(resulti=="") continue;
 		tags_div.innerHTML+=
 		"<a href='' target='__blank' onclick='pull_urls_div("+"\""+resulti+"\""+");return false;'"+
-		" style=\"font-size:"+Math.ceil(Math.random()*6+9)+"pt;color:"+getColor(resulti)+";\">" +resulti+"</a>"+
+		" style=\"font-weight:bold;font-size:"+Math.ceil(Math.random()*5+10)+"pt;color:"+getColor(resulti)+";\">" +resulti+"</a>"+
 		"<a href='' class='del-tag' onclick='del_tag(\""+resulti+"\");return false;'>.</a>..";
 	}
 		}

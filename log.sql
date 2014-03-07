@@ -277,3 +277,9 @@ insert into my_db.urls
 		(linkname,linkvalue,tags) values('jwchat搭建在线聊天','http://blog.sina.com.cn/s/blog_4b9d0957010008rx.html','xmpp');
 insert into my_db.urls
 		(linkname,linkvalue,tags) values('xmpp定义','http://my.eoe.cn/967832/archive/10682.html','xmpp');
+insert into my_db.del_urls select * from my_db.urls where linkid=235;
+delete from my_db.urls where linkid=235;
+insert into my_db.del_urls select * from my_db.urls where linkid=236;
+delete from my_db.urls where linkid=236;
+insert into my_db.del_urls select * from my_db.urls where linkid=237;
+delete from my_db.urls where linkid=237;
