@@ -72,16 +72,26 @@ a:hover {
 a:active {
 	text-decoration: none;
 	}
-td#col_1{ opacity:0.6 }
-td#col_2{ opacity:0.8 }
-td#col_3{ opacity:0.8; }
+td#col_1{ 
+background-color:#4c4c4c;//rgba(215,243,255,0.6);
+opacity:0.8;
+border-radius:3px;
+}
+td#col_2{ 
+background:transparent;
+opacity:0.8
+}
+td#col_3{ 
+background:transparent;
+opacity:0.8; 
+}
 #container { 
 	background-position: center 0;
 	width:100%;
 }
 body{
 	background-color: #6a6f83;
-	background: url(bg.jpg), repeat-y;
+	background: url(blackbg.jpg), fixed;
 	font-size:12px;font-family:Arial,Console,Verdana,Courier New;
 }
 #header { width: 900px; height: 10px; Z-INDEX:1; POSITION:relative; margin: 0 auto; padding: 90px 0 0 0; text-align: left; }
@@ -100,8 +110,7 @@ li { list-style:none;margin-left:0;}
 	<div id='flow_1' style="opacity:0.02;Z-INDEX:0;POSITION:absolute;top:53px;LEFT:-30px;display:none"> <img src="1.jpg" width="500px"></div>
 	<div id='body' style="width:85%;margin-left:auto;margin-right:auto;padding:20px 20px 20px 20px;border-radius:10px;
 		background-color:rgba(243, 243, 243, 0.57);">	
-	<table style="border-collapse:none;table-layout:fixed;
-		background-color:rgba(215,243,255,0.6);"  align="center"><tr>
+	<table style="border-collapse:none;table-layout:fixed;"  align="center"><tr>
 	<td id='col_1' width=20% bgcolor='#42a272'>
 <!-- 'f1e6d4' -->
 	<div style="margin-left:10px;margin-right:10px;padding:5px 5px 5px 5px"><!-- bgcolor='F1E6D4' -->  <!--'F1E6D4'-->
@@ -244,7 +253,7 @@ $begin=$pg-5>0?$pg-5:0; $end=$pg+5; for($k=$begin;$k<$end;$k++){ ?>
 
 	<td id='col_2' width=63% bgcolor='#fafafa'> <!--efffff-->
 		<div>
-			<h2>ALGORITHM</h2>
+			<font size='2px' color='blue'>ALGORITHM</font>
 			<ul><li>
 				在线评测平台
 				<table frame="hsides" width=100% style="table-layout:fixed;" >
@@ -264,15 +273,15 @@ $begin=$pg-5>0?$pg-5:0; $end=$pg+5; for($k=$begin;$k<$end;$k++){ ?>
 				<li>
 					<font size=5 strong black><a href="pull.php?action=pullUrl" target="_blank">your links</a></font>
 					<font size=1 face="arial" color="green" align='center'>
-					<p><div name="tags_div" id="tags_div" style="minWidth:600px;minHeight:40px;
+					<div name="tags_div" id="tags_div" style="minWidth:600px;minHeight:20px;
 						text-shadow: 1px 1px 6px #ddd;
 						text-align: center;
-						"></div></p>
+						"></div>
 					<div name="other_links_div" id="other_links_div" 
 						style="minWidth:600px;minHeight:450px;
 						text-shadow: 1px 1px 3px #ddd;
 						text-align: center;
-						border-radius: 8px; padding:10px 30px 20px 30px;"> </div>
+						border-radius: 8px; padding:10px 10px 20px 10px;"> </div>
 					<table name="other_links" id="other_links" minWidth="600px" align='center'> </table>
 					</font>
 	<script type="text/javascript">
@@ -340,24 +349,20 @@ pull_urls_div("");
 						<td><a  target="_blank" href="http://www.codesoso.net/default.aspx">codesoso</a></td>
 						<td><a  target="_blank" href="http://www.codeforge.cn/"><strong>codeforge</strong></a></td>
 				</table>
-				</li></ul>
+				</li><li>
+				PROJECTS</br>
+					<a  target="_blank" href="https://github.com/alibaba/canal">canal</a>
+					<a  target="_blank" href="http://i.pku.edu.cn/renrenplugin">renrenp</a>
+					<a  target="_blank" href="http://astar.baidu.com/index.php?mod=cms&act=gy_detail&id=18">ypf</a>
+					<a  target="_blank" href="http://ftp3.ie.freebsd.org/pub/">oschina</a>
+					<a  target="_blank" href="http://www.csdn.net/article/2011-08-11/302961">crazy web</a>
+					<a  target="_blank" href="https://code.google.com/p/mrrm/">ypf_mrrm...</a>
+			</li></ul>
 			</div>
-
-			<div class=td_content>PROJECTS
-				<ul><li>
-						<a  target="_blank" href="https://github.com/alibaba/canal">canal</a>
-						<a  target="_blank" href="http://i.pku.edu.cn/renrenplugin">renrenp</a>
-						<a  target="_blank" href="http://astar.baidu.com/index.php?mod=cms&act=gy_detail&id=18">ypf</a>
-						<a  target="_blank" href="http://ftp3.ie.freebsd.org/pub/">oschina</a>
-						<a  target="_blank" href="http://www.csdn.net/article/2011-08-11/302961">crazy web</a>
-						<a  target="_blank" href="https://code.google.com/p/mrrm/">ypf_mrrm...</a>
-					</li>
-				</ul>
-		</div>
 	</td>
 
 	<td id='col_3' width=20% bgcolor='fafafa' border=0><!-- effeff-->
-		<h3>personal</h3>
+		<font size='3px' color='blue'>personal</font>
 		<div>
 			<ul style="display: inline-block; overflow: hidden; font-size: 12px; font-weight: bold; word-wrap: break-word;">
 			<li><img  src="http://tp3.sinaimg.cn/2635728142/180/22831012745/1" width="150" height="145" alt="请叫我老xu"></li>
@@ -452,12 +457,12 @@ pull_urls_div("");
 					</font>
 					</div></li>
 					<li>
-						<h6> 备用链接 </h6>
+						备用链接 
 						 <!--form id="push_url_form" name="push_url_form" method="post" action="push.php"></form -->
 						<form name="push_url_form" id="push_url_form">
 						<label><font size="2" p strong>链接名称</font></label><input size='10px' name="link_name" value="link name"  onclick="this.value=''"/><br/>
 						<label><font size="2" p strong>链接内容</font></label><input size='10px' name="link_value" value="xx"  onclick="this.value=''"/><br/>
-						<label><font size="2" p strong>链接标签</font></label>
+						// <label><font size="2" p strong>链接标签</font></label>
 						<textarea size='100px' name="link_tags" value="yy" ></textarea><br/>
 						<script>
 							$(function(){
