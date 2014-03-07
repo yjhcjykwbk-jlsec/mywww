@@ -278,10 +278,10 @@ $begin=$pg-5>0?$pg-5:0; $end=$pg+5; for($k=$begin;$k<$end;$k++){ ?>
 						text-align: center;
 						"></div>
 					<div name="other_links_div" id="other_links_div" 
-						style="minWidth:600px;minHeight:450px;
+						style="minWidth:600px;minHeight:450px;background-color:#080808;opacity:1.0;background:transparent;
 						text-shadow: 1px 1px 3px #ddd;
 						text-align: center;
-						border-radius: 8px; padding:10px 10px 20px 10px;"> </div>
+						border-radius: 4px; padding:10px 10px 20px 10px;"> </div>
 					<table name="other_links" id="other_links" minWidth="600px" align='center'> </table>
 					</font>
 	<script type="text/javascript">

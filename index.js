@@ -14,10 +14,15 @@ function hashCode(strKey)
 }  
 
 var colorList = ["#93dd80","#74bBdF","#eea9ee","#eeac8e","#a6a2cc","#ab7777","#79a006","#aba006","#ee9c4b"]; 
+var darkColors=["#000000","#008080","#808000","#800080","#800000","#008000","#000080"];
 function getColorByRandom(){ 
-	var colorIndex = Math.floor(Math.random()*colorList.length); 
-	var color = colorList[colorIndex]; 
+	// var colorIndex = Math.floor(Math.random()*colorList.length); 
+	// var color = colorList[colorIndex]; 
+	var colorIndex = Math.floor(Math.random()*darkColors.length); 
+	var color = darkColors[colorIndex]; 
 	// colorList.splice(colorIndex,1); 
+	// return "red";
+	// return "#000000";
 	return color; 
 } 
 function getColor(tag){
@@ -69,7 +74,7 @@ function pull_urls_div(tag){
 		// onclick='"+ //function(ev){"+
 		// // "console.log(ev);return false;}'"+
 		// "edit_url(this," +result[i][0]+");return false;'"+
-		">... </a>";
+		">..</a>";
 	//here use each to add a listener to everyone
 	$("a.edit-url").each(function() {
 		var id=$(this).attr('id');
