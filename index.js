@@ -68,13 +68,12 @@ function pull_urls_div(tag){
 		data:"action=pullUrl"+para, type:'post', dataType:'json', 
 		success:function(result){
 			for(var i=0; i<result.length; i++){
-				other_links_div.innerHTML+="<a target=_blank"+result[i][0]+" href="+result[i][2]+
-		" style=\"font-size:"+Math.ceil(Math.random()*6+9)+"pt;color:"+getColorByRandom()+";\">"+result[i][1]+"</a>"+
-		"<a class='edit-url' id='"+result[i][0]+"' href=''"+
-		// onclick='"+ //function(ev){"+
-		// // "console.log(ev);return false;}'"+
-		// "edit_url(this," +result[i][0]+");return false;'"+
-		">..  </a>";
+        console.log(result[i][2]);
+        //@patch: when push data with ajax uri , use encodeURIComponent, when pull data from server , use decodeURI..
+        //        to handle with special chars like + , & and so on
+				other_links_div.innerHTML+="<a target=_blank"+result[i][0]+" href=\""+ decodeURIComponent(result[i][2])+"\" "+
+      " style=\"font-size:"+Math.ceil(Math.random()*6+9)+"pt;color:"+getColorByRandom()+";\">"+result[i][1]+"</a>"+
+      "<a class='edit-url' id=\'"+result[i][0]+"\' href=''>..  </a>";
 	//here use each to add a listener to everyone
 	$("a.edit-url").each(function() {
 		var id=$(this).attr('id');
@@ -175,7 +174,7 @@ function set_url(linkid,linkname,linkvalue,linktags){
 }
 function push_url(linkname,linkvalue,linktags){
 	// linkvalue=encodeURIComponent(linkvalue);
-	linkvalue=escape(linkvalue);
+	linkvalue= encodeURIComponent(linkvalue);
 	console.log("push_url():link_value:"+linkvalue);
 	$.ajax({
 		url:"push.php", 

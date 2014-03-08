@@ -283,3 +283,16 @@ insert into my_db.del_urls select * from my_db.urls where linkid=236;
 delete from my_db.urls where linkid=236;
 insert into my_db.del_urls select * from my_db.urls where linkid=237;
 delete from my_db.urls where linkid=237;
+update my_db.urls set linkname='xmpp聊天',linkvalue='http://www.baidu.com/s?ie=utf-8',tags=',xmpp' where linkid='252'
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('google-ocr','http://scholar.google.com/scholar?start=30&q=ocr&hl=zh-CN&as_sdt=0,5&as_ylo=2013','ocr');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('google-ocr-dictionary-match','http://scholar.google.com/scholar?as_ylo=2013&q=dictionary match ocr&hl=zh-CN&as_sdt=0,5','ocr');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('link name','  ','');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('link name','  ','');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('link name','++','');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('google-ocr-dictionary-match','http://scholar.google.com/scholar?as_ylo=2013&q=dictionary+match+ocr&hl=zh-CN&as_sdt=0,5',',ocr');

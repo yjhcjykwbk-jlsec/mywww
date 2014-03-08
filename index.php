@@ -511,7 +511,7 @@ pull_urls_div("");
 								<!-- <option value="1">0</option>   -->
 							</select>  
 						</form>
-						<button onclick="push_url(push_url_form.link_name.value,push_url_form.link_value.value,push_url_form.link_tags.value);">添加</button>
+						<button onclick="alert(push_url_form.link_value.value);push_url(push_url_form.link_name.value,push_url_form.link_value.value,push_url_form.link_tags.value);">添加</button>
 						<button type="ff" id="dd" name="dd" onclick="del_urls();return false;">清空</button>
 						<script>s=true;</script>
 						<button type="ff" id="dd" name="dd" onclick="display_urls();return false;">显示</button>
