@@ -296,3 +296,11 @@ insert into my_db.urls
 		(linkname,linkvalue,tags) values('link name','++','');
 insert into my_db.urls
 		(linkname,linkvalue,tags) values('google-ocr-dictionary-match','http://scholar.google.com/scholar?as_ylo=2013&q=dictionary+match+ocr&hl=zh-CN&as_sdt=0,5',',ocr');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('image process pattern recognition','http://scholar.google.com/scholar?q=image+process+pattern+recognition&btnG=&hl=en&as_sdt=0%2C5&as_ylo=2013',',ocr');
+insert into my_db.del_urls select * from my_db.urls where linkid=256;
+delete from my_db.urls where linkid=256;
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('2d-lstm ocr','http://scholar.google.com/scholar?hl=zh-CN&q=2d+lstm+network+ocr&btnG=&lr=',',ocr');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('near-document-duplicated','http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6460143','ocr');
