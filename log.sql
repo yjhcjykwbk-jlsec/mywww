@@ -304,3 +304,12 @@ insert into my_db.urls
 		(linkname,linkvalue,tags) values('2d-lstm ocr','http://scholar.google.com/scholar?hl=zh-CN&q=2d+lstm+network+ocr&btnG=&lr=',',ocr');
 insert into my_db.urls
 		(linkname,linkvalue,tags) values('near-document-duplicated','http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6460143','ocr');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('android','http://www.cnblogs.com/devinzhang/archive/2011/12/31/2308980.html','android');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('android-service-activity','http://blog.csdn.net/xiaanming/article/details/9750689','android');
+update my_db.urls set linkname='android_books',linkvalue='http://www.xue5.com/Mobile/Android/Index.html',tags='android' where linkid='185'
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('dom4j-document','http://zhangjunhd.blog.51cto.com/113473/126310/','java');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('xmlpullparser','http://blog.csdn.net/doandkeep/article/details/13170515','java');
