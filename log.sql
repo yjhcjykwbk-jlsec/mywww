@@ -323,3 +323,5 @@ insert into my_db.del_urls select * from my_db.urls where linkid=268;
 delete from my_db.urls where linkid=268;
 insert into my_db.urls
 		(linkname,linkvalue,tags) values('Detecting Near-Duplicate Document Images using Interest Point Matching','http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6460143&tag=1',',ocr');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('document image detect','http://scholar.google.com/scholar?as_ylo=2010&q=document+image+detect&hl=en&as_sdt=0,5',',ocr');
