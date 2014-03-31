@@ -460,7 +460,7 @@ pull_urls_div("");
 						备用链接 
 						 <!--form id="push_url_form" name="push_url_form" method="post" action="push.php"></form -->
 						<form name="push_url_form" id="push_url_form">
-						<label><font size="2" p strong>链接名称</font></label><input size='10px' name="link_name" value="link name"  onclick="this.value=''"/><br/>
+						<label><font size="2" p strong>链接名称</font></label><input size='10px' name="link_name" value="link name"  onclick="this.value=''" size="100"/><br/>
 						<label><font size="2" p strong>链接内容</font></label><input size='10px' name="link_value" value="xx"  onclick="this.value=''"/><br/>
 						// <label><font size="2" p strong>链接标签</font></label>
 						<textarea size='100px' name="link_tags" value="yy" ></textarea><br/>

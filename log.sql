@@ -313,3 +313,13 @@ insert into my_db.urls
 		(linkname,linkvalue,tags) values('dom4j-document','http://zhangjunhd.blog.51cto.com/113473/126310/','java');
 insert into my_db.urls
 		(linkname,linkvalue,tags) values('xmlpullparser','http://blog.csdn.net/doandkeep/article/details/13170515','java');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('Document image binarization using background estimation and stroke edges','http://download.springer.com/static/pdf/183/art%253A10.1007%252Fs10032-010-0130-8.pdf?auth66=1396444508_1bdbb9695565cb58cfc0f5e5700ea445&ext=.pdf',',ocr');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('A Hybrid Approach to Detect and Localize Texts in Natural Scene Images','http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5560830',',ocr');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('A Hybrid Approach to Detect and Localize Texts in Natural Scene Images','http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5560830',',ocr');
+insert into my_db.del_urls select * from my_db.urls where linkid=268;
+delete from my_db.urls where linkid=268;
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('Detecting Near-Duplicate Document Images using Interest Point Matching','http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6460143&tag=1',',ocr');

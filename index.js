@@ -50,7 +50,7 @@ function pull_urls_table(tag){
 		newcol=newrow.insertCell(1);
 		newcol.innerHTML=result[i][1];
 		newcol=newrow.insertCell(2);
-		newcol.innerHTML="<a target=_blank"+result[i][0]+" href="+result[i][2]+">"+result[i][2].substring(0,20)+"</a>";
+		newcol.innerHTML="<a target=_blank"+result[i][0]+" href="+result[i][2]+">"+result[i][2].substring(0,80)+"</a>";
 		newcol=newrow.insertCell(3);
 		newcol.innerHTML="<button onclick=del_url("+result[i][0]+")>del</button>";
 	}
