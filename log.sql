@@ -325,3 +325,27 @@ insert into my_db.urls
 		(linkname,linkvalue,tags) values('Detecting Near-Duplicate Document Images using Interest Point Matching','http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6460143&tag=1',',ocr');
 insert into my_db.urls
 		(linkname,linkvalue,tags) values('document image detect','http://scholar.google.com/scholar?as_ylo=2010&q=document+image+detect&hl=en&as_sdt=0,5',',ocr');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('robust system to detect and localize texts in natural images','http://www.google.com.hk/search?q=A+robust+system+to+detect+and+localize+texts+in+natural+scene+images&newwindow=1&safe=strict&noj=1&ei=QgJBU5rODOaQiAf414DgAQ&start=10&sa=N&biw=1366&bih=631&dpr=1',',ocr');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('Text Detection and Character Recognition in Scene Images with Unsupervised Feature Learning','http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6065350',',ocr');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('Text Detection and Character Recognition in Scene Images with Unsupervised Feature Learning','http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6065350',',ocr');
+insert into my_db.del_urls select * from my_db.urls where linkid=273;
+delete from my_db.urls where linkid=273;
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('Text Detection and Character Recognition in Scene Images with Unsupervised Feature Learning','Text Detection and Character Recognition in Scene Images with Unsupervised Feature Learning','');
+insert into my_db.del_urls select * from my_db.urls where linkid=274;
+delete from my_db.urls where linkid=274;
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('Text Detection and Character Recognition in Scene Images with Unsupervised Feature Learning','Text Detection and Character Recognition in Scene Images with Unsupervised Feature Learning',',ocr');
+insert into my_db.del_urls select * from my_db.urls where linkid=275;
+delete from my_db.urls where linkid=275;
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('Text Detection and Character Recognition in Scene Images with Unsupervised Feature Learning','xx','');
+insert into my_db.del_urls select * from my_db.urls where linkid=276;
+delete from my_db.urls where linkid=276;
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('Text Detection and Character Recognition in Scene Images with Unsupervised Feature Learning','xx','');
+insert into my_db.del_urls select * from my_db.urls where linkid=277;
+delete from my_db.urls where linkid=277;

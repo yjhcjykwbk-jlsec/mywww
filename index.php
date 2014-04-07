@@ -109,7 +109,7 @@ li { list-style:none;margin-left:0;}
 	<div id='flow_1' style="opacity:0.02;Z-INDEX:0;POSITION:absolute;top:53px;LEFT:-30px;display:none"> <img src="1.jpg" width="500px"></div>
 	<div id='body' style="width:85%;margin-left:auto;margin-right:auto;padding:20px 20px 20px 20px;border-radius:10px;
 		background-color:rgba(243, 243, 243, 0.57);">	
-	<table style="border-collapse:none;table-layout:fixed;"  align="center"><tr>
+	<table style="height:900px;border-collapse:none;table-layout:fixed;"  align="center"><tr>
 	<td id='col_1' width=20% bgcolor='#42a272'>
 <!-- 'f1e6d4' -->
 	<div style="margin-left:10px;margin-right:10px;padding:5px 5px 5px 5px"><!-- bgcolor='F1E6D4' -->  <!--'F1E6D4'-->
@@ -458,8 +458,8 @@ pull_urls_div("");
 						备用链接 
 						 <!--form id="push_url_form" name="push_url_form" method="post" action="push.php"></form -->
 						<form name="push_url_form" id="push_url_form">
-						<label><font size="2" p strong>链接名称</font></label><input size='10px' name="link_name" value="link name"  onclick="this.value=''" size="100"/><br/>
-						<label><font size="2" p strong>链接内容</font></label><input size='10px' name="link_value" value="xx"  onclick="this.value=''"/><br/>
+						<label><font size="2" p strong>链接名称</font></label><input  width="10" name="link_name" value="link name"  onclick="this.value=''"/><br/>
+						<label><font size="2" p strong>链接内容</font></label><input  width="10" name="link_value" value="xx"  onclick="this.value=''"/><br/>
 						// <label><font size="2" p strong>链接标签</font></label>
 						<textarea size='100px' name="link_tags" value="yy" ></textarea><br/>
 						<script>
@@ -509,7 +509,7 @@ pull_urls_div("");
 								<!-- <option value="1">0</option>   -->
 							</select>  
 						</form>
-						<button onclick="alert(push_url_form.link_value.value);push_url(push_url_form.link_name.value,push_url_form.link_value.value,push_url_form.link_tags.value);">添加</button>
+						<button onclick="push_url(push_url_form.link_name.value,push_url_form.link_value.value,push_url_form.link_tags.value);">添加</button>
 						<button type="ff" id="dd" name="dd" onclick="del_urls();return false;">清空</button>
 						<script>s=true;</script>
 						<button type="ff" id="dd" name="dd" onclick="display_urls();return false;">显示</button>
