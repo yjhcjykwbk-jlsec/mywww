@@ -297,4 +297,73 @@ insert into my_db.urls
 insert into my_db.urls
 		(linkname,linkvalue,tags) values('google-ocr-dictionary-match','http://scholar.google.com/scholar?as_ylo=2013&q=dictionary+match+ocr&hl=zh-CN&as_sdt=0,5',',ocr');
 insert into my_db.urls
-		(linkname,linkvalue,tags) values('baihui','http://docs.baihui.com/index.do','office');
+		(linkname,linkvalue,tags) values('image process pattern recognition','http://scholar.google.com/scholar?q=image+process+pattern+recognition&btnG=&hl=en&as_sdt=0%2C5&as_ylo=2013',',ocr');
+insert into my_db.del_urls select * from my_db.urls where linkid=256;
+delete from my_db.urls where linkid=256;
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('2d-lstm ocr','http://scholar.google.com/scholar?hl=zh-CN&q=2d+lstm+network+ocr&btnG=&lr=',',ocr');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('near-document-duplicated','http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6460143','ocr');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('android','http://www.cnblogs.com/devinzhang/archive/2011/12/31/2308980.html','android');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('android-service-activity','http://blog.csdn.net/xiaanming/article/details/9750689','android');
+update my_db.urls set linkname='android_books',linkvalue='http://www.xue5.com/Mobile/Android/Index.html',tags='android' where linkid='185'
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('dom4j-document','http://zhangjunhd.blog.51cto.com/113473/126310/','java');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('xmlpullparser','http://blog.csdn.net/doandkeep/article/details/13170515','java');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('Document image binarization using background estimation and stroke edges','http://download.springer.com/static/pdf/183/art%253A10.1007%252Fs10032-010-0130-8.pdf?auth66=1396444508_1bdbb9695565cb58cfc0f5e5700ea445&ext=.pdf',',ocr');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('A Hybrid Approach to Detect and Localize Texts in Natural Scene Images','http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5560830',',ocr');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('A Hybrid Approach to Detect and Localize Texts in Natural Scene Images','http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5560830',',ocr');
+insert into my_db.del_urls select * from my_db.urls where linkid=268;
+delete from my_db.urls where linkid=268;
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('Detecting Near-Duplicate Document Images using Interest Point Matching','http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6460143&tag=1',',ocr');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('document image detect','http://scholar.google.com/scholar?as_ylo=2010&q=document+image+detect&hl=en&as_sdt=0,5',',ocr');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('robust system to detect and localize texts in natural images','http://www.google.com.hk/search?q=A+robust+system+to+detect+and+localize+texts+in+natural+scene+images&newwindow=1&safe=strict&noj=1&ei=QgJBU5rODOaQiAf414DgAQ&start=10&sa=N&biw=1366&bih=631&dpr=1',',ocr');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('Text Detection and Character Recognition in Scene Images with Unsupervised Feature Learning','http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6065350',',ocr');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('Text Detection and Character Recognition in Scene Images with Unsupervised Feature Learning','http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6065350',',ocr');
+insert into my_db.del_urls select * from my_db.urls where linkid=273;
+delete from my_db.urls where linkid=273;
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('Text Detection and Character Recognition in Scene Images with Unsupervised Feature Learning','Text Detection and Character Recognition in Scene Images with Unsupervised Feature Learning','');
+insert into my_db.del_urls select * from my_db.urls where linkid=274;
+delete from my_db.urls where linkid=274;
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('Text Detection and Character Recognition in Scene Images with Unsupervised Feature Learning','Text Detection and Character Recognition in Scene Images with Unsupervised Feature Learning',',ocr');
+insert into my_db.del_urls select * from my_db.urls where linkid=275;
+delete from my_db.urls where linkid=275;
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('Text Detection and Character Recognition in Scene Images with Unsupervised Feature Learning','xx','');
+insert into my_db.del_urls select * from my_db.urls where linkid=276;
+delete from my_db.urls where linkid=276;
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('Text Detection and Character Recognition in Scene Images with Unsupervised Feature Learning','xx','');
+insert into my_db.del_urls select * from my_db.urls where linkid=277;
+delete from my_db.urls where linkid=277;
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('Text Detection and Character Recognition in Scene Images with Unsupervised Feature Learning','http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6065350',',ocr');
+insert into my_db.del_urls select * from my_db.urls where linkid=272;
+delete from my_db.urls where linkid=272;
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('得图网-下拉slide效果','http://www.detu.com/','精致前端');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('淘宝房产-地图设施','http://fang.taobao.com/building_detail.htm?spm=a211z.6595626.0.0.BKfvkE&id=67','精致前端');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('得图云-全景及3d图片','http://www.detuyun.com/app','精致前端');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('单图片展示','http://www.detu.com/photo/ushow/18627/hot#18627','精致前端');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('jquery 滚动条','http://slodive.com/web-development/jquery-scroll/',',精致前端');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('jQuery ui','http://www.marcofolio.net/webdesign/jquery_quickie_unlimited_scroll_using_the_twitter_api.html',',精致前端');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('jquery-api','http://hemin.cn/jq/',',精致前端');

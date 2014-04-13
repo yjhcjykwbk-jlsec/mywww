@@ -81,8 +81,6 @@ td#col_2{ background:transparent;
 opacity:0.8
 }
 td#col_3{ 
-max-height:600px;
-overflow:scroll;
 background:transparent;
 opacity:0.8; 
 }
@@ -92,7 +90,7 @@ opacity:0.8;
 }
 body{
 	background-color: #6a6f83;
-	background:#eee;// url(blackbg.jpg), fixed;
+	background: url(blackbg.jpg), fixed;
 	font-size:12px;font-family:Arial,Console,Verdana,Courier New;
 }
 #header { width: 900px; height: 10px; Z-INDEX:1; POSITION:relative; margin: 0 auto; padding: 90px 0 0 0; text-align: left; }
@@ -109,9 +107,9 @@ li { list-style:none;margin-left:0;}
 	<body>
 	<div id='container' style="margin-top:30px;margin:0">
 	<div id='flow_1' style="opacity:0.02;Z-INDEX:0;POSITION:absolute;top:53px;LEFT:-30px;display:none"> <img src="1.jpg" width="500px"></div>
-	<div id='body' style="width:90%;margin-left:auto;margin-right:auto;padding:10px 20px 10px 20px;border:4px solid #ddd;border-radius:10px;
+	<div id='body' style="width:85%;margin-left:auto;margin-right:auto;padding:20px 20px 20px 20px;border-radius:10px;
 		background-color:rgba(243, 243, 243, 0.57);">	
-	<table style="max-height:94%;overflow-y:scroll;border-collapse:none;table-layout:fixed;"  align="center"><tr>
+	<table style="border-collapse:none;table-layout:fixed;"  align="center"><tr>
 	<td id='col_1' width=20% bgcolor='#42a272'>
 <!-- 'f1e6d4' -->
 	<div style="margin-left:10px;margin-right:10px;padding:5px 5px 5px 5px"><!-- bgcolor='F1E6D4' -->  <!--'F1E6D4'-->
@@ -252,7 +250,7 @@ $begin=$pg-5>0?$pg-5:0; $end=$pg+5; for($k=$begin;$k<$end;$k++){ ?>
 	</ul>
 </div></td>
 
-	<td id='col_2' bgcolor='#fafafa' style="width:53%;margin-top:-15px;position:absolute;display:block;"> <!--efffff-->
+	<td id='col_2' bgcolor='#fafafa' style="width:50%;margin-top:-20px;position:absolute;display:block;"> <!--efffff-->
 		<div>
 			<ul><li>
 				在线评测平台
@@ -278,7 +276,7 @@ $begin=$pg-5>0?$pg-5:0; $end=$pg+5; for($k=$begin;$k<$end;$k++){ ?>
 						text-align: center;
 						"></div>
 					<div name="other_links_div" id="other_links_div" 
-						style="minWidth:600px;min-height:250px;max-height:400px;overflow-y:scroll;background-color:#080808;opacity:1.0;background:transparent;
+						style="minWidth:600px;minHeight:450px;background-color:#080808;opacity:1.0;background:transparent;
 						text-shadow: 1px 1px 3px #ddd;
 						text-align: center;
 						border-radius: 4px; padding:10px 10px 20px 10px;"> </div>
@@ -460,8 +458,9 @@ pull_urls_div("");
 						备用链接 
 						 <!--form id="push_url_form" name="push_url_form" method="post" action="push.php"></form -->
 						<form name="push_url_form" id="push_url_form">
-						<label><font size="2" p strong>链接名称</font></label><input size='10px' name="link_name" value="link name"  onclick="this.value=''"/><br/>
+						<label><font size="2" p strong>链接名称</font></label><input size='10px' name="link_name" value="link name"  onclick="this.value=''" size="100"/><br/>
 						<label><font size="2" p strong>链接内容</font></label><input size='10px' name="link_value" value="xx"  onclick="this.value=''"/><br/>
+						// <label><font size="2" p strong>链接标签</font></label>
 						<textarea size='100px' name="link_tags" value="yy" ></textarea><br/>
 						<script>
 							$(function(){
@@ -487,14 +486,14 @@ pull_urls_div("");
 								push_url_form.link_tags.onclick=function(){
 									this.value='';
 									refreshTags();
-								};
+								}
 								select_tag.onclick=function(){
 									var text=
 									select_tag.options[select_tag.selectedIndex].text;
 									console.log(text);
 									push_url_form.link_tags.value+=","+text;
 									select_tag.options.remove(select_tag.selectedIndex);
-								};
+								}
 								// push_url_form.link_tags.onchange=function(){
 									// var str=push_url_form.link_tags.value;
 									// console.log(str);
@@ -505,21 +504,16 @@ pull_urls_div("");
 							};
 							pull_tags(f);
 							});
-							var gitFlag=false;
-							var toggleGit=function(){if(!gitFlag){git_div.style.display="block";gitFlag=true;}else{git_div.style.display="none";gitFlag=false;}};
 						</script>
 						 <select id='select_tag' multiple="multiple" size="6" style="width:186px;" id="leftSel">  
 								<!-- <option value="1">0</option>   -->
 							</select>  
 						</form>
-						<button onclick="push_url(push_url_form.link_name.value,push_url_form.link_value.value,push_url_form.link_tags.value);">添加</button>
+						<button onclick="alert(push_url_form.link_value.value);push_url(push_url_form.link_name.value,push_url_form.link_value.value,push_url_form.link_tags.value);">添加</button>
 						<button type="ff" id="dd" name="dd" onclick="del_urls();return false;">清空</button>
 						<script>s=true;</script>
 						<button type="ff" id="dd" name="dd" onclick="display_urls();return false;">显示</button>
-						<button value='git' 
-						onclick='toggleGit();return false;'>git</button>
-						<?php include "git.php";?>
-					</li>
+				</li>
 		</ul>
 		</div>
 	</td>
