@@ -110,7 +110,7 @@ li { list-style:none;margin-left:0;}
 	<body>
 	<div id='container' style="margin-top:30px;margin:0">
 	<div id='flow_1' style="opacity:0.02;Z-INDEX:0;POSITION:absolute;top:53px;LEFT:-30px;display:none"> <img src="1.jpg" width="500px"></div>
-	<div id='body' style="width:85%;margin-left:auto;margin-right:auto;padding:20px 20px 20px 20px;border-radius:10px;
+	<div id='body' style="width:95%;margin-left:auto;margin-right:auto;padding:20px 20px 20px 20px;border-radius:10px;
 		background-color:rgba(243, 243, 243, 0.57);">	
 	<table style="border-collapse:none;table-layout:fixed;"  align="center"><tr>
 	<td id='col_1' width=20% bgcolor='#42a272'>

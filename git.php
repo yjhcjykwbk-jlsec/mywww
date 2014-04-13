@@ -15,7 +15,7 @@
 var arr=["LSTM", "OCR_WITH_TEMPLATE_MATCHING_MATLAB", "RobotDetect", "TI", "TextCopyDetection_ferret", "TextDetection_Chung-Ta-Ku", "TextDetection_DCText", "TextDetection_SEDA-CV", "TextDetection_Stab-Textection", "TextDetection_abroun", "TextOCR_neural-ocr", "TextOCR_ocropus", "bbs", "facerec", "gumbo-parser", "handwriting", "linosu", "mysqldb", "neural-network", "nprize", "ocr", "ocrstyle", "qtapps", "recommender", "ristretto", "sha", "sissi", "vim", "zrender"];
 arr.sort();
 $.each(arr,function(i,it){
-	urls.innerHTML+="<li><a target=\"__blank\" href=\"http://github.com/stevenberge/"+it+"\">"+it+"</a></li>";
+	urls.innerHTML+="<li><a target=\"__blank"+it+"\" href=\"http://github.com/stevenberge/"+it+"\">"+it+"</a></li>";
 });
 		<!-- var s="";$.each($(".repolist-name").val("h3"),function(i,it){s+="<a target=\"__blank\" href=http://github.com/stevenberge/"+it.innerText+">"+it.innerText+"</a><hr>";}); -->
 <!-- alert(s); -->
