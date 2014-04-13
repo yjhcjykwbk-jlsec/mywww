@@ -3,7 +3,7 @@
 			margin-bottom:5px;
 		}
 	</style>
-	<div id="git_div" style="display:none">
+	<div id="git_div" style="display:none;max-width:200px;max-height:300px;overflow:overlay;">
 		<ul id="urls"></ul>
 	</div>
 	<script>

@@ -518,9 +518,9 @@ pull_urls_div("");
 						<button type="ff" id="dd" name="dd" onclick="del_urls();return false;">清空</button>
 						<script>s=true;</script>
 						<button type="ff" id="dd" name="dd" onclick="display_urls();return false;">显示</button>
-						<?php include "git.php";?>
 						<button value='git' 
 						onclick='toggleGit();return false;'>git</button>
+						<?php include "git.php";?>
 					</li>
 		</ul>
 		</div>
