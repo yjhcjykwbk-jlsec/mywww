@@ -296,3 +296,5 @@ insert into my_db.urls
 		(linkname,linkvalue,tags) values('link name','++','');
 insert into my_db.urls
 		(linkname,linkvalue,tags) values('google-ocr-dictionary-match','http://scholar.google.com/scholar?as_ylo=2013&q=dictionary+match+ocr&hl=zh-CN&as_sdt=0,5',',ocr');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('baihui','http://docs.baihui.com/index.do','office');

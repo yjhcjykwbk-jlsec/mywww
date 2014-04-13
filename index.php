@@ -82,6 +82,8 @@ background:transparent;
 opacity:0.8
 }
 td#col_3{ 
+max-height:600px;
+overflow:scroll;
 background:transparent;
 opacity:0.8; 
 }
@@ -91,7 +93,7 @@ opacity:0.8;
 }
 body{
 	background-color: #6a6f83;
-	background: url(blackbg.jpg), fixed;
+	background:#eee;// url(blackbg.jpg), fixed;
 	font-size:12px;font-family:Arial,Console,Verdana,Courier New;
 }
 #header { width: 900px; height: 10px; Z-INDEX:1; POSITION:relative; margin: 0 auto; padding: 90px 0 0 0; text-align: left; }
@@ -462,7 +464,6 @@ pull_urls_div("");
 						<form name="push_url_form" id="push_url_form">
 						<label><font size="2" p strong>链接名称</font></label><input size='10px' name="link_name" value="link name"  onclick="this.value=''"/><br/>
 						<label><font size="2" p strong>链接内容</font></label><input size='10px' name="link_value" value="xx"  onclick="this.value=''"/><br/>
-						// <label><font size="2" p strong>链接标签</font></label>
 						<textarea size='100px' name="link_tags" value="yy" ></textarea><br/>
 						<script>
 							$(function(){
@@ -488,14 +489,14 @@ pull_urls_div("");
 								push_url_form.link_tags.onclick=function(){
 									this.value='';
 									refreshTags();
-								}
+								};
 								select_tag.onclick=function(){
 									var text=
 									select_tag.options[select_tag.selectedIndex].text;
 									console.log(text);
 									push_url_form.link_tags.value+=","+text;
 									select_tag.options.remove(select_tag.selectedIndex);
-								}
+								};
 								// push_url_form.link_tags.onchange=function(){
 									// var str=push_url_form.link_tags.value;
 									// console.log(str);
@@ -506,6 +507,8 @@ pull_urls_div("");
 							};
 							pull_tags(f);
 							});
+							var gitFlag=false;
+							var toggleGit=function(){if(!gitFlag){git_div.style.display="block";gitFlag=true;}else{git_div.style.display="none";gitFlag=false;}};
 						</script>
 						 <select id='select_tag' multiple="multiple" size="6" style="width:186px;" id="leftSel">  
 								<!-- <option value="1">0</option>   -->
@@ -515,7 +518,10 @@ pull_urls_div("");
 						<button type="ff" id="dd" name="dd" onclick="del_urls();return false;">清空</button>
 						<script>s=true;</script>
 						<button type="ff" id="dd" name="dd" onclick="display_urls();return false;">显示</button>
-				</li>
+						<?php include "git.php";?>
+						<button value='git' 
+						onclick='toggleGit();return false;'>git</button>
+					</li>
 		</ul>
 		</div>
 	</td>
