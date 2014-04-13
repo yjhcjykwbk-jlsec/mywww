@@ -349,3 +349,21 @@ insert into my_db.urls
 		(linkname,linkvalue,tags) values('Text Detection and Character Recognition in Scene Images with Unsupervised Feature Learning','xx','');
 insert into my_db.del_urls select * from my_db.urls where linkid=277;
 delete from my_db.urls where linkid=277;
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('Text Detection and Character Recognition in Scene Images with Unsupervised Feature Learning','http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6065350',',ocr');
+insert into my_db.del_urls select * from my_db.urls where linkid=272;
+delete from my_db.urls where linkid=272;
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('得图网-下拉slide效果','http://www.detu.com/','精致前端');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('淘宝房产-地图设施','http://fang.taobao.com/building_detail.htm?spm=a211z.6595626.0.0.BKfvkE&id=67','精致前端');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('得图云-全景及3d图片','http://www.detuyun.com/app','精致前端');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('单图片展示','http://www.detu.com/photo/ushow/18627/hot#18627','精致前端');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('jquery 滚动条','http://slodive.com/web-development/jquery-scroll/',',精致前端');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('jQuery ui','http://www.marcofolio.net/webdesign/jquery_quickie_unlimited_scroll_using_the_twitter_api.html',',精致前端');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('jquery-api','http://hemin.cn/jq/',',精致前端');

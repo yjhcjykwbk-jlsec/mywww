@@ -109,7 +109,7 @@ li { list-style:none;margin-left:0;}
 	<div id='flow_1' style="opacity:0.02;Z-INDEX:0;POSITION:absolute;top:53px;LEFT:-30px;display:none"> <img src="1.jpg" width="500px"></div>
 	<div id='body' style="width:85%;margin-left:auto;margin-right:auto;padding:20px 20px 20px 20px;border-radius:10px;
 		background-color:rgba(243, 243, 243, 0.57);">	
-	<table style="height:900px;border-collapse:none;table-layout:fixed;"  align="center"><tr>
+	<table style="max-height:94%;overflow-y:scroll;border-collapse:none;table-layout:fixed;"  align="center"><tr>
 	<td id='col_1' width=20% bgcolor='#42a272'>
 <!-- 'f1e6d4' -->
 	<div style="margin-left:10px;margin-right:10px;padding:5px 5px 5px 5px"><!-- bgcolor='F1E6D4' -->  <!--'F1E6D4'-->
@@ -276,7 +276,7 @@ $begin=$pg-5>0?$pg-5:0; $end=$pg+5; for($k=$begin;$k<$end;$k++){ ?>
 						text-align: center;
 						"></div>
 					<div name="other_links_div" id="other_links_div" 
-						style="minWidth:600px;minHeight:450px;background-color:#080808;opacity:1.0;background:transparent;
+						style="minWidth:600px;min-height:250px;max-height:400px;overflow-y:scroll;background-color:#080808;opacity:1.0;background:transparent;
 						text-shadow: 1px 1px 3px #ddd;
 						text-align: center;
 						border-radius: 4px; padding:10px 10px 20px 10px;"> </div>
