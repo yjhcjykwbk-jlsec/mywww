@@ -367,3 +367,21 @@ insert into my_db.urls
 		(linkname,linkvalue,tags) values('jQuery ui','http://www.marcofolio.net/webdesign/jquery_quickie_unlimited_scroll_using_the_twitter_api.html',',精致前端');
 insert into my_db.urls
 		(linkname,linkvalue,tags) values('jquery-api','http://hemin.cn/jq/',',精致前端');
+insert into my_db.del_urls select * from my_db.urls where linkid=250;
+delete from my_db.urls where linkid=250;
+insert into my_db.del_urls select * from my_db.urls where linkid=240;
+delete from my_db.urls where linkid=240;
+insert into my_db.del_urls select * from my_db.urls where linkid=248;
+delete from my_db.urls where linkid=248;
+insert into my_db.del_urls select * from my_db.urls where linkid=241;
+delete from my_db.urls where linkid=241;
+insert into my_db.del_urls select * from my_db.urls where linkid=241;
+delete from my_db.urls where linkid=241;
+insert into my_db.del_urls select * from my_db.urls where linkid=246;
+delete from my_db.urls where linkid=246;
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('Watashi','http://blog.watashi.ws/','ACM');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('ACM呆滞慢板','http://www.huangwenchao.com.cn/category/tech/acm',',ACM');
+insert into my_db.del_urls select * from my_db.urls where linkid=253;
+delete from my_db.urls where linkid=253;

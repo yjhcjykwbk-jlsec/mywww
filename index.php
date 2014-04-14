@@ -91,8 +91,8 @@ opacity:0.8;
 	width:100%;
 }
 body{
-	background-color: #6a6f83;
-	background:#eee;// url(blackbg.jpg), fixed;
+	background-color:#fff;// #6a6f83;
+	//background:#eee;// url(blackbg.jpg), fixed;
 	font-size:12px;font-family:Arial,Console,Verdana,Courier New;
 }
 #header { width: 900px; height: 10px; Z-INDEX:1; POSITION:relative; margin: 0 auto; padding: 90px 0 0 0; text-align: left; }
