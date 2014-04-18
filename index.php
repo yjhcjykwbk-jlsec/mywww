@@ -82,7 +82,6 @@ opacity:0.8
 }
 td#col_3{ 
 max-height:600px;
-overflow:scroll;
 background:transparent;
 opacity:0.8; 
 }
@@ -111,7 +110,7 @@ li { list-style:none;margin-left:0;}
 	<div id='flow_1' style="opacity:0.02;Z-INDEX:0;POSITION:absolute;top:53px;LEFT:-30px;display:none"> <img src="1.jpg" width="500px"></div>
 	<div id='body' style="width:90%;margin-left:auto;margin-right:auto;padding:10px 20px 10px 20px;border:4px solid #ddd;border-radius:10px;
 		background-color:rgba(243, 243, 243, 0.57);">	
-	<table style="max-height:94%;overflow-y:scroll;border-collapse:none;table-layout:fixed;"  align="center"><tr>
+	<table style="border-collapse:none;table-layout:fixed;"  align="center"><tr>
 	<td id='col_1' width=20% bgcolor='#42a272'>
 <!-- 'f1e6d4' -->
 	<div style="margin-left:10px;margin-right:10px;padding:5px 5px 5px 5px"><!-- bgcolor='F1E6D4' -->  <!--'F1E6D4'-->
