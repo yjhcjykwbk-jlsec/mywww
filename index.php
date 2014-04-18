@@ -444,11 +444,10 @@ pull_urls_div("");
 				<div>
 					links of IT online<br/>
 					<font size="4px">
-						<a  target="_blank" href="">ubuntu</a>
-						<a  target="_blank" href="http://mirror.bjtu.edu.cn/cn/">bjtu-mirror</a>
-						<a  target="_blank" href="http://www.chinaunix.net/">chinaunix</a>
 						<a  target="_blank" href="http://www.csdn.net/">csdn</a>
+						<a  target="_blank" href="http://home.cnblogs.com/">cnblog</a>
 						<a  target="_blank" href="http://www.pudn.com/">pudn</a>
+						<a  target="_blank" href="http://www.chinaunix.net/">chinaunix</a>
 						<a  target="_blank" href="http://www.programlife.net/">programlife</a>
 							<a  target="_blank" href="http://xingfinal.blog.163.com/blog/#m=0">linuxer</a>
 							<a  target="_blank" href="http://www.cnblogs.com/rainydays/">acmer</a>
