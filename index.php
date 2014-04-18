@@ -73,7 +73,7 @@ a:active {
 	text-decoration: none;
 	}
 td#col_1{ 
-background-color:#4c4c4c;//rgba(215,243,255,0.6);
+background-color:#aaa;//rgba(215,243,255,0.6);
 opacity:0.8;
 border-radius:3px;
 }
