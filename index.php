@@ -365,7 +365,8 @@ pull_urls_div("");
 		<div>
 			<ul style="display: inline-block; overflow: hidden; font-size: 12px; font-weight: bold; word-wrap: break-word;">
 			<li><img  src="http://tp3.sinaimg.cn/2635728142/180/22831012745/1" width="150" height="145" alt="请叫我老xu"></li>
-			<li ><a target="_blank" href="" ><strong node-type="follow"><font font-family='华文行凯'> 今日事今日</font></strong><span>毕</span></a></li>
+			<button onclick="csdn();">csdn</button>
+			<button onclick="cnblog();">cnblog</button>
 			</ul>  
 		</div>
 

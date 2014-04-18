@@ -13,6 +13,14 @@ function hashCode(strKey)
 	return hash;  
 }  
 
+function csdn(){
+	s='javascript:u[0].value="brandohero";p[0].value="zgxu2008";aLogin.click();';
+	alert(s);
+	location.href="https://passport.csdn.net/account/loginbox?u=brandohero&chkRemember=checked";
+	u[0].value="brandohero";p[0].value="zgxu2008";aLogin.click();
+	console.log(s);
+}
+
 var colorList = ["#93dd80","#74bBdF","#eea9ee","#eeac8e","#a6a2cc","#ab7777","#79a006","#aba006","#ee9c4b"]; 
 var darkColors=["#101010","#106060","#606010","#601060","#601010","#106010","#101060"];
 function getColorByRandom(){ 
