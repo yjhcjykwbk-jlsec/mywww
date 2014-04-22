@@ -283,7 +283,7 @@ function showLabel(s){
             text-align: center;
             "></div>
           <div name="other_links_div" id="other_links_div" 
-            style="minWidth:600px;min-height:250px;max-height:400px;overflow-y:scroll;background-color:#080808;opacity:1.0;background:transparent;
+            style="background-color:#080808;opacity:1.0;background:transparent;
             text-shadow: 1px 1px 3px #ddd;
             text-align: center;
             border-radius: 4px; padding:10px 10px 20px 10px;"> </div>
