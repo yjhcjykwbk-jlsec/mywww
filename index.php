@@ -73,7 +73,6 @@ a:active {
   text-decoration: none;
   }
 #col{
-opacity:0.8;
 padding:2px 5px 2px 5px ;
 border:2px solid #eee;border-radius:3px;
 margin-top:10px;
@@ -92,7 +91,6 @@ width:54%;
 position:absolute;
 left:78%;
 width:18%;
-font-size:9px;
 }
 #container { 
 background-position: center 0;
