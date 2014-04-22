@@ -387,3 +387,11 @@ insert into my_db.del_urls select * from my_db.urls where linkid=253;
 delete from my_db.urls where linkid=253;
 insert into my_db.urls
 		(linkname,linkvalue,tags) values('intel游戏开发','https://software.intel.com/zh-cn/blogs/2014/04/14','game');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('http://www.kaggle.com/competitions','http://www.kaggle.com/competitions','数据分析预测比赛平台');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('数据挖掘预测平台','http://www.kaggle.com/competitions','数据分析');
+update my_db.urls set tags='' where linkid='290';
+
+insert into my_db.del_urls select * from my_db.urls where linkid=290;
+delete from my_db.urls where linkid=290;

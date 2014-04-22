@@ -74,7 +74,7 @@ a:active {
   }
 #col{
 padding:2px 5px 2px 5px ;
-border:2px solid #eee;border-radius:3px;
+border:4px solid #eee;border-radius:4px;
 margin-top:10px;
 }
 #col_1{ 
@@ -412,13 +412,15 @@ pull_urls_div("");
               <a  target="_blank" href="http://software.pku.edu.cn:8080/pkuSoftLegal/student/rjjh.htm">free software</a>
           </div></li></ul></div>
 
+
+
+
 <div id="col"><ul> <li>
             备用链接 
-             <!--form id="push_url_form" name="push_url_form" method="post" action="push.php"></form -->
             <form name="push_url_form" id="push_url_form">
-            <label><font size="2" p strong>链接名称</font></label><input size='10px' name="link_name" value="link name"  onclick="this.value=''"/><br/>
-            <label><font size="2" p strong>链接内容</font></label><input size='10px' name="link_value" value="xx"  onclick="this.value=''"/><br/>
-            <textarea size='100px' name="link_tags" value="yy" ></textarea><br/>
+            <label><font size="2" p strong>链接名称</font></label><input  name="link_name" value="link name"  onclick="this.value=''"/><br/>
+            <label><font size="2" p strong>链接内容</font></label><input  name="link_value" value="xx"  onclick="this.value=''"/><br/>
+            <textarea name="link_tags" value="yy" ></textarea><br/>
 <script>
 $(function(){
   console.log("pull_tags()");
@@ -464,14 +466,20 @@ $(function(){
 var gitFlag=false;
 var toggleGit=function(){if(!gitFlag){git_div.style.display="block";gitFlag=true;}else{git_div.style.display="none";gitFlag=false;}};
 </script>
-             <select id='select_tag' multiple="multiple" size="6" style="width:186px;" id="leftSel">  
-                <!-- <option value="1">0</option>   -->
-              </select>  
-            </form>
-            <button onclick="push_url(push_url_form.link_name.value,push_url_form.link_value.value,push_url_form.link_tags.value);">添加</button>
-            <button type="ff" id="dd" name="dd" onclick="del_urls();return false;">清空</button>
-            <script>s=true;</script>
-            <button type="ff" id="dd" name="dd" onclick="display_urls();return false;">显示</button>
+         <select id='select_tag' style="width:85%"  multiple="multiple" >  
+            <!-- <option value="1">0</option>   -->
+          </select>  
+        </form>
+        <button onclick="push_url(push_url_form.link_name.value,push_url_form.link_value.value,push_url_form.link_tags.value);">添加</button>
+        <button type="ff" id="dd" name="dd" onclick="del_urls();return false;">清空</button>
+        <script>s=true;</script>
+        <button type="ff" id="dd" name="dd" onclick="display_urls();return false;">显示</button>
+  </div>
+
+
+
+
+<div id="col">
             <button value='git' 
             onclick='toggleGit();return false;'>git</button>
             <?php include "git.php";?>
