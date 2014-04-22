@@ -385,3 +385,5 @@ insert into my_db.urls
 		(linkname,linkvalue,tags) values('ACM呆滞慢板','http://www.huangwenchao.com.cn/category/tech/acm',',ACM');
 insert into my_db.del_urls select * from my_db.urls where linkid=253;
 delete from my_db.urls where linkid=253;
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('intel游戏开发','https://software.intel.com/zh-cn/blogs/2014/04/14','game');
