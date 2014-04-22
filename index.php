@@ -86,11 +86,11 @@ width:18%;
 #col_2{
 position:absolute;
 left:23%;
-width:53%;
+width:54%;
 }
 #col_3{ 
 position:absolute;
-left:77%;
+left:78%;
 width:18%;
 font-size:9px;
 }
