@@ -395,3 +395,75 @@ update my_db.urls set tags='' where linkid='290';
 
 insert into my_db.del_urls select * from my_db.urls where linkid=290;
 delete from my_db.urls where linkid=290;
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('fess全文索引','http://fess.sourceforge.jp/',',search');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('fess_settings','http://fess.codelibs.org/screenshot.html',',search');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('Linux配置Java Home变量','http://developer.51cto.com/art/200906/128576.htm','linux');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('在线做图','http://www.processon.com/explore','tools');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('acm呆滞慢板','http://www.huangwenchao.com.cn/category/tech/acm',',算法');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('Accurate and Robust Text Detection: A Step-In for Text  Retrieval in Natural Scene Images','http://scholar.google.com/scholar?hl=en&q=Accurate+and+Robust+Text+Detection%3A+A+Step-In+for+Text++Retrieval+in+Natural+Scene+Images&btnG=&as_sdt=1%2C5&as_sdtp=',',ocr');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('Accurate and Robust Text Detection: A Step-In for Text  Retrieval in Natural Scene Images','http://scholar.google.com/scholar?hl=en&q=Accurate+and+Robust+Text+Detection%3A+A+Step-In+for+Text++Retrieval+in+Natural+Scene+Images&btnG=&as_sdt=1%2C5&as_sdtp=','ocr,scholar');
+insert into my_db.del_urls select * from my_db.urls where linkid=297;
+delete from my_db.urls where linkid=297;
+update my_db.urls set linkname='robust system to detect and localize texts in natu',linkvalue='http://www.google.com.hk/search?q=A robust system to detect and localize texts in natural scene imag',tags=',ocr,scholar' where linkid='271'
+update my_db.urls set linkname='2d-lstm ocr',linkvalue='http://scholar.google.com/scholar?hl=zh-CN',tags=',ocr,scholar' where linkid='260'
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('ICDAR text detection localization','https://github.com/search?p=5&q=ICDAR+text+detection+localization&ref=searchresults&type=Code','git');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('pics','http://500px.com/BlackStation','精致前端');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('robust detect','http://scholar.google.com/scholar?q=source+code++robust+video+text+detection++&btnG=&hl=en&as_sdt=0%2C5&as_ylo=2009&as_yhi=2014','scholar');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('fess','http://localhost:8080/fess','search');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('fess-admin','http://localhost:8080/fess','search');
+update my_db.urls set linkname='fess-admin',linkvalue='http://localhost:8080/fess/admin',tags='search' where linkid='303'
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('cite@Scene text detection using graph model built upon maximally stable extremal regions','http://scholar.google.com/scholar?cites=4637960668092137170&as_sdt=2005&sciodt=0,5&hl=en',',ocr,scholar');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('wordpress themes','http://www.wpdaxue.com/wordpress-theme-danhuaer.html',',精致前端');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('CITE Real-time scene text localization and recognition','http://scholar.google.com/scholar?cites=6194601372988143092&as_sdt=2005&sciodt=0,5&hl=en',',scholar,ocr');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('ER Filter','http://github.com/Itseez/opencv/commits/master/modules/objdetect/src/erfilter.cpp',',git,开源,算法,ocr');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('opencv-dev','http://itseez.com/OpenCV/',',开源');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('Linux Power Mgr','http://os.it168.com/a2009/1025/1027/000001027665.shtml','linux,');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('abb','http://www.huanqiu.com/zhuanti/tech/alibaba/','战略');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('Multi-script Text Extraction from Natural Scenes','http://158.109.8.43/textlocation/','ocr,experiment demo');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('opencv_boost_blog','http://robertour.com/','blog,opencv');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('opencv api','http://docs.opencv.org/modules/refman.html','opencv');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('multi-script text exaction','https://github.com/lluisgomez/text_extraction/tree/master/boost_train','ocr,git,opencv,experiment demo');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('图标集','http://glyphicons.com/#','精致前端');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('icdar2011','http://robustreading.opendfki.de/',',ocr,scholar,experiment demo');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('icdar2011-scene_text_detection_compete','http://robustreading.opendfki.de/wiki/SceneText',',ocr,scholar,experiment demo');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('今年自然图片文字提取论文','http://scholar.google.com/scholar?as_q=text+image&as_epq=&as_oq=natural+scene+image+text+extraction+detection+localization&as_eq=&as_occt=any&as_sauthors=&as_publication=&as_ylo=2014&as_yhi=&btnG=&hl=en&as_sdt=0%2C5',',experiment demo,ocr,scholar,google');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('An effective graph-cut scene text localization with embedded text segmentation','http://link.springer.com/article/10.1007/s11042-013-1848-3#page-1','2014scene-text-detect');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('Apply Adaptive Threshold Operation and Conditional Connected-component to Image Text Recognition','http://www.hrpub.org/journals/article_info.php?aid=1138','2014scene-text-detect');
+update my_db.urls set tags='' where linkid='310';
+
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('Scene Text Recognition in Mobile Applications by Character Descriptor and Structure Configuration','http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6799236&tag=1','2014scene-text-detect');
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('scholar列表','http://scholar.google.com/scholar?as_q=text+detection+scene+image+&as_epq=&as_oq=natural+scene+image+text+extraction+detection+localization&as_eq=&as_occt=any&as_sauthors=&as_publication=&as_ylo=2014&as_yhi=&btnG=&hl=en&as_sdt=0%2C5','2014scene-text-detect');
+update my_db.urls set linkname='总列表',linkvalue='http://scholar.google.com/scholar?as_q=text detection scene image ',tags='2014scene-text-detect' where linkid='322'
+insert into my_db.urls
+		(linkname,linkvalue,tags) values('Bangla Text Recognition from Video Sequence: A New Focus','http://arxiv.org/abs/1401.1190',',2014scene-text-detect');

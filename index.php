@@ -466,7 +466,7 @@ $(function(){
 var gitFlag=false;
 var toggleGit=function(){if(!gitFlag){git_div.style.display="block";gitFlag=true;}else{git_div.style.display="none";gitFlag=false;}};
 </script>
-         <select id='select_tag' style="width:85%"  multiple="multiple" >  
+         <select id='select_tag' style="width:85%;height:200px;"  multiple="multiple" >  
             <!-- <option value="1">0</option>   -->
           </select>  
         </form>
